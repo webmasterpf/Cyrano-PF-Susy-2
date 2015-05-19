@@ -1,0 +1,98 @@
+/*
+Pour le dev, code visuel sur les blocs selon le breakpoint
+à commenter ou supprimer pour la production
+
+*/
+
+body .conteneur{
+    //Approche mobile-first,réglage pour mobile
+    
+    
+    #header{}
+    .content-global{}
+    
+    #left-content{}
+    .content-inner{
+        //@include susy-grid-background;
+        background-color: #F29400;
+    .content-top{background-color: chocolate;}
+    .content-bottom{}
+    .content-bottom-home{}
+    }
+    .middle-content{background-color:deeppink;}
+    #right-content{}
+    #footer{background-color: firebrick;
+        }
+}   
+
+@include susy-breakpoint($tablet) {//Dimensions pour les tablettes
+    body .conteneur{
+        
+        
+        #header{
+          
+            background-color: sienna;
+        }
+        .content-global{}
+        .content-top{background-color: mistyrose;}
+        .content-inner{}
+        .middle-content{
+            background-color: #C8D215;
+        //@include susy-grid-background;
+        }
+        #left-content{}
+        #right-content{}
+        #footer{background-color: peachpuff;
+        }
+    }
+    @include susy-breakpoint($desktop) {//Dimensions pour les pc
+    body .conteneur{
+        #header{
+           
+            background: seashell;}
+        .content-global{
+            
+             
+        }
+        .content-inner{
+        background-color: palevioletred;     
+        }
+        .middle-content{
+            background-color:yellow;
+            
+        }
+        .content-top{background-color: yellowgreen;}
+        .content-bottom{}
+        .content-bottom-home{}
+        #left-content{background: tomato;}
+        #right-content{background: violet;}
+        #footer{background-color: palegreen;
+        }
+    }
+}
+@include susy-breakpoint($tabletlandscape) {//Dimensions pour les tablettes
+    body .conteneur{
+        #header{
+           
+            background: palevioletred;}
+        .content-global{
+            
+             
+        }
+        .content-inner{
+        background-color: yellow;     
+        }
+        .middle-content{
+            background-color: sandybrown;
+            
+        }
+        .content-top{background-color: yellowgreen;}
+        .content-bottom{}
+        .content-bottom-home{}
+        #left-content{background: tomato;}
+        #right-content{background: violet;}
+        #footer{background-color: palegreen;
+        }
+    }
+}
+}

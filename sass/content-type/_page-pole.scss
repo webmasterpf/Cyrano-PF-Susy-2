@@ -1,0 +1,33 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|           CONTENU VDL                |
+|--------------------------------------*/
+
+//@include susy-breakpoint ($mobile){}
+//@include susy-breakpoint ($desktop){}
+//@include susy-breakpoint ($tablet){}
+
+h1.page-pole{color: $gris-anthracite;}
+.pole1{
+    background:transparent image-url("bg_pole_01.jpg") no-repeat left top;
+    @include background-size;
+}
+.pole2{
+    background:transparent image-url("bg_pole_02.jpg") no-repeat left top;
+    @include background-size;
+}
+.pole3{
+    background:transparent image-url("bg_pole_03.jpg") no-repeat left top;
+    @include background-size;
+}
+
+.vdl-galerie-image .gallery-slides
+{
+    img{@include adaptable-img;}
+}
+
+
+

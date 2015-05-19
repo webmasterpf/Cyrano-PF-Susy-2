@@ -1,0 +1,223 @@
+/*-------------------------------------|
+|       HEADER DU SITE                 |
+|--------------------------------------*/
+
+// Layout du header et de ses parties haute et basse (logique mobile first)
+ //Imbrication à 100% (full nested)
+ body .conteneur #header {
+       
+     .headHaut {
+      
+         .logoHead {
+                    img{margin: 0 auto;display: block;}
+         }
+         .menuImg {}
+     }
+     .headBas {
+        @include clearfix; 
+         .site-slogan{}
+         .headSearch{
+          @include squish(0.3); //Ajoute un margin avant et aprés l'element pour le centrer
+         }
+        .menuHead{}  
+     }                
+      
+     
+     @include breakpoint($desktop) {/*    //Dimensions pour les pc*/
+         
+         .headHaut {
+             @include span(full);
+             .logoHead { 
+                @include span(first 4 of $desktopcol);
+             }
+             .menuImg {
+                @include span(last 8 of $desktopcol); 
+                                 
+             }
+         }
+         .headBas {
+            @include span(full);
+             .site-slogan{@include span(first 7 of $desktopcol );}
+             .headSearch{@include span(last 5 of $desktopcol );}
+             .menuHead{
+             aside.menuDyn{
+                 
+                ul#superfish-1{}
+             }
+         } 
+         
+         }
+     }
+     @include breakpoint($tablet) {/*     //Dimensions pour les tablettes*/
+         .headHaut {
+             .logoHead {}
+             .menuImg {}
+         }
+         .headBas {
+             .site-slogan{@include span(first 4 of $tabletcol);}
+             .headSearch{@include span( 4 of $tabletcol last);}
+             
+         }
+          .menuHead{
+           
+             aside.menuDyn{
+               
+             }
+         }
+     }
+   
+ }
+
+
+ //Pour le dev, code visuel sur les blocs selon le breakpoint
+// à commenter ou supprimer pour la production
+ 
+#header {
+    .headHaut {
+        .logoHead { }
+        .menuImg {  }
+    }
+    .headBas {background: red;
+              .site-slogan{}
+              .headSearch{}
+              .menuHead{}
+    }                
+}
+@include breakpoint($desktop) {/*    //Dimensions pour les pc*/
+    #header {
+        .headHaut {
+            .logoHead { }
+            .menuImg { background: #FFCCFF; }
+        }
+        .headBas {background: #00CC99;
+                  .site-slogan{}
+                  .headSearch{}
+                  .menuHead{}
+        }                
+    }
+}
+/*---- HEADER HAUT ----*/
+ 
+
+
+.logoHead {
+   img {
+    @include adaptable-img;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+/*---- HEADER BAS ----*/
+
+.headBas {
+ //background: $rose-fushia;//Modifier la couleur du fond de la partie basse selon couleur du lycée
+  //  margin: em(5px) 0 0 0;
+  background: #cfd0d2 image-url('bg_menu_rp.gif') repeat-x top left;
+}
+
+
+.headSearch {
+    
+    padding: 0 0.5em;
+    text-align: right;
+    margin: em(2px) 0 0 0;
+    //background: transparent image-url('bg_recherche.gif') no-repeat scroll 6em em(7px);
+    .form-item > label{color: #DDD;font-family: $AristaFont;font-size: medium;}
+    input[type=image]{
+        vertical-align: middle;
+    }
+    @include breakpoint($desktop){
+        padding: 0;
+    }
+}
+
+
+
+.name-and-slogan {
+  vertical-align: bottom;
+}
+
+.site-name {
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+  padding: em(160px) 0 0 0;
+  margin: 0;
+}
+
+.site-slogan {
+  color: white;
+  font-size: small;
+  text-align: center;
+  
+  
+  @include breakpoint($desktop){
+      text-align: left;
+      padding: em(3px) 0 0 1em;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+}
+/*--------------------------------
+---- BANDEAU HAUT HOMEPAGE -------
+---------------------------------*/
+.bandeau-pagetop {
+    display: none;
+    @include breakpoint ($desktop){
+        display: block;
+        ul{
+            background: $banc-casse;
+            //@include span (full);
+            @include squish (0.7,0.6);
+            li{
+                @include span (1 of 7);
+                list-style : none;
+
+                &:last-child{
+                    @include last;
+                }
+                a{
+                    text-decoration: none;font-size:small;
+                    &:hover{color: #FBFBFB;
+                            transition: background 2s ease,color 1000ms ease;-webkit-transition: background 2s ease,color 1000ms ease;}
+                }
+            }
+        }
+
+    }
+
+
+
+
+}
+
+
+.bandeau-pagetop a.site_er{color: #E2001A;}
+.bandeau-pagetop a:hover.site_er{background: #E2001A;}
+
+.bandeau-pagetop a.site_cg{color: #F29400;}
+.bandeau-pagetop a:hover.site_cg{background: #F29400;}
+
+.bandeau-pagetop a.site_mg{color: #E10279;}
+.bandeau-pagetop a:hover.site_mg{background: #E10279;}
+
+.bandeau-pagetop a.site_bl{color: #00AAD2;}
+.bandeau-pagetop a:hover.site_bl{background: #00AAD2;}
+
+.bandeau-pagetop a.site_lr{color: #970F7D;}
+.bandeau-pagetop a:hover.site_lr{background: #970F7D;}
+
+.bandeau-pagetop a.site_ca{color: #9B9C9E;}
+.bandeau-pagetop a:hover.site_ca{background: #9B9C9E;}
+
+.bandeau-pagetop a.site_ce{color: #C8D215;}
+.bandeau-pagetop a:hover.site_ce{background:#C8D215;}
+/*FIN CSS HEADER*/
+/*****************/
