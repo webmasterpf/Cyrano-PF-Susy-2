@@ -14,24 +14,25 @@
  
 
      <!--        ______________________ PARTIE GAUCHE _______________________ -->
+     <div class="HPGauche">
+         <?php if ($annonceImg): ?>
+             <div class="annonceImg"><?php print $annonceImg; ?></div>
+         <?php endif; ?>
+         <?php if ($blocLycee): ?>
+             <div class="blocLycee"><?php print $blocLycee; ?></div>
+         <?php endif; ?>
+     </div>
 
-	  <?php if ($annonceImg): ?>
-                 <div id="annonceImg"><?php print $annonceImg; ?></div>
-              <?php endif; ?>
-                 <?php if ($blocLycee): ?>
-                 <div id="blocLycee"><?php print $blocLycee; ?></div>
-              <?php endif; ?>
+    <!--______________________ PARTIE DROITE_______________________ -->
 
-    <!--______________________ ZONE DIAPO DROITE_______________________ -->
-
-                 
-                  <div id="contentAnim"> 		
+     <div class="HPDroite">            
+                  <div class="contentAnim"> 		
         <?php if ($Anim): ?>
-            <div id="textAnim"><?php print $Anim; ?></div><!-- /#textAnim -->
+            <div class="textAnim"><?php print $Anim; ?></div><!-- /#textAnim -->
         <?php endif; ?>
 		
       </div><!-- /#contentAnim -->
-	
+	</div>
 <!--    ______________________ FIN LAYOUT PAGE _______________________ -->
 
 

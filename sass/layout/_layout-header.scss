@@ -5,7 +5,10 @@
 // Layout du header et de ses parties haute et basse (logique mobile first)
  //Imbrication à 100% (full nested)
  body .conteneur #header {
-       
+     &:after{
+                content: " ";
+                display: block;
+                clear: both;}  
      .headHaut {
       
          .logoHead {
@@ -24,7 +27,7 @@
       
      
      @include breakpoint($desktop) {/*    //Dimensions pour les pc*/
-         
+          //@include clearfix;
          .headHaut {
              @include span(full);
              .logoHead { 

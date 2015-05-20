@@ -63,9 +63,9 @@ breakpoint-2.5.0
 
 //@import "content-type/frontpage-agtest";
 //@import "content-type/frontpage-pano";
-@import "content-type/frontpage-verticalDroit";
+//@import "content-type/frontpage-verticalDroit";
 //@import "content-type/frontpage-verticalGauche";
-//@import "content-type/frontpage-institutionnel";
+@import "content-type/frontpage-institutionnel";
 
 
 
@@ -74,8 +74,8 @@ breakpoint-2.5.0
 @import "content-type/views";
 
 @import "content-type/page-lycee";
-@import "content-type/contenu-vdl";
-@import "content-type/page-pole";
+//@import "content-type/contenu-vdl";
+//@import "content-type/page-pole";
 
 //Content type site PF
 @import "content-type/contenu-actu-presse-asso";
@@ -83,5 +83,8 @@ breakpoint-2.5.0
 @import "content-type/contenu-poste-bts-alternance";
 
 //developpement
-@import "content-type/page-agtest";
+//@import "content-type/page-agtest";
 //@import "layout/layout-debug-colour";
+
+//Galeries slideshow views
+@import "galeries/_views_slideshow";
