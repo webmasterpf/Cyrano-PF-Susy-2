@@ -6,16 +6,19 @@
 /**-- style du fil d'ariane --**/
 
 .ariane .breadcrumb {
-  padding: 0 0 0 0.3em;
-  color: #C0c0c0;
-  text-decoration: none;
-  background: chocolate;//supprimer en PROD
-  a {
-    color: #FFF;
+    padding: 0 0 0 0.3em;
+    color: #d63e2a;
     text-decoration: none;
-    &:hover {
-      color: #000;
-      text-decoration: underline;
+//    background: chocolate;//supprimer en PROD
+    a {
+        color:#4e4d5e;
+        text-decoration:none;
+        background: white;
+        text-transform: capitalize;
+        font-size: smaller;
+        &:hover {
+            color: #000;
+            text-decoration: underline;
+        }
     }
-  }
 }

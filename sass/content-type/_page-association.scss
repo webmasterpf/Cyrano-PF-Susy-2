@@ -1,0 +1,68 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|       PAGE ASSOCIATION               |
+|--------------------------------------*/
+
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+
+
+/*¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+== STYLE SPAN LYCEE CONTENU (reprise code visuel lycée) ==
+*/
+span.celony{color: black;background: #c8d215;padding: 0pt 2px;}
+span.caucadis{color: black;background: #9c9e9f;padding: 0pt 2px;}
+span.brise-lames{color: black;background: #00ACD1;padding: 0pt 2px;}
+span.le-rocher{color: black;background: #970F7D;padding: 0pt 2px;}
+span.gasquet{color: black;background: #E2017B;padding: 0pt 2px;}
+span.grawitz{color: black;background: #F09500;padding: 0pt 2px;}
+span.rostand{color: black;background: #E3001C;padding: 0pt 2px;}
+span.pf{color: black;background: #E85231;padding: 0pt 2px;}
+
+
+.page-association{
+    p, ul{
+        padding: em(5px);
+        margin: 0;
+        list-style-position: inside;
+    }
+    h3, h2{
+        color: #EA703F;
+        padding: em(2px);
+    }
+    h2{
+        text-align: center;
+    }
+    h4{
+        color: #94127F;
+        padding: em(2px);
+        text-indent: em(3px);
+    }
+    a{ 
+        text-decoration: none;
+        color:$orange-fonce;
+        &:hover{color:$violet; }
+    }
+} 
+.title-association{
+    text-align: right;
+    color: #EA703F;
+    font-size: em(24px);
+}
+
+/*Contenu du QT pour afficher temoignage anciens élèves sur page association*/
+#centre-asso h2{
+    text-align: left;
+}
+#centre-asso h3{
+    color: #E2017B;
+}
+#centre-asso li.active a {
+    color: white;
+}
+#centre-asso a:hover{}
+#centre-asso img{}

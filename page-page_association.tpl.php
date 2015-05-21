@@ -3,30 +3,19 @@
 
   <!-- ______________________ CONTENU _______________________ -->
   
-      <div id="contentPage">
+      
       <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
-            <div id="content-top-pageAssociation">
-			<span id="ariane"> <?php print $breadcrumb; ?></span>
+            <div id="content-top">
+			<span class="ariane"> <?php print $breadcrumb; ?></span>
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
             <?php endif; ?>
       
-       <!-- ______________________ COLONNE GAUCHE _______________________ -->
-		
-			
-         <div id="left-content-pageAssociation">
-              <?php if ($title): ?>
-                <h1 class="title-association"><?php print $title; ?></h1>
-              <?php endif; ?>
-            <?php print $left; ?>
-          </div>
-             <!-- /sidebar-left -->
-
-		<!--fin du contenu gauche -->
+      
         
-        <div id="content-inner-pageAssociation">
+        <div id="content-inner">
 		
 			
           <?php if ($mission || $messages || $help || $tabs): ?>
@@ -47,7 +36,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-pageAssociation">
+          <div class="middle-content">
               
             <?php print $content; ?>
              <?php if ($centralBloc): ?>
@@ -59,8 +48,7 @@
             <?php print $centre_partenaire; ?>
           </div>
              <?php endif; ?>
-                   <!-- retour haut selon resolution de l'ecran -->
-          <a href="#general" id="retour_haut">Haut de page</a>
+                   
      
 
               <?php print $feed_icons; ?>
@@ -81,16 +69,6 @@
         <?php endif; ?>
 
        
-		  <!-- ______________________ COLONNE DROITE _______________________ -->
-
-                   <!-- colonne droite pageAssociation -->
-          <?php if ($right): ?>
-            <div id="right-content-pageAssociation">
-              <?php print $right; ?>
-            </div>
-        <?php endif; ?> <!-- /colonne droite pageAssociation -->
-		
-<br clear="all" />
 <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div id="content-bottom">
@@ -98,8 +76,4 @@
             </div><!-- /#content-bottom -->
           <?php endif; ?>
    
-    	
-		  
-	 </div> <!-- /contentPage -->
-	  
-	  <?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_footer.php'); ?>    
+   <?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_footer.php'); ?>    

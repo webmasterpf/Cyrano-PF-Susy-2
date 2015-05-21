@@ -42,7 +42,7 @@ box-sizing: $value;
 // qui simplifie les media-queries.Donner la largeur mini de l'ecran
 $mobile   :  (max-width 799px);//500px
 $tablet   :  (min-width 800px) (max-width 989px);//800px
-$desktop  :  990px;// sortie=>> min-width: 950px
+$desktop  :  990px;// sortie=>> min-width: 990px
 
 // Breakpoint pour les format paysage 
 $mobilelandscape : (min-height 319px) (max-height 765px) (orientation landscape);//pour orientation paysage
