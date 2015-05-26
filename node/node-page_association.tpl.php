@@ -29,7 +29,15 @@
           
                <div class="content">
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
-     
+         <?php if ($centralBloc): ?>
+                <div id="middleGalerie"><?php print $centralBloc; ?></div>
+              <?php endif; ?>
+
+                <?php if ($centre_partenaire): ?>
+         <div id="centre-asso">
+            <?php print $centre_partenaire; ?>
+          </div>
+             <?php endif; ?>
             <?php
               global $theme_path;
               include ($theme_path.'/includes/inc_region_col_2.php');

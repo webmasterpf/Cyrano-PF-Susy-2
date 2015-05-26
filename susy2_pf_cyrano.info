@@ -63,6 +63,7 @@ regions[bandeau1] = Bandeau haut de page
 regions[annonceImg] = Image pour annonce - Bloc
 regions[blocLycee] = Acces Lycees - Bloc
 regions[Anim] = Animation Flash - Bloc
+regions[centralBloc] = Zone pour bloc central - View Bloc
 regions[centre_partenaire] = Zone centrale page partenaire
 regions[DiapoHP] = Diaporama Homepage - Bloc
 
@@ -91,7 +92,6 @@ regions[formulaire] = Zone formulaire bloc
 regions[left] = Colonne Gauche
 regions[decoTitre] = Titre deco image - Fiche Formations
 regions[right] = Colonne Droite
-regions[centralBloc] = Zone pour bloc central - View Bloc
 regions[content_bottom] = Content bottom
 regions[content_bottom_home] = Content bottom homepage
 regions[footer_block] = Footer

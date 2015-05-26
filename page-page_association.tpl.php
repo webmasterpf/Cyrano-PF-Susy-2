@@ -39,15 +39,7 @@
           <div class="middle-content">
               
             <?php print $content; ?>
-             <?php if ($centralBloc): ?>
-                <div id="middleGalerie"><?php print $centralBloc; ?></div>
-              <?php endif; ?>
-
-                <?php if ($centre_partenaire): ?>
-         <div id="centre-asso">
-            <?php print $centre_partenaire; ?>
-          </div>
-             <?php endif; ?>
+         
                    
      
 

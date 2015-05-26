@@ -6,6 +6,97 @@
 |       PAGE LYCEE                     |
 |--------------------------------------*/
 
-//@include susy-breakpoint ($mobile){}
-//@include susy-breakpoint ($desktop){}
-//@include susy-breakpoint ($tablet){}
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+#colonne-1.page-lycee{
+    @include breakpoint ($desktop){
+        @include border-R-orangePF();
+    }
+    
+}
+.page-lycee{
+    h1.titre-lycee{
+        color: $orange-fonce;
+        margin: 0px;
+        padding: em(5px) 0px;
+        font-size: em(24px);
+        line-height: 1em;
+    }
+    h2#logo_lpp{
+        color: $orange-fonce;
+    }
+h3{
+    font-size: 14px;
+    color:#AECA20;
+    padding: 2px 0;
+}
+h4{
+    font-size: em(13px);
+    color:#93117E;
+    padding: 2px 0;
+}
+strong{
+    color:#E85231;
+}
+a{color: #93117E;text-decoration: none;}
+a:hover{text-decoration: underline;}
+}
+#lycee-coordlogo{
+    a{
+        color: #d63e2a;
+        text-decoration:none;
+    }
+    a:hover{
+        text-decoration:underline;
+    }
+}
+
+
+/*STYLE PAGE LYCEE*/
+.table-formation, #table-acces{
+    width: 95%;
+    border: 0;
+    text-align:right;
+    margin: 0 auto;
+}
+.table-formation , #table-acces tr.transport{
+    th.diplome{
+        text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+    border-bottom: 0.13em dotted gray;
+    text-align:left;
+    }
+    
+caption{
+    color:black;
+    font-weight:bold;
+    text-align:left;
+    text-transform:uppercase;
+}
+}
+
+.transport-detail{}
+.views-field-diplome a{
+     color: gray;
+      text-decoration: none;
+}
+.views-field-diplome a:hover{
+   text-decoration: underline;
+}
+#diapo-lycee {margin:0 auto;display: block;width: 95%;}
+#diapo-lycee img{border: em(2px) solid #E85231;padding: em(1px);}
+#gmap-lycee {
+    width: 98%;display: block;margin: em(20px) 0;
+    iframe{border: em(2px) solid #00AAD2;padding: em(1px);}
+    small{
+        a{
+            color : #01ABCF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}

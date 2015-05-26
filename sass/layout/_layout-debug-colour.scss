@@ -274,22 +274,17 @@ body .conteneur{
 //Pour un 3 colonnes egales : page pole
 body .conteneur{
     .layout_3col_all4{
-       @include span($mobilecol);
-        
-        background: khaki;
+            background: indianred;
         @include breakpoint ($tablet){
-       
-            background: tomato;
+                background: tomato;
         }
         @include breakpoint ($desktop){
-       
-            background: indianred;
+                
+                background: khaki;
         }
     }
     .layout_3col_all4last{
-       @include span($mobilecol);
-        
-        background: khaki;
+            background: khaki;
         @include breakpoint ($tablet){
        
             background: tomato;

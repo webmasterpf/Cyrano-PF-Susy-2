@@ -23,6 +23,11 @@ span.grawitz{color: black;background: #F09500;padding: 0pt 2px;}
 span.rostand{color: black;background: #E3001C;padding: 0pt 2px;}
 span.pf{color: black;background: #E85231;padding: 0pt 2px;}
 
+#colonne-2.page-association{
+    @include breakpoint ($desktop){
+        @include border-L-bleu
+    }
+}
 
 .page-association{
     p, ul{
@@ -47,6 +52,7 @@ span.pf{color: black;background: #E85231;padding: 0pt 2px;}
         color:$orange-fonce;
         &:hover{color:$violet; }
     }
+    tbody{border: 0;}
 } 
 .title-association{
     text-align: right;
