@@ -1,0 +1,34 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|       MON NODE TYPE PAGE BOURSES     |
+|--------------------------------------*/
+
+ //@include breakpoint ($mobile){}
+  //@include breakpoint ($desktop){}
+  //@include breakpoint ($tablet){}
+#colonne-2.page-bourses{
+    @include breakpoint ($desktop){
+        @include border-L-violet;
+    }  
+}
+.page-bourses{
+    h1.titre-bourses{
+        color: $orange-fonce;
+        font-size: x-large;
+    }
+    h3{
+        color: $vert;
+        text-decoration: none;
+        font-size: em(16px);
+    }
+    a{
+        text-decoration: none;
+        color: $rose-fushia;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}

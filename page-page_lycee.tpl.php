@@ -67,7 +67,4 @@ include ($theme_path.'/includes/inc_header.php');
             </div><!-- /#content-bottom -->
           <?php endif; ?>
 	 </div> <!-- /content-global -->
-<?php
-global $theme_path;
-include ($theme_path.'/includes/inc_footer.php');
-?>     
+   <?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_footer.php'); ?>         

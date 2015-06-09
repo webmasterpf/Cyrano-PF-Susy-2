@@ -6,10 +6,15 @@
 |       CONTENU FICHE FORMATION        |
 |--------------------------------------*/
 
-//@include susy-breakpoint ($mobile){}
-//@include susy-breakpoint ($desktop){}
-//@include susy-breakpoint ($tablet){}
-
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+#colonne-2.fiche-formation{
+    @include breakpoint ($desktop){
+        @include border-L-grisclair;
+    }
+    
+}
 .fiche-formation
 {
     h1.titre-fiche-formation{
@@ -18,7 +23,7 @@
         
     }
     h2{
-        font-size: 1.2em;
+        font-size: 1em;
         color: #333333;
         font-weight: bold;
         text-align: left;
@@ -36,6 +41,11 @@
     }
     p{
         padding: em(5px);
+        
+    }
+    ul{
+        list-style: inside;
+        
     }
     img{padding: 0;}
     a{  

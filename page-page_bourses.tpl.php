@@ -1,8 +1,8 @@
-<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>
+<?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_header.php'); ?>
  <!-- ______________________ LAYOUT PAGE BOURSES _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
-      <div id="contentPage">
+      
       
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
@@ -11,7 +11,7 @@
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
-	  
+	  <?php endif; ?>
       
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
 		
@@ -23,11 +23,9 @@
 		
 		<!--fin du contenu gauche -->
         
-        <div id="content-inner-bourses" class="inner column center">
+        <div class="content-inner">
 		             
-		 <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
+		
            
 
           <?php if ($mission || $messages || $help || $tabs): ?>
@@ -78,8 +76,8 @@
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-	 </div> <!-- /contentPage -->
+	 
 	  
-	  <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
-         <?php endif; ?>
+	  <?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_footer.php'); ?>
+         
      

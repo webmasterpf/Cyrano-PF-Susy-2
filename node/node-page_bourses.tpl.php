@@ -7,19 +7,19 @@
     <div class="node-inner">
         <!--______________COLONNE 1________________ -->
       
-        <div id="colonne-1" class="CHOIX_DU_LAYOUT">
+        <div id="colonne-1" class="col1_layout_4_8 page-bourses">
             <?php if ($title): /*copier le titre dans la colonne desirée*/?>
-            <h1 class="titre_page"><?php print $title; ?></h1>
+            <h1 class="titre-bourses"><?php print $title; ?></h1>
             <?php endif; ?>
         
             <?php 
-  $theme_path = drupal_get_path('theme', 'NOM_THEME');
+  $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano');
 include($theme_path .'/includes/inc_region_col_1.php');
 ?>
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-        <div id="colonne-2" class="CHOIX_DU_LAYOUT">
+        <div id="colonne-2" class="col2_layout_4_8 page-bourses">
 
             <?php print $picture; ?>
 
@@ -31,7 +31,7 @@ include($theme_path .'/includes/inc_region_col_1.php');
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
             </div>
  <?php 
-  $theme_path = drupal_get_path('theme', 'NOM_THEME');
+  $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano');
 include($theme_path .'/includes/inc_region_col_2.php');
 ?>
             
@@ -44,31 +44,7 @@ include($theme_path .'/includes/inc_region_col_2.php');
         <?php endif; ?>
         </div>
 
-        <!--______________COLONNE 3________________ -->
-        <div id="colonne-3" class="CHOIX_DU_LAYOUT">
-            <!--***********!!!!!!  EXEMPLE DE CHAMP CCK INCLUS AVEC CONDITION !!!!!!!!************ -->
-            <?php if ($node->nom_du_champ[0]['view']): ?>
-            <div class="nom-css">
-                    <?php  print $node->nom_du_champ[0]['view']  ?>
-            </div>
-            <?php endif;?>
-            
-            SI CHAMP ITEMS MULTIPLES (fichiers,..) **
-             <?php if (!empty($node->nom_du_champ[0]['view'])): ?>
-           <div class="nom-css">
-               <?php
-               foreach ($node->nom_du_champ as $key => $TYPE_CONTENU) {
-                   print $node->nom_du_champ[$key]['view'];
-               }
-               ?>            
-           </div>
-            <?php endif;?>
- <?php 
-  $theme_path = drupal_get_path('theme', 'NOM_THEME');
-include($theme_path .'/includes/inc_region_col_3.php');
-?>
-
-        </div>
+       
 
 
     </div> <!-- /node-inner -->

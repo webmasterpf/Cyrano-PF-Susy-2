@@ -20,7 +20,7 @@
       
  
         
-        <div id="content-inner" class="inner column center">
+        <div class="content-inner" class="inner column center">
 		             
 		
            

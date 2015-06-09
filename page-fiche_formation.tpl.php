@@ -13,9 +13,9 @@
             </div> <!-- /#content-top -->
 	  
       
-     
+     <?php endif; ?>
         
-        <div id="content-inner-ficheFormation" class="inner column center">
+        <div class="content-inner">
 		             
 		
            
@@ -72,6 +72,4 @@
 
        
 	  
-<?php global $theme_path; include ($theme_path.'/includes/inc_footer.php'); ?>
-         <?php endif; ?>
-     
+   <?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_footer.php'); ?>                   

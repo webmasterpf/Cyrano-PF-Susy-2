@@ -13,6 +13,7 @@
     <?php print $head; ?>
     <?php print $styles; ?>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
     <?php print $scripts; ?>
     <script src="<?php print $base_path . path_to_theme() ?>/js/typos.js" type="text/javascript" charset="utf-8"></script>
 
@@ -27,10 +28,16 @@ include ($theme_path.'/js/google_font.php');
  <body class="<?php print $body_classes; ?>">
  <!-- ______________________ PAGE TOP BANDEAU _______________________ -->
 <?php if (!empty($bandeau1)): ?>
-<div class="bandeau-pagetop">
-          <?php print $bandeau1; ?>
-         </div>
-<?php endif; ?>
+<div id="volet_clos" class="bandeau-pagetop">
+    
+    <div id="volet">
+        <?php print $bandeau1; ?>
+    
+        <a href="#volet" class="ouvrir">Les sites de nos lycées</a>
+        <a href="#volet_clos" class="fermer">Fermer</a>
+    </div>
+</div>
+    <?php endif; ?>
 <!-- ______________________ CONTENEUR _______________________ -->
      <section class="conteneur">
      

@@ -15,7 +15,7 @@
       
       
         
-        <div id="content-inner">
+        <div class="content-inner">
 		
 			
           <?php if ($mission || $messages || $help || $tabs): ?>

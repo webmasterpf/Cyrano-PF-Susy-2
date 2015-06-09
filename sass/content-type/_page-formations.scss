@@ -1,0 +1,74 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|       PAGE FORMATIONS                |
+|--------------------------------------*/
+
+h1.titre-formation{
+    text-align: center;
+    color: $orange-fonce;
+    font-size: x-large;
+}
+#colonne-1.page-formations{
+    @include breakpoint ($desktop){
+        @include border-R-orangePF();
+    }
+}
+.page-formations{
+    table.table-liste-formation{
+        width: 98%;/*largeur du tableau contenant les formations*/
+        background: none;
+        margin: 0 auto;
+        caption{
+            color:black;
+            font-weight:bold;
+            text-align:left;
+            text-transform:uppercase;
+        }
+    }
+    th.titre-categorie-diplome{
+        border-bottom: 0.125em dotted gray;
+        color: black;
+    }
+    .views-field-titre-categorie, .views-field-titre-categorie a{
+    color: gray;
+    text-align: right;
+    text-decoration: none;
+}
+.views-field-titre-categorie a:hover, .views-field-titre-revue-presse a:hover{
+    text-decoration: underline;
+}
+    span.complement {
+        color: $violet;
+        font-size: 0.95em;
+    }
+}
+
+
+
+.view-liste-formation-initiales{
+    background: none;
+    width:auto;
+}
+
+.tr-table-formations, .tr-table-revue-presse{
+    background: none;
+
+}
+.views-field-table{
+    color:black;
+}
+#colonne-2.page-formations{
+    a{
+        color: #E10279;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    h2{}
+    h3{color: #94127F;margin: em(2px);}
+    h5{color: #888888;}
+}

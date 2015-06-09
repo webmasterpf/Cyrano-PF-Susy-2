@@ -48,6 +48,7 @@ breakpoint-2.5.0
 @import "layout/layout-header";
 @import "layout/layout-footer";
 @import "layout/layout-defilant";
+@import "layout/layout-bandeau";
 
 // Les BREAKPOINTS
         
@@ -83,6 +84,8 @@ breakpoint-2.5.0
 @import "content-type/contenu-poste-bts-alternance";
 @import "content-type/page-association";
 @import "content-type/page-lycee";
+@import "content-type/page-formations";
+@import "content-type/page-bourses";
 
 //developpement
 //@import "content-type/page-agtest";

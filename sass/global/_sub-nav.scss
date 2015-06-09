@@ -8,7 +8,7 @@ aside.navStatic{
     .js #subnav { display: none; }
     .js .selectnav {display: block;}
     select{width: 100%}    
-    @include susy-breakpoint ($desktop){
+    @include breakpoint ($desktop){
         .selectnav { display: none; }
         .horizontal-nav { display:block; }
         ul.horizontal-nav {        
@@ -22,10 +22,10 @@ aside.navStatic{
                 text-align:center;
                 font-size: 1.5em;
                 list-style: none;
-                
+                float: right;
                 &:last-child {
-                @include last;
-                   width: 30%;//Permet de limiter la taille de la derniere li
+              //  @include last;
+                  // width: 30%;//Permet de limiter la taille de la derniere li
                 }
               
                 a {

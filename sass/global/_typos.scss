@@ -92,15 +92,19 @@ h6, .h6 {
 }
 
 /*------------ PARAGRAPHES ---------------*/
-//Vertical Rythm via compass
+//Vertical Rythm via compass pour tout le site
 .conteneur{
     p{@include leader();}
     #header{@include adjust-font-size-to(12px);}
     .content-global{}
     #left-content{}
     .content-inner{
-        p,td{
+        p,td, ul{
             padding: 0.3em;
+            font-size: small;
+        }
+        ul{
+            list-style: inside;
         }
     }
     #right-content{}

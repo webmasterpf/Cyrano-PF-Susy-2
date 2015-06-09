@@ -1,4 +1,4 @@
-<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>
+<?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_header.php'); ?>
  <!-- ______________________ LAYOUT PAGE FORMATION _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
@@ -13,22 +13,35 @@
       <!-- <pre> <?php print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->   
        <?php //print_r(arg(0)); ?>
             </div> <!-- /#content-top -->
+            <?php endif; ?>
 	  
       
      <!-- ______________________ CONTENT INNER _______________________ -->
         
-        <div id="content-inner" class="inner column center">
-		             
-		 <?php if ($title): ?>
-                <h1 class="title-formation"><?php print $title; ?></h1>
+        <div class="content-inner">
+		 <?php if ($mission || $messages || $help || $tabs): ?>
+            <div id="content-header">
+
+              <?php if ($mission): ?>
+                <div id="mission"><?php print $mission; ?></div>
               <?php endif; ?>
+
+              <?php print $messages; ?>
+
+              <?php print $help; ?>
+
+              <?php if ($tabs): ?>
+                <div class="tabs"><?php print $tabs; ?></div>
+              <?php endif; ?>
+
+            </div> <!-- /#content-header -->
+          <?php endif; ?>             
+	
                 
                
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-pageFormation">
-            <?php if ($centralBloc): ?>
-                <div id="centralBloc"><?php print $centralBloc; ?></div>
-              <?php endif; ?>
+          <div id="middle-content">
+          <?php print $content; ?>
            <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
 
@@ -52,31 +65,15 @@
        
          <!--d�but du contenu droit -->
 	<div id="right-content-pageFormation">
-             <?php if ($mission || $messages || $help || $tabs): ?>
-            <div id="content-header">
-
-              <?php if ($mission): ?>
-                <div id="mission"><?php print $mission; ?></div>
-              <?php endif; ?>
-
-              <?php print $messages; ?>
-
-              <?php print $help; ?>
-
-              <?php if ($tabs): ?>
-                <div class="tabs"><?php print $tabs; ?></div>
-              <?php endif; ?>
-
-            </div> <!-- /#content-header -->
-          <?php endif; ?>
             
-		<?php print $content; ?>
+            
+		
 
                
           
 	 </div>
           
-    	   <br clear="all" />
+    	   
            <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div id="content-bottom">
@@ -86,6 +83,5 @@
 
 	 </div> <!-- /contentPage -->
 	  
-	  <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
-         <?php endif; ?>
+	  <?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_footer.php'); ?>
      

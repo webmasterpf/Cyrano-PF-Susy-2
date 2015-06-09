@@ -85,8 +85,11 @@ caption{
 .views-field-diplome a:hover{
    text-decoration: underline;
 }
-#diapo-lycee {margin:0 auto;display: block;width: 95%;}
-#diapo-lycee img{border: em(2px) solid #E85231;padding: em(1px);}
+#diapo-lycee {
+    margin:0 auto;display: block;width: 98%;
+    img{border: em(2px) solid #E85231;padding: em(1px);}
+}
+
 #gmap-lycee {
     width: 98%;display: block;margin: em(20px) 0;
     iframe{border: em(2px) solid #00AAD2;padding: em(1px);}
