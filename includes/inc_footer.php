@@ -16,16 +16,14 @@ include ($theme_path.'/js/code_stats.php');
     </section> 
     <!-- ______________________ /CONTENEUR _______________________ -->
        <!-- ajout des scripts utiles pour drupal -->
-     <?php print $scripts; ?>
+  
        <?php
 global $theme_path;
 include ($theme_path.'/js/google_font.php');
 ?>
-	
-           <?php
-global $theme_path;
-include ($theme_path.'/includes/inc_responsivenav.php');
-?>    
+
+  
+       
 	<?php print $closure ?>
    
   </body>

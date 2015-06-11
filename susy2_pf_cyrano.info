@@ -15,7 +15,11 @@ scripts[] = js/general.js
 ;scripts[] = js/jquery.navobile.min.js
 ;scripts[] = js/jquery.jpanelmenu.min.js
 scripts[] = js/selectnav.min.js
-
+;pour header / menu collant haut de page
+scripts[] = js/jquery.sticky.js
+;pour bandeau coulissant
+scripts[] = js/jquery.sidebar.js
+scripts[] = js/jquery.sidebar.min.js
 
 stylesheets[all][] = css/application.css
 

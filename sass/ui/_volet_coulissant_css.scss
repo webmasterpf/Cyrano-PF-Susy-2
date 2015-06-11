@@ -1,0 +1,64 @@
+/*
+Style pour volet coulissant 100% CSS
+*/
+
+/*Slider top en CSS - code dans le inc_header*/
+#volet {
+    width: 98%;
+    padding: em(10px);
+    height: 1.05em;
+    @include ombrage;
+    
+}
+
+#volet {
+    position: relative;
+    left: 0;/*Position du volet fermé - au départ*/ 
+    top: -5em;
+}
+#volet a.ouvrir,
+#volet a.fermer {
+    position: absolute;
+    left: 45%;
+    top: 4em;
+
+    /* quelques styles CSS3 */
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+
+    border-radius: 0 0 8px 8px;
+    
+    padding: 10px 25px;
+    background: #555;
+    color: #fff;
+    text-decoration: none;
+    
+    /*Ombrage sur bouton*/
+     @include ombrage-effet-incurve;
+}
+
+#volet {
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+#volet:target {
+    left: 0;
+    top:0.1em;
+    
+}
+#volet a.fermer {
+    display: none;
+}
+#volet_clos:target #volet {
+    left: 0;    /*Retour position de depart*/
+}
+#volet:target a.ouvrir {
+    display: none;
+}
+#volet:target a.fermer {
+    display: block;
+    top: 2.6em; /*Position btn volet ouvert*/
+   
+}

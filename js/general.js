@@ -1,3 +1,10 @@
+/*
+ * Pour pouvoir utiliser plusieurs versions de Jquery : https://www.drupal.org/node/1058168
+ * Utiliser $jq pour les plugins qui n'utilisent pas 1.3.2 fournit par Jquery Update
+ */
+var $jq = jQuery.noConflict(); 
+var jQuery13 = jQuery;
+jQuery.noConflict(true);
 //Pour avoir un retour haut dynamique selon longueur du contenu
 Drupal.behaviors.goTop = function(context) {
   var link = $('#retour_haut', context);
