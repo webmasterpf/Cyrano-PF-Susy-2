@@ -6,7 +6,7 @@ Style - layout pour le bandeau des autres sites de l'ASSO
 ---- BANDEAU HAUT HOMEPAGE -------
 ---------------------------------*/
 .bandeau-pagetop {
-    display: none;
+    display: block;
     @include breakpoint ($desktop){
         display: block;
         ul{
@@ -60,10 +60,10 @@ Style - layout pour le bandeau des autres sites de l'ASSO
 }
 
 /*Slider top en CSS - code dans le inc_header*/
-#volet {
+/*#volet {
     width: 98%;
     padding: em(10px);
     height: 1.05em;
     @include ombrage;
     
-}
+}*/
