@@ -1,0 +1,124 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|       PAGE BTS                       |
+|--------------------------------------*/
+
+ //@include breakpoint ($mobile){}
+  //@include breakpoint ($desktop){}
+  //@include breakpoint ($tablet){}
+  
+  /*--------------------------------------------
+~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
+¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+*/
+
+/*___ STYLE GLOBAL PAGE BTS V2 ______*/
+.page-bts {
+    a{
+        text-decoration: none;
+        color: #950F7E;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    p{
+        padding: em(2px) 0;
+    }
+    h3{color: #AEC81F;text-decoration: none;font-size: large;}
+    h4{text-decoration: none;font-size: medium;color: #950F7E}
+}
+
+
+#content2-bts{}
+#content2-bts a{}
+#content2-bts a:hover{text-decoration: none;}
+.table-bts-coord{
+    width: 97%;border: 0;
+    tbody{height: em(45px);margin: 0;padding: 0;}
+    tr{}
+    td{vertical-align: middle;}
+}
+
+/*************************************/
+/* POUR NODE.TPL PAGE BTS ACCUEIL */
+#vue-liste-bts{
+    background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
+    padding: 0;
+    margin: em(10px) 0;
+}
+.vue-bloc-liste-bts{text-align: left;text-indent: 15px;}
+.vue-bloc-liste-bts ul{
+    list-style: none;
+}
+.vue-bloc-liste-bts li{}
+.vue-bloc-liste-bts a{
+    font-weight: bold;
+    padding: 3px;
+    color: #911381;
+}
+#vue-liste-bts .vue-bloc-liste-bts a:hover{
+    background: #911381;
+    color: white;
+}
+#vue-liste-bts h3,#vue-liste-bts .view-header{text-align: center;}
+span#DossierBTS{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.8em;
+    border: em(2px) solid #01ABCF;
+    a{
+        font-size: em(14px);
+        font-weight: bold;
+    }
+    a:hover{}
+}
+
+
+#txt-dossier-bts{}
+#txt-dossier-bts p{}
+#txt-dossier-bts{}
+#centres-bts a{
+    font-size: 12px;
+    margin: 5px 0;
+}
+#dossier-bts, #centres-bts{
+     text-align: center;
+}
+#dossier-bts .filefield-icon, #centres-bts .filefield-icon{
+     display: none;
+}
+
+#block-webform-client-block-109{}
+#block-webform-client-block-109 table{}
+#block-webform-client-block-109 tbody{}
+#block-webform-client-block-109 tr{}
+#block-webform-client-block-109 td{
+    display: block;
+}
+/*______Pour le node/111 BTS et entreprise______*/
+#docs-alternance-bts{
+    margin: 0 auto;text-align: left;width: 90%;   
+}
+#docs-alternance-bts li{
+     list-style-position: outside;
+     list-style-type: circle;
+}
+
+#objectif-bts{
+    table,tbody{border: 0;width: em(300px);margin: 0 auto;display: block;}
+    tr{
+        background: GhostWhite;
+        margin: em(2px) 0;
+        display: block;
+        tr,td{border: 0;}
+        thead{text-align: center;background: none;}
+        th{border: 0;font-size: 18px;color: #00AACE;padding: 3px;}
+        a{color: #91127D;}
+        a:hover{text-decoration: underline;}
+    }
+} 

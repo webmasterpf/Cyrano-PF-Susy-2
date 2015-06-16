@@ -334,8 +334,22 @@ body .conteneur{
   .col1_layout_6_6{}
   .col2_layout_6_6{}
   
-  .col1_layout_7_5{}
-  .col2_layout_7_5{}
+  .col1_layout_7_5{
+      @include breakpoint ($tablet){
+          background: tomato;
+      }
+      @include breakpoint ($desktop){
+          background: thistle;
+      }
+  }
+  .col2_layout_7_5{
+      @include breakpoint ($tablet){
+          background: #00CC99;
+      }
+      @include breakpoint ($desktop){
+          background: darkorange;
+      }
+  }
   
   .col1_layout_8_4{
       @include breakpoint ($tablet){

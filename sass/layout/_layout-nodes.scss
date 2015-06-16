@@ -259,8 +259,18 @@ body .conteneur{
   .col1_layout_6_6{}
   .col2_layout_6_6{}
   
-  .col1_layout_7_5{}
-  .col2_layout_7_5{}
+  .col1_layout_7_5{
+      @include breakpoint ($tablet){}
+      @include breakpoint ($desktop){
+           @include span(first 7 of $desktopcol);
+      }
+  }
+  .col2_layout_7_5{
+      @include breakpoint ($tablet){}
+      @include breakpoint ($desktop){
+          @include span(last 5 of $desktopcol);
+      }
+  }
   
   .col1_layout_8_4{
 

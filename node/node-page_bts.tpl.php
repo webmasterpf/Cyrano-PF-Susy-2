@@ -1,4 +1,4 @@
-    <!-- ******* TEMPLATE DE NODE 110 POUR PAGE BTS *********************** -->
+    <!-- ******* TEMPLATE GLOBAL DE NODE POUR PAGE BTS *********************** -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
   <div class="node-inner">
 <!--_______________________ COLONNE 1 __________________ -->

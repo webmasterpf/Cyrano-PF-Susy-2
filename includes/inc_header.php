@@ -18,17 +18,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         
      <?php //inclusion des actions plugins avec dernière version de Jquery
-     global $theme_path;include ($theme_path.'/includes/inc_jquery_plugin.php');
+     //global $theme_path;include ($theme_path.'/includes/inc_jquery_plugin.php');
      ?>   
   </head>
 
  <body class="<?php print $body_classes; ?>">
  <!-- ______________________ PAGE TOP BANDEAU _______________________ -->
  <?php
- global $theme_path; include_once ($theme_path . '/includes/inc_bandeau_coulissant_css.php');
+ //global $theme_path; include_once ($theme_path . '/includes/inc_bandeau_coulissant_css.php');
  ?>
  <?php
- //global $theme_path; include ($theme_path . '/includes/inc_bandeau_coulissant_js.php');
+ global $theme_path; include ($theme_path . '/includes/inc_bandeau_coulissant_js.php');
  ?>
 <!-- ______________________ CONTENEUR _______________________ -->
      <section class="conteneur">

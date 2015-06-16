@@ -11,4 +11,4 @@ if ($col_G1): ?>
    <?php  print $col_G1; ?>
  <?php endif; ?>
 <h3>La colonne 1 existe !</h3>
-<br clear="all"/>
+

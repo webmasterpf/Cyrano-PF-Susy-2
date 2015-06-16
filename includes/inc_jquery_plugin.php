@@ -14,7 +14,7 @@
     
     $("#header").sticky({topSpacing:10});
     
-    
+    $("#volet").sidebar({position:"top",open:"click"});
     
     $(".bandeau-pagetop").sidebar({side: "top"});
     $(".bandeau-pagetop").trigger("sidebar:toggle");
@@ -51,8 +51,8 @@ jQuery.noConflict();
     //jQuery111(".bandeau-pagetop").sidebar({position:"top",open:"click"});
 
     // Sidebar on top side avec jQuery Sidebar    
-    jQuery111(".bandeau-pagetop").sidebar({side: "top"});
-    jQuery111(".bandeau-pagetop").trigger("sidebar:toggle");
+//    jQuery111(".bandeau-pagetop").sidebar({side: "top"});
+//    jQuery111(".bandeau-pagetop").trigger("sidebar:toggle");
    });
  
  

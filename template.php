@@ -1,13 +1,17 @@
 <?php
 // permet template suggestions avec page-
-function phptemplate_preprocess(&$vars, $hook)
+function susy2_pf_cyrano_preprocess(&$vars, $hook)
 {
+    
   switch($hook)
   {
       case 'page' :
       if (arg(0) == 'node')
       {
         $vars['template_files'][]  = 'page-' . $vars['node']->type;
+        $vars['template_files'][] = "page-" . $vars['node']->type . "-" . $vars['node']->nid;
+        
+        //var_dump($vars);
       }
       break;
 
@@ -29,6 +33,8 @@ $term = preg_replace('<code>\s+</code>', '<em>', trim($term));
 }
 
 function susy2_pf_cyrano_preprocess_node(&$vars, $hook) {
+ //Pour avoir un template du type node-ID.tpl
+ $vars['template_files'][] = 'node-'. $vars['node']->nid;      
 //Partie regions dans node.tpl- ajoute les regions utiles au node.tpl
  $vars['pole_bloc_G'] = theme('blocks', 'pole_bloc_G');
  $vars['pole_bloc_C'] = theme('blocks', 'pole_bloc_C');
