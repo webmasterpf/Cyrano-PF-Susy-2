@@ -100,6 +100,58 @@ function susy2_pf_cyrano_webform_view_messages($node, $teaser, $page, $submissio
 }
 ?>
 <?php
+/*
+// permet de trier la taxonomie - utilisé sur les fiches formations
+//pour afficher corrrectement la taxonomie en bas de page via "print cyrano_pf_print_terms"
+//http://drupalfr.org/node/23218#comment-35519
+*/
+function cyrano_pf_print_terms($node, $vid = NULL, $ordered_list = TRUE) {
+     $vocabularies = taxonomy_get_vocabularies();
+     if ($ordered_list) $output .= '<ul>'; //checks to see if you want an ordered list
+     if ($vid) { //checks to see if you've passed a number with vid, prints just that vid
+        $output = '<div class=tags-'. $vid . '>';
+        foreach($vocabularies as $vocabulary) {
+         if ($vocabulary->vid == $vid) {
+           $terms = taxonomy_node_get_terms_by_vocabulary($node, $vocabulary->vid);
+           if ($terms) {
+             $links = array();
+             $output .= '<span class=only-vocabulary-'. $vocabulary->vid . '>';
+             if ($ordered_list) $output .= '<li class=vocabulary-'. $vocabulary->vid . '>' . $vocabulary->name . ': ';
+             foreach ($terms as $term) {
+               $links[] = '<span class="term-' . $term->tid . '">' . l($term->name, taxonomy_term_path($term), array('rel' => 'tag', 'title' => strip_tags($term->description))) .'</span>';
+             }
+             $output .= implode(', ', $links);
+             if ($ordered_list) $output .= '</li>';
+             $output .= '</span>';
+           }
+         }
+       }
+     }
+     else {
+       $output = '<div class="tags">';
+       foreach($vocabularies as $vocabulary) {
+         if ($vocabularies) {
+           $terms = taxonomy_node_get_terms_by_vocabulary($node, $vocabulary->vid);
+           if ($terms) {
+             $links = array();
+             $output .= '<ul class=vocabulary-'. $vocabulary->vid . '>';
+             if ($ordered_list) $output .= '<li class=vocabulary-'. $vocabulary->vid . '>' . $vocabulary->name . ': ';
+             foreach ($terms as $term) {
+               $links[] = '<span class="term-' . $term->tid . '">' . l($term->name, taxonomy_term_path($term), array('rel' => 'tag', 'title' => strip_tags($term->description))) .'</span>';
+             }
+             $output .= implode(', ', $links);
+             if ($ordered_list) $output .= '</li>';
+             $output .= '</ul>';
+           }
+         }
+       }
+     }
+     if ($ordered_list) $output .= '</ul>';
+     $output .= '</div>';
+     return $output;
+}
+?>
+<?php
 // permet d'ouvrir en blank les fichiers uploadés via filefield
 //NE PAS OUBLIER DE CHANGER NOM DU THEME !!!
 function susy2_pf_cyrano_filefield_file($file) {
@@ -158,5 +210,42 @@ function susy2_pf_cyrano_more_link ($url, $title) {
   if (stristr( $url, 'aggregator')) {
     return "";
   }
+}
+?>
+<?php
+/* Fonction pour splitter le contenu de $body en plusieurs colonnes
+ * S'utilise en insérant dans le node.tpl
+ * $output = cyrano_pf_split_bodycontent ($content);
+    print $output;
+ * dans le node-custom.tpl et en ajoutant le tag <columns> dans le corps du node
+ */
+function susy2_pf_cyrano_split_bodycontent ($colcontent) {
+    $coloutput =  "";
+    $string = "<columns>";
+    $columns = explode($string,$colcontent); // cut the text for splitting the body into columns
+
+    $i = 0;
+    foreach($columns as $cle=>$valeur) {   //go through the array and add div to contents when necessary
+
+        if ($i == 0) {
+
+            $coloutput .= $valeur;
+            $i ++;
+
+        }
+
+        else if ($i == 1) {
+            $coloutput .= "<div class=\"column_".$i."\">".$valeur."</div>";
+            $i = 2;
+        }
+
+        else {
+            $coloutput .= "<div class=\"column_".$i."\">".$valeur."</div>";
+            $i = 1;
+        }
+
+    }
+
+    return $coloutput;
 }
 ?>

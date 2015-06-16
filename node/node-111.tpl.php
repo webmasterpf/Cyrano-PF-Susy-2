@@ -17,7 +17,13 @@
     <div class="content">
       <?php  print $node->content['body']['#value']; ?>
 
-         <?php if (!empty($node->field_docs_bts_alternance[0]['view'])): ?>
+         
+            <?php
+       if (!empty($node->field_docs_bts_alternance[0]['view']
+        OR $node->field_docs_bts_alternance[1]['view']
+        OR $node->field_docs_bts_alternance[2]['view']
+        OR $node->field_docs_bts_alternance[3]['view']
+        )): ?>
         <ul id="docs-alternance-bts">
          <?php
                foreach ($node->field_docs_bts_alternance as $key => $TYPE_CONTENU) {
@@ -26,36 +32,7 @@
                ?>            
            </ul>
             <?php endif;?>
-         <?php
-       if ($node->field_docs_bts_alternance[0]['view']
-        OR $node->field_docs_bts_alternance[1]['view']
-        OR $node->field_docs_bts_alternance[2]['view']
-        OR $node->field_docs_bts_alternance[3]['view']
-        ): ?>
-        <ul id="docs-alternance-bts">
-           <?php if ($node->field_docs_bts_alternance[0]['view']): ?>
-              <li>      <?php  print $node->field_docs_bts_alternance[0]['view'] ?></li>
-              <?php endif; ?>
-              <?php if ($node->field_docs_bts_alternance[1]['view']): ?>
-              <li>      <?php  print $node->field_docs_bts_alternance[1]['view'] ?></li>
-              <?php endif; ?>
-                 <?php if ($node->field_docs_bts_alternance[2]['view']): ?>
-              <li>      <?php  print $node->field_docs_bts_alternance[2]['view'] ?></li>
-              <?php endif; ?>
-              <?php if ($node->field_docs_bts_alternance[3]['view']): ?>
-              <li>      <?php  print $node->field_docs_bts_alternance[3]['view'] ?></li>
-              <?php endif; ?>
-        </ul>
-   <?php endif; ?>
-
-
-
-
-        <br clear="all"/>
-       
       
-    </div>
-
     <?php if ($terms): ?>
 
       <div id="taxonomy">
@@ -68,10 +45,10 @@
     <?php endif; ?>
   <?php
  $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano');
- include ($theme_path.'/includes/inc_region_col_2.php');
+ include ($theme_path.'/includes/inc_region_col_1.php');
  ?>
-      
-      </div>
+     </div>  
+</div><!--Fin colonne 1-->
 
 <!--_______________________ COLONNE 2 __________________ -->
       <div id="colonne-2" class="col2_layout_7_5 page-bts">
@@ -85,7 +62,7 @@
 
   <?php
  $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano');
- include ($theme_path.'/includes/inc_region_col_3.php');
+ include ($theme_path.'/includes/inc_region_col_2.php');
  ?>
 
 

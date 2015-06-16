@@ -10,7 +10,7 @@
   //@include breakpoint ($desktop){}
   //@include breakpoint ($tablet){}
   
-  /*--------------------------------------------
+/*--------------------------------------------
 ~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
 ¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
@@ -30,15 +30,16 @@
     }
     h3{color: #AEC81F;text-decoration: none;font-size: large;}
     h4{text-decoration: none;font-size: medium;color: #950F7E}
+    
 }
 
 
 #content2-bts{}
 #content2-bts a{}
 #content2-bts a:hover{text-decoration: none;}
-.table-bts-coord{
+table.table-bts-coord{
     width: 97%;border: 0;
-    tbody{height: em(45px);margin: 0;padding: 0;}
+    tbody{height: em(45px);margin: 0;padding: 0;border: 0;}
     tr{}
     td{vertical-align: middle;}
 }
@@ -109,16 +110,16 @@ span#DossierBTS{
      list-style-type: circle;
 }
 
-#objectif-bts{
-    table,tbody{border: 0;width: em(300px);margin: 0 auto;display: block;}
+table#objectif-bts{
+    tbody{border: 0;width: em(300px);margin: 0 auto;display: block;}
     tr{
         background: GhostWhite;
         margin: em(2px) 0;
         display: block;
-        tr,td{border: 0;}
-        thead{text-align: center;background: none;}
-        th{border: 0;font-size: 18px;color: #00AACE;padding: 3px;}
-        a{color: #91127D;}
-        a:hover{text-decoration: underline;}
     }
+    tr,td{border: 0;}
+    thead{text-align: center;background: none;}
+    th{border: 0;font-size: medium;color: #00AACE;padding: 3px;}
+    a{color: #91127D;}
+    a:hover{text-decoration: underline;}          
 } 

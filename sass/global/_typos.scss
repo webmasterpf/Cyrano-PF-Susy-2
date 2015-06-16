@@ -26,24 +26,21 @@ $TrebuchetFont : Trebuchet MS, Verdana, Helvetica, sans-serif;
 /*====================================|
 ==             CSS H                ==|
 =====================================*/
-  
+h1, .h1,h2, .h2 ,h3, .h3,h4, .h4,h5, .h5,h6, .h6{
+    padding:0.3em;margin: 0;color:#000;
+}
+
 h1, .h1 {
-	margin: 0;
-	padding: 0;
-	color:#000;
+	
 	font-size: em(20px);
 }
   
 h2, .h2 {
-	margin: 0;
-	padding: 0;
-	color:#000;
+	
 	font-size: em(18px);
 }
 h2.title{
-	margin: 5px;
-	padding: 0;
-	color:#000;
+	
 	font-size: em(18px);
 
  a{
@@ -51,27 +48,22 @@ h2.title{
 }
 }
 h3, .h3{
-	margin: 0;
-	padding: 0;
-	color:#000;
+	
+	
 	font-size: em(16px);
 }
 h4, .h4{
-	margin: 0;
-	padding: 0;
-	color:#000;
+	
+	
 	font-size: em(14px);
 }
 h5, .h5 {
-	margin: 0;
-	padding: 0;
-	color:#000;
+	
+	
 	font-size: em(12px);
 }
 h6, .h6 {
-	margin: 0;
-	padding: 0;
-	color:#000;
+	
 	font-size: em(10px);
 }
 /*---------------- TITRES -----------------------*/

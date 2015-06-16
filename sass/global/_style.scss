@@ -26,3 +26,55 @@
         
     }
 }
+/*TABLES STYLES DIVERS*/
+.table_generik{
+    border: 0;
+    width: 97%;
+    margin:0 auto;
+    tr{
+        border: 0px solid black;
+        &:nth-child(odd){
+            background: #ADC91F;
+            color: white;
+        }
+        &:nth-child(even){
+            background: transparent;
+            color: black;
+        }
+    }
+
+    td{
+        border: 0px solid black;
+
+    }
+    tr.titre td{
+        padding: 2px;
+    }
+}
+
+#table_frais{
+    border: 0;
+    width: 100%;
+}
+#table_frais tr:nth-child(odd){
+    color: #606171;
+    background: #ACC624;
+}
+#table_frais tr:nth-child(even){
+    color: #E85231;
+    background: white;
+}
+/*Table resultats examens*/
+#table-resultats{
+    border: 0;
+    width: 100%;
+    text-align: center;
+}
+#table-resultats tr.line_1{
+     color: #606171;
+    background: #F19601;
+}
+#table-resultats tr.line_2{
+    color: #E85231;
+    background: white;
+}

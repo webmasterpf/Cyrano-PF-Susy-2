@@ -4,7 +4,7 @@
  <!-- ______________________ COLONNE GAUCHE _______________________ -->
 
 
-         <div id="left-content-fiche-bts">
+ <div id="colonne-1" class="col1_layout_4_8 fiche-bts">
             <?php if ($title): ?>
      <h1 class="titre-fiche-bts"><?php print $title; ?></h1>
      <?php endif; ?>
@@ -57,7 +57,7 @@
 
 		<!--fin du contenu gauche -->
    <!--______________COLONNE CENTRALE________________ -->
-   <div id="middle-content-fiche-bts">
+   <div id="colonne-2" class="col2_layout_4_8 fiche-bts">
     <?php print $picture; ?>
 
     <?php if ($submitted): ?>
@@ -69,7 +69,7 @@
                   <td class="col1">
                       <h4>Des liens...</h4>
                       <?php
- $theme_path = drupal_get_path('theme', 'cyrano_pf');
+ $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano');
  include ($theme_path.'/includes/inc_fiche_bts_liste_liens.php');
  ?>
                   </td>
@@ -104,7 +104,7 @@
      
       <?php
       
-      $output = Cyrano_PF_split_bodycontent ($node->content['body']['#value']);
+      $output = susy2_pf_cyrano_split_bodycontent ($node->content['body']['#value']);
         print $output;?>
 
     </div>
@@ -115,8 +115,7 @@
   <?php  print $node->field_info_plus_bts[0]['view'] ?>
   </div>
         <?php endif; ?> 
-<!-- retour haut selon resolution de l'ecran -->
-          <a href="#general" id="retour_haut">Haut de page</a>
+
     <?php if ($links): ?> 
       <div class="links"> <?php print $links; ?></div>
     <?php endif; ?>
