@@ -10,46 +10,59 @@
   //@include breakpoint ($desktop){}
   //@include breakpoint ($tablet){}
 /************** NODE.TPL ***********************/
+h1.titre-fiche-bts{
+    margin: 0 0 0.3em 0;
+    padding: em(5px);
+    color: $orange-fonce;
+    font-size: em(24px);
+    line-height: 1em;
+}
 #abreviation-bts{
      color: #94127F;
     float: right;
-    padding: 0 5px;
+    padding: 0 em(5px);
     font-style: italic;
+    text-align: right;display: block;margin: em(5px);
 }
 #intro-fiche-bts{
-    background:  url(../images/bg_intro_bts_bas.jpg) no-repeat scroll left bottom;
-    padding: 25px 7px;
-    width: 295px;
+    padding: em(25px) em(7px);
+    width: auto;
     /*-moz-box-shadow: 0px 7px 8px #606171;
     -webkit-box-shadow: 0px 7px 8px #606171;
     box-shadow: 0px 7px 8px #606171;
-*/
+    */
+    h2{
+        font-size:x-large;
+        color: $vert;
+        /*google font*/
+        font-family: 'Ubuntu',sans-serif;
+    }
+    @include breakpoint ($desktop){
+        background:  url(../images/bg_intro_bts_bas.jpg) no-repeat scroll left bottom;
+    }
+    @include breakpoint ($tablet){
+        background:  url(../images/bg_intro_bts_bas.jpg) no-repeat scroll left bottom;
+    }
+}
 
-}
-#intro-fiche-bts h2,#middle-content-fiche-bts h2{
-    font-size:x-large;
-    color: $vert;
-    /*google font*/
-    font-family: 'Ubuntu',sans-serif;
-}
 
 #illus-fiche-bts{
-   border: 3px solid #02A7D5;
-    box-shadow: 0 0 5px #888888;
+   border: em(3px) solid $bleu-turquoise;
+    box-shadow: 0 0 em(5px) #888888;
     display: block;
-    height: 150px;
+    height: em(150px);
     margin: 0 auto;
-    width: 290px;
+    width: em(290px);
     
 
 }
 
-#abreviation-bts{text-align: right;display: block;margin: 5px;}
+
 /*effet css3 pour fiche BTS*/
-#colonne-1.fiche-bts .complement-bts{
+.fiche-bts .complement-bts{
     display:block;
-    width:6em;
-    height:6em;
+    width:4em;
+    height:4em;
     background:#fe0;
     -webkit-transform:rotate(45deg);
     -moz-transform:rotate(45deg);
@@ -64,47 +77,19 @@
     margin: 0 5em;
     span{
         display:block;
-        width:6em;
-        height:6em;
+        width:4em;
+        height:4em;
         background:#fe0;
         -webkit-transform:rotate(-21.5deg);
         -moz-transform:rotate(-21.5deg);
         transform: rotate(-22.5deg);/*Pour IE*/
     }
-    @-moz-keyframes blinker {  
-        0% { opacity: 1.0; }
-        50% { opacity: 0.0; }
-        100% { opacity: 1.0; }
+    span h3{
+       max-width: 6em;
+       @include cesure-txt;
+       @include clignote();//avec 1 to 0 duration 1s
     }
-
-    @-webkit-keyframes blinker {  
-        0% { opacity: 1.0; }
-        50% { opacity: 0.0; }
-        100% { opacity: 1.0; }
-    }
-
-    @keyframes blinker {  
-        0% { opacity: 1.0; }
-        50% { opacity: 0.0; }
-        100% { opacity: 1.0; }
-    }
-    span p{
-        -webkit-animation-name: blinker;
-        -webkit-animation-duration: 1s;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-iteration-count: infinite;
-
-        -moz-animation-name: blinker;
-        -moz-animation-duration: 1s;
-        -moz-animation-timing-function: linear;
-        -moz-animation-iteration-count: infinite;
-
-        animation-name: blinker;
-        animation-duration: 1s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite; 
-    }
-    h3{color: $bleu-turquoise;padding: 1.5em 0;}
+    h3{color: $bleu-turquoise;padding: 1.5em 0;font-size: small;}
 }
  
  
@@ -113,8 +98,7 @@
 table#infos-pratiques-bts { 
     border-top: em(1px) solid  $vert;
     border-bottom: em(2px) solid $gris-anthracite;
-    margin: 0 auto;
-    width: 99%;
+    width: 100%;
     tbody{}
     tr{}
     td{padding: em(2px);background: $gris-clair;vertical-align: top;}
@@ -126,7 +110,7 @@ table#infos-pratiques-bts {
           font-family: 'IM Fell English', serif;
           behavior: url(/sites/all/libraries/PIE/PIE.htc);
           position: relative;
-          font-size: small;
+          font-size: large;
     }
 }
 td.col1{
@@ -140,14 +124,9 @@ td.col3{
     background: none ;
 }
 td.col1 :hover{
-    background: blue ;
+   
 }
-td:hover.col2{
-    background: yellow;
-}
-td:hover.col3{
-    background: #F39300;
-}
+
 /*Partie liens*/
 #liens-fiche-bts{
     tr{}
@@ -159,11 +138,12 @@ td:hover.col3{
     background-color: #EFEFEF;
     bottom: 0;
     display: block;
-    margin: 5px 0;
-    padding: 3px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px; 
+    margin: 0 auto;
+    padding: 0.5em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    width:93%;
     a{
         color: #01ABCF;
         text-decoration: none;
@@ -185,9 +165,9 @@ td:hover.col3{
 }
 
 /*bodyfield content*/
-#colonne-1.fiche-bts,#colonne-2.fiche-bts
+.fiche-bts
 {h2,h3{padding: 0; margin: 0;line-height: 1em;}}
-#colonne-2.fiche-bts{
+.fiche-bts{
     h3{
         font-size: 1.2em;
         color: #91127D;
@@ -223,8 +203,11 @@ td:hover.col3{
     li{
         list-style: none;
         text-transform: capitalize;
-        line-height:0.3;
         font-size:0.8em;
+        line-height:1.1em;
+        @include breakpoint ($desktop){
+            line-height:0.3em;
+        }
     }
     a{
         color: #d63e2a;

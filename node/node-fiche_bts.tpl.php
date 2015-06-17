@@ -1,15 +1,16 @@
 <!-- ************************ NODE.TPL POUR FICHE BTS *****************-->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
   <div class="node-inner">
- <!-- ______________________ COLONNE GAUCHE _______________________ -->
-
-
- <div id="colonne-1" class="col1_layout_4_8 fiche-bts">
-            <?php if ($title): ?>
+      
+       
+  
+ <!--______________ BLOC 1 ________________ -->
+ <div id="bloc-1" class="layout_2col_4_8_bloc1 fiche-bts layout_2col_items_4_8">
+     <?php if ($title): ?>
      <h1 class="titre-fiche-bts"><?php print $title; ?></h1>
      <?php endif; ?>
      
-      <br clear="all"/>
+      
       
       <?php if ($node->field_abreviation_bts[0]['view']): ?>
       <span id="abreviation-bts">
@@ -17,48 +18,23 @@
       </span>
              <?php endif; ?>
 
-       <br clear="all"/>
+      
       
       <?php if ($node->field_complement_fiche_bts[0]['view']): ?>
        <div class="complement-bts"><span><span><span>
                  <?php  print $node->field_complement_fiche_bts[0]['view'] ?>
                </span></span></span></div>
              <?php endif; ?>
-    
-      <br clear="all"/>
-
-      
-       
-
-             <?php if ($node->field_intro_fiche_bts[0]['view']): ?>
-        <div id="intro-fiche-bts">
-          
-           <?php if ($node->field_illus_fiche_bts[0]['view']): ?>
+     <?php if ($node->field_illus_fiche_bts[0]['view']): ?>
       <div id="illus-fiche-bts">
                  <?php  print $node->field_illus_fiche_bts[0]['view'] ?>
       </div>
              <?php endif; ?>
-                 <?php  print $node->field_intro_fiche_bts[0]['view'] ?>
-             
-         
-        </div>
-             <?php endif; ?>
-        <br clear="all"/>
-  
-      
-                 <?php if ($left): ?>
-            <?php print $left; ?>
-                 <?php endif; ?>
-  <br clear="all"/>
-    
+     </div> <!--Fin Bloc 1-->
 
-          </div>
-             <!-- /sidebar-left -->
-
-		<!--fin du contenu gauche -->
-   <!--______________COLONNE CENTRALE________________ -->
-   <div id="colonne-2" class="col2_layout_4_8 fiche-bts">
-    <?php print $picture; ?>
+     <!--______________ BLOC 2 ________________ -->
+     <div id="bloc-2" class="layout_2col_4_8_bloc2 fiche-bts layout_2col_items_4_8">
+           <?php print $picture; ?>
 
     <?php if ($submitted): ?>
       <span class="submitted"><?php print $submitted; ?></span>
@@ -97,9 +73,22 @@
 
       </table>
 
+          </div> <!--Fin Bloc -->
+     
+     <!--______________ BLOC 3 ________________ -->
+     <div id="bloc-3" class="layout_2col_4_8_bloc3 fiche-bts layout_2col_items_4_8">
+          <?php if ($node->field_intro_fiche_bts[0]['view']): ?>
+        <div id="intro-fiche-bts">
+         
+                 <?php  print $node->field_intro_fiche_bts[0]['view'] ?>
+            
+        </div>
+             <?php endif; ?>
+     </div> <!--Fin Bloc -->
 
-    
-      
+     <!--______________ BLOC 4 ________________ -->
+     <div id="bloc-4" class="layout_2col_4_8_bloc4 fiche-bts layout_2col_items_4_8">
+             
     <div class="bodyfield-content-bts">
      
       <?php
@@ -119,7 +108,9 @@
     <?php if ($links): ?> 
       <div class="links"> <?php print $links; ?></div>
     <?php endif; ?>
-      </div>
+        </div> <!--Fin Bloc -->
+      
+  
 
   </div> <!-- /node-inner -->
 </div> <!-- /node-->

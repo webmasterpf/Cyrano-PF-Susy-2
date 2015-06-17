@@ -1,0 +1,16 @@
+/*
+Déplacement de div particulier.
+Quand la réorganisation via susy ne suffit pas
+*/
+
+/*//////////////////////\\\\\\\\\\\\\\\\\\\\\\
+********** DEPLACEMENT DE DIV SUR MOBILE *****
+\\\\\\\\\\\\\\\\\\\\\\\//////////////////////*/
+
+//Pour node_fiche-bts, déplacement de la table <table id="infos-pratiques-bts">
+/*table#infos-pratiques-bts{
+    @include breakpoint ($mobile){
+        @include span(isolate 4 of $mobilecol first);
+    }
+    
+}*/

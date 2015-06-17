@@ -6,7 +6,7 @@ Layout pour les tablettes.Breakpoint définit par variable dans _variables.scss
 @include susy-breakpoint($tablet)
 {
     max-width: container($tabletcol);
-    @debug susy-get(columns);
+    //@debug susy-get(columns);
     #header{
         //pas besoin de mixin car bloc prend toute la largeur
 

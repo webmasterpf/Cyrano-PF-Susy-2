@@ -93,6 +93,41 @@ filter : alpha(opacity=$opacite); /* IE < 8 */
     -webkit-border-radius: $angle;
     border-radius: $angle;
 }
+@mixin clignote($duree:1s,$startopacity:1.0,$midopacity:0.0,$finalopacity:1.0){
+     -webkit-animation-name: blinker;
+        -webkit-animation-duration: $duree;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+
+        -moz-animation-name: blinker;
+        -moz-animation-duration: $duree;
+        -moz-animation-timing-function: linear;
+        -moz-animation-iteration-count: infinite;
+
+        animation-name: blinker;
+        animation-duration: $duree;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite; 
+    
+    @-moz-keyframes blinker {  
+        0% { opacity: $startopacity; }
+        50% { opacity: $midopacity; }
+        100% { opacity: $finalopacity; }
+    }
+
+    @-webkit-keyframes blinker {  
+        0% { opacity: $startopacity; }
+        50% { opacity: $midopacity; }
+        100% { opacity: $finalopacity; }
+    }
+
+    @keyframes blinker {  
+        0% { opacity: $startopacity; }
+        50% { opacity: $midopacity; }
+        100% { opacity: $finalopacity; }
+}
+}
+
 /*//////////////// BORDER RIGHT \\\\\\\\\\\\\\\\*/
 @mixin border-R-orangePF{border-right: em(1px) solid #DA5714;}
 @mixin border-R-anthracite{border-left: em(1px) solid #606171;}

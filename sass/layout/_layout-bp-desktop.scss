@@ -6,7 +6,7 @@ body .conteneur{
     @include breakpoint($desktop)
     {
         @include container($desktopcol);
-        @debug susy-get(columns);
+        //@debug susy-get(columns);
         #header{
             //voir _layout-header.scss
 

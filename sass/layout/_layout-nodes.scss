@@ -329,3 +329,49 @@ body .conteneur{
         }
     }
 }
+/*\\\\\\\\\\\ LAYOUT IMBRIQUE (NESTED) - SPECIAUX ///////////*/
+body .conteneur {
+    @include breakpoint ($desktop){
+        
+        .layout_2col_items_4_8 {
+            @include span(last 12  nest);
+            &:nth-child(odd) {
+                //pour les blocs pairs
+                clear: both;
+                @include span(first 4 of $desktopcol);
+            }
+            &:nth-child(even) {
+                //pour les blocs impairs
+                @include span(last 8 of $desktopcol no-gutters);
+            }
+
+        }
+    }
+
+}
+/*body .conteneur{
+
+    @include breakpoint ($desktop){
+        .middle-content{
+           
+            @include span(12 of $desktopcol nest);
+            .layout_2col_4_8_bloc1 {
+                @include span(first 4 of $desktopcol);
+            }
+            .layout_2col_4_8_bloc2 {
+                @include span(last 8 of $desktopcol);
+            }
+
+            .layout_2col_4_8_bloc3 {
+                @include span(first 4 of 12);
+            }
+
+            .layout_2col_4_8_bloc4 {
+                @include span(last 8 no-gutters);
+            }
+        }
+
+
+    }
+
+}*/
