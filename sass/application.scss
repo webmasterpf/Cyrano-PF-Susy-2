@@ -24,6 +24,7 @@ breakpoint-2.5.0
 // Import de Compass
 @import "compass";
 
+
 //Import des plugins de Compass
 @import "susy";// utiliser susyone si syntaxe ancienne(Susy v1),sinon susy pour utiliser v2
 //@import 'modular-scale';
@@ -49,7 +50,7 @@ breakpoint-2.5.0
 @import "layout/layout-footer";
 @import "layout/layout-defilant";
 @import "layout/layout-bandeau";
-@import "layout/layout-moving-div";
+@import "layout/layout-off-canvas-susy";
 // Les BREAKPOINTS
         
 @import "layout/layout-bp-tablet";

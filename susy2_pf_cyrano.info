@@ -23,6 +23,7 @@ scripts[] = js/jquery.sidebar.min.js
 
 ;Action des plugins Jquery
 scripts[] = js/general.js
+;scripts[] = js/jquery_plugin.js
 
 stylesheets[all][] = css/application.css
 

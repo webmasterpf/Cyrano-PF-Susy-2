@@ -1,0 +1,67 @@
+/*
+Déplacement de div particulier.
+Quand la réorganisation via susy ne suffit pas
+*/
+
+/*//////////////////////\\\\\\\\\\\\\\\\\\\\\\
+********** DEPLACEMENT DE DIV SUR MOBILE *****
+\\\\\\\\\\\\\\\\\\\\\\\//////////////////////*/
+
+body .conteneur {
+  $off-canvas-width: 10em;
+  
+  .transformer {
+  @include trans-prep;
+  transition: transform 0.3s ease;
+  &.is-open {
+    transform: translate3d(0, 10em, 0);
+  }
+  }
+  .off-canvas {
+    position: absolute;
+    width: 100%;
+    left: 10em;
+    top: 1em;//position de départ
+    bottom: 0;
+    height: 5em//limite la hauteur du bloc
+       
+  }
+  .menu-toggle{
+      position: absolute;
+      /*Coins arrondis*/
+      border-radius: 0 0 8px 8px;
+      background: #555;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.3em;
+      left: 0.5em;
+      top: 10%;
+      /* quelques styles CSS3 */
+      -ms-transform: rotate(270deg);
+      -moz-transform: rotate(270deg);
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg);
+  }
+  @include breakpoint ($desktop){
+      .off-canvas{
+          position: absolute;
+    width: 100%;
+    left: 0;
+    top: -10em;//position de départ
+    bottom: 0;
+    height: 5em//limite la hauteur du bloc
+      }
+      .menu-toggle{
+          position: relative;
+          /*Coins arrondis*/
+          border-radius: 0 0 8px 8px;
+          background: #555;
+          color: #fff;
+          text-decoration: none;
+          padding: 0.3em;
+          left: 40%;
+          top: 0.5em;
+      }
+
+  }
+}

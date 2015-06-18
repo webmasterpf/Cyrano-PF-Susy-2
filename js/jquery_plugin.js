@@ -1,4 +1,4 @@
-<script>/*
+/*
  * Plugin Jquery qui utilisent la version de base fournie par Drupal
  * jquery update 1.3.2
  */
@@ -47,7 +47,7 @@ jQuery.noConflict();
 
 
 /* Effets Jquery avec version différente de jQ */
-  jQuery111(document).ready(function($){
+  jQuery111(document).ready(function(){
     console.log(
 'Dans la boucle Plugins :  Version de jquery utilisée pour les plugins :' + jQuery111().jquery +
 ' -- Version de Jquery pour $ :' + $.fn.jquery +
@@ -62,7 +62,6 @@ jQuery.noConflict();
     //jQuery111(".bandeau-pagetop").sidebar({position:"top",open:"click"});
 
 //https://github.com/jillix/jQuery-sidebar#documentation
-    $(".sidebar.top").sidebar({side: "top"});
-    $(".sidebar.top").trigger("sidebar:toggle");
+    jQuery111(".sidebar.top").sidebar({side: "top"});
+    jQuery111(".sidebar.top").trigger("sidebar:toggle");
    });
-   </script>

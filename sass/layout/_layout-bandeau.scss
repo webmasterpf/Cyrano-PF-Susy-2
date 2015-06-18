@@ -7,12 +7,33 @@ Style - layout pour le bandeau des autres sites de l'ASSO
 ---------------------------------*/
 .bandeau-pagetop {
     display: block;
+    
+    ul{
+            background: $blanc-casse;
+            
+            
+            li{
+                //@include span (1 of 7);
+                list-style : none;
+
+                &:last-child{
+                    @include last;
+                }
+                a{
+                    text-decoration: none;font-size:small;
+                    &:hover{color: #FBFBFB;
+                            transition: background 2s ease,color 1000ms ease;-webkit-transition: background 2s ease,color 1000ms ease;}
+                }
+            }
+        }
     @include breakpoint ($desktop){
         display: block;
+        height: 3em;
         ul{
             background: $blanc-casse;
-            //@include span (full);
-            @include squish (0.7,0.6);
+            display: block;
+            height: 2em;
+            @include squish (0.05,0.05);
             li{
                 @include span (1 of 7);
                 list-style : none;
@@ -58,12 +79,3 @@ Style - layout pour le bandeau des autres sites de l'ASSO
     a.site_ce{color: #C8D215;}
     & a:hover.site_ce{background:#C8D215;}
 }
-
-/*Slider top en CSS - code dans le inc_header*/
-/*#volet {
-    width: 98%;
-    padding: em(10px);
-    height: 1.05em;
-    @include ombrage;
-    
-}*/

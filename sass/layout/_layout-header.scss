@@ -5,6 +5,7 @@
 // Layout du header et de ses parties haute et basse (logique mobile first)
  //Imbrication à 100% (full nested)
  body .conteneur #header {
+     z-index : 30;
      &:after{
                 content: " ";
                 display: block;

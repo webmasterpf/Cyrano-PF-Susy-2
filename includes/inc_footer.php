@@ -13,6 +13,10 @@ include ($theme_path.'/js/code_stats.php');
 </footer> <!-- /footer -->
       <?php endif; ?>
        
+<?php if (!empty($bandeau1)): ?>
+    </div> <!-- Fin transformer pour off canvas susy -->
+<?php endif; ?>
+
     </section> 
     <!-- ______________________ /CONTENEUR _______________________ -->
        <!-- ajout des scripts utiles pour drupal -->
