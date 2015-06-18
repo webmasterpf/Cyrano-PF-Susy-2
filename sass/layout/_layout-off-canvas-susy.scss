@@ -14,20 +14,20 @@ body .conteneur {
   @include trans-prep;
   transition: transform 0.3s ease;
   &.is-open {
-    transform: translate3d(0, 10em, 0);
+    transform: translate3d(1em,0em, 0);
   }
   }
   .off-canvas {
     position: absolute;
-    width: 100%;
-    left: 10em;
+    width: 40%;
+    left: -10em;
     top: 1em;//position de départ
     bottom: 0;
-    height: 5em//limite la hauteur du bloc
+    height: auto;//limite la hauteur du bloc
        
   }
   .menu-toggle{
-      position: absolute;
+      position: inherit;
       /*Coins arrondis*/
       border-radius: 0 0 8px 8px;
       background: #555;
@@ -35,7 +35,7 @@ body .conteneur {
       text-decoration: none;
       padding: 0.3em;
       left: 0.5em;
-      top: 10%;
+      top: 20%;
       /* quelques styles CSS3 */
       -ms-transform: rotate(270deg);
       -moz-transform: rotate(270deg);
@@ -43,6 +43,13 @@ body .conteneur {
       transform: rotate(270deg);
   }
   @include breakpoint ($desktop){
+       .transformer {
+  
+  transition: transform 0.3s ease;
+  &.is-open {
+    transform: translate3d(0, 10em, 0);
+  }
+  }
       .off-canvas{
           position: absolute;
     width: 100%;

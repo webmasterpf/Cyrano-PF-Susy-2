@@ -16,6 +16,11 @@
   $theme_path = drupal_get_path('theme', 'NOM_THEME');
 include($theme_path .'/includes/inc_region_col_1.php');
 ?>
+            OU
+                <?php
+              global $theme_path;
+              include ($theme_path.'/includes/inc_region_col_1.php');
+              ?>
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->

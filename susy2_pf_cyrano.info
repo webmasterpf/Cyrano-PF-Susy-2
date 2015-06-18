@@ -71,9 +71,13 @@ regions[bandeau1] = Bandeau haut de page
 regions[annonceImg] = Image pour annonce - Bloc
 regions[blocLycee] = Acces Lycees - Bloc
 regions[Anim] = Animation Flash - Bloc
+regions[DiapoHP] = Diaporama Homepage - Bloc
+
+;Regions customs pour site Provence Formation
 regions[centralBloc] = Zone pour bloc central - View Bloc
 regions[centre_partenaire] = Zone centrale page partenaire
-regions[DiapoHP] = Diaporama Homepage - Bloc
+
+
 
 ;Diaporama HP selon layout choisi (décommenter pour choisir)
 ;regions[DiapoPanoHP] = Diaporama Panoramique Homepage - Bloc
@@ -93,6 +97,16 @@ regions[DiapoHP] = Diaporama Homepage - Bloc
 ;regions[PartieGauche1] = Zone Gauche 1 HP - Bloc
 ;regions[PartieGauche2] = Zone Gauche 2 HP - Bloc
 ;regions[PartieGauche3] = Zone Gauche 3 HP - Bloc
+
+;Region pour les node.tpl (ajouter dans template.php)
+regions[actuAssociation] = Zone pour RSS issu du site PF - Vue Bloc RSS
+regions[col_1] = Bloc pour colonne 1
+regions[col_2] = Bloc pour colonne 2
+regions[col_3] = Bloc pour colonne 3
+;Region pour page poles formation (ajouter dans template.php)
+regions[pole_bloc_G] = Bloc pour pole Gauche
+regions[pole_bloc_C] = Bloc pour pole Centre
+regions[pole_bloc_D] = Bloc pour pole Droit
 
 regions[content_top] = Content top
 regions[content_top_node] = Content top node
@@ -114,15 +128,7 @@ regions[formulaire] = Formulaire (centre) - Webform Bloc
 ;Region pour slideshow
 regions[frontpageSlideshow] = Zone Frontpage Slideshow
 
-;Region pour les node.tpl (ajouter dans template.php)
-regions[actuAssociation] = Zone pour RSS issu du site PF - Vue Bloc RSS
-regions[col_1] = Bloc pour colonne 1
-regions[col_2] = Bloc pour colonne 2
-regions[col_3] = Bloc pour colonne 3
-;Region pour page poles formation (ajouter dans template.php)
-regions[pole_bloc_G] = Bloc pour pole Gauche
-regions[pole_bloc_C] = Bloc pour pole Centre
-regions[pole_bloc_D] = Bloc pour pole Droit
+
 
 
 settings[basic_zen_tabs]             = 1

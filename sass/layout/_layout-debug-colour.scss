@@ -112,7 +112,7 @@ body .conteneur{
 
 /*//////////////// 3 COLONNES \\\\\\\\\\\\\\\\*/
 body .conteneur{
-    .col1_layout_3_8_3{
+    .col1_layout_3_6_3{
        
         @include breakpoint ($tablet){
        
@@ -120,7 +120,7 @@ body .conteneur{
         }
         @include breakpoint ($desktop){
        
-            background: darkorange;
+            background: #cccccc;
         }
         //Pour orientation paysage
          @include breakpoint ($tabletlandscape){
@@ -128,7 +128,7 @@ body .conteneur{
             background: violet;
         }
     }
-    .col2_layout_3_8_3{
+    .col2_layout_3_6_3{
        
         
         background: khaki;
@@ -148,7 +148,7 @@ body .conteneur{
         }
 
     }
-    .col3_layout_3_8_3{
+    .col3_layout_3_6_3{
         background: #00c9fe;
        
         @include breakpoint ($tablet){
@@ -222,7 +222,7 @@ body .conteneur{
        
        @include breakpoint ($desktop){
        
-            background: darkorange;
+            background: #cccccc;
         }
         //Pour orientation paysage
          @include breakpoint ($tabletlandscape){
@@ -304,7 +304,7 @@ body .conteneur{
         }
         @include breakpoint ($desktop){
        
-            background: darkorange;
+            background: #cccccc;
         }
     }
     .col2_layout_4_8{
@@ -312,18 +312,32 @@ body .conteneur{
         
         background: khaki;
         @include breakpoint ($tablet){
-       
-            background: tomato;
+              background: tomato;
         }
         @include breakpoint ($desktop){
-       
-            background: thistle;
+                   background: thistle;
         }
 
     }
   
-  .col1_layout_3_9{}
-  .col2_layout_3_9{}
+    
+    .col1_layout_3_9{
+        @include breakpoint ($tablet){
+            background: #00CC99;
+        }
+        @include breakpoint ($desktop){
+            background: #cccccc;
+        }
+    }
+    .col2_layout_3_9{
+        background: khaki;
+        @include breakpoint ($tablet){
+            background: tomato;
+        }
+        @include breakpoint ($desktop){
+            background: thistle;
+        }
+    }
   
   .col1_layout_2_10{}
   .col2_layout_2_10{}
@@ -347,7 +361,7 @@ body .conteneur{
           background: #00CC99;
       }
       @include breakpoint ($desktop){
-          background: darkorange;
+          background: #cccccc;
       }
   }
   
@@ -364,7 +378,7 @@ body .conteneur{
           background: #00CC99;
       }
       @include breakpoint ($desktop){
-          background: darkorange;
+          background: #cccccc;
       }
   }
   

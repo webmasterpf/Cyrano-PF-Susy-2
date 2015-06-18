@@ -1,0 +1,134 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|       PAGE BTS                       |
+|--------------------------------------*/
+
+ //@include breakpoint ($mobile){}
+  //@include breakpoint ($desktop){}
+  //@include breakpoint ($tablet){}
+
+  .titre_partenaires{
+      color: $orange-fonce;
+  }  
+.page-partenaires{
+    img{
+        padding: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: #02A7D5;
+    }
+    &a:hover{
+        text-decoration: underline;
+    }
+    b,strong{
+        color: $gris-anthracite;
+        padding: 0.3em;
+    }
+    h2{
+        color: $violet;
+    }
+    h3{
+        color: $bleu-turquoise;
+    }
+}   
+  /*BLOC BOUTONS PARTENAIRES*/
+#table-bouton-partenaire{
+    width: 210px;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+}
+#table-bouton-partenaire img{
+    border: 0;
+     
+}
+#table-bouton-partenaire a{
+    color: white;
+    font-family: Arista,Trebuchet MS,sans serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.8em;
+    height:auto;
+    padding:11px 7px;
+    width:auto;
+}
+#table-bouton-partenaire td.stage a{
+    background: url("../images/bt_proposer_stage.jpg") no-repeat top left;
+    display: block;
+    }
+#table-bouton-partenaire td.stage a:hover{
+    background: url("../images/bt_proposer_stage_hover.jpg") no-repeat top left;
+   }
+#table-bouton-partenaire td.objectif a{
+    background: url("../images/bt_objectif_reussite.jpg") no-repeat top left;
+    display: block;
+    margin: 5px 0;
+}
+#table-bouton-partenaire td.objectif a:hover{
+    background: url("../images/bt_objectif_reussite_hover.jpg") no-repeat top left;
+    }
+
+#formulaire_partenaire{
+        width: 500px;
+        margin: 0 auto;
+        padding:5px 0;
+}
+
+
+
+/*Contenu du QT pour afficher temoignage partenaires*/
+#centre-partenaire{}
+#centre-partenaire h3{
+    color: #E2017B;
+    margin: 5px;
+}
+#centre-partenaire img.portrait,#middle-content-partenaire img.portrait{
+    border: 2px solid #AEC81F;
+    padding: 5px;
+}
+.cartouche{
+    padding: 3px;
+    background: #EFEFEF;
+    margin: 3px 0;
+    font-size: 10px;
+    color: #606171;
+}
+#centre-partenaire{
+    
+}
+/*Contenu du QT pour afficher temoignage anciens élèves sur page association*/
+#centre-asso h2{
+    text-align: left;
+}
+#centre-asso h3{
+    color: #E2017B;
+}
+#centre-asso li.active a {
+    color: white;
+}
+#centre-asso a:hover{}
+#centre-asso img{}
+/*----- Liste partenaires associatifs vue ------*/
+#liste_part_asso{
+    ul{
+        list-style: none;
+    }
+    li{
+        margin: 3px 0;
+        padding: 5px;
+        background: #EFEFEF;
+    }
+    li a{
+        font-weight: bold;
+        text-decoration: none;
+    }
+    li a:hover{
+        color: white;
+        background: #E85231;
+    }
+}

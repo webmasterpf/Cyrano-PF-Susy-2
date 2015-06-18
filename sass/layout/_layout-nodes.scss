@@ -16,7 +16,7 @@ body .conteneur{
 
 /*//////////////// 3 COLONNES \\\\\\\\\\\\\\\\*/
 body .conteneur{
-    .col1_layout_3_8_3{
+    .col1_layout_3_6_3{
        @include span($mobilecol);
        
         @include clearfix;
@@ -34,7 +34,7 @@ body .conteneur{
             background: violet;
         }
     }
-    .col2_layout_3_8_3{
+    .col2_layout_3_6_3{
        @include span($mobilecol);
         
         background: khaki;
@@ -54,23 +54,20 @@ body .conteneur{
         }
 
     }
-    .col3_layout_3_8_3{
+    .col3_layout_3_6_3{
         @include span($mobilecol);
        
         background: #00c9fe;
         @include clearfix;
         @include breakpoint ($tablet){
-            @include span(last 2 of $tabletcol);
-            background: purple;
+             @include isolate(.3%);
         }
         @include breakpoint ($desktop){
-           @include span(last 3 of $desktopcol);
-           background: teal;
+           @include span(last 3 of $desktopcol no-gutters);
         }
         //Pour orientation paysage
          @include breakpoint ($tabletlandscape){
-           @include span(last 3 of $tabletcol-landcsape);
-            background: violet;
+            @include isolate(.3%);
         }
 
     }
@@ -247,8 +244,27 @@ body .conteneur{
 
     }
   
-  .col1_layout_3_9{}
-  .col2_layout_3_9{}
+    .col1_layout_3_9{
+         @include breakpoint ($tablet){
+            @include span(first 2 of $tabletcol);
+            background: #00CC99;
+        }
+        @include breakpoint ($desktop){
+            @include span(first 3 of $desktopcol);
+            background: darkorange;
+        }
+    }
+    .col2_layout_3_9{
+         background: khaki;
+        @include breakpoint ($tablet){
+            @include span(last 6 of $tabletcol);
+            background: tomato;
+        }
+        @include breakpoint ($desktop){
+           @include span(last 9 of $desktopcol);
+            background: thistle;
+        }
+    }
   
   .col1_layout_2_10{}
   .col2_layout_2_10{}
