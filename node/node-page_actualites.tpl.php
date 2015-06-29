@@ -9,49 +9,49 @@
       <h2 class="title"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
     <?php endif; ?>
 <!-- ______________________ COLONNE REVUE PRESSE _______________________ -->
-<div class="col_375" id="rp_actu_gloable">
+<div id="colonne-1" class="layout_3col_all4 rp_actu_gloable" >
+  
          <?php
  /* inclusion vue liste illustrée */
-    include (drupal_get_path('theme','cyrano_pf').'/includes/inc_vue_actu_globale_rp.php');
+    include (drupal_get_path('theme','susy2_pf_cyrano').'/includes/inc_vue_actu_globale_rp.php');
               ?>
     <br clear="all"/>
    <?php
-   include (drupal_get_path('theme','cyrano_pf').'/includes/inc_vue_actu_globale_rp_petit.php');
+   include (drupal_get_path('theme','susy2_pf_cyrano').'/includes/inc_vue_actu_globale_rp_petit.php');
    ?>
      <?php
  /* inclusion d'une region pour bloc */
-              include (drupal_get_path('theme','cyrano_pf').'/includes/inc_region_col_G1.php');
+              include (drupal_get_path('theme','susy2_pf_cyrano').'/includes/inc_region_col_1.php');
               ?>
 </div>
 <!-- ______________________ COLONNE ACTUS ASSO _______________________ -->
-<div class="col_375" id="actu_asso_actu_globale">
+<div id="colonne-2" class="layout_3col_all4 actu_asso_actu_globale" >
      <?php
  /* inclusion vue liste illustrée */
-              include (drupal_get_path('theme',cyrano_pf).'/includes/inc_vue_actu_globale_actuasso.php');
+              include (drupal_get_path('theme','susy2_pf_cyrano').'/includes/inc_vue_actu_globale_actuasso.php');
               ?>
      <br clear="all"/>
        <?php
  /* inclusion vue liste illustrée petit */
-              include (drupal_get_path('theme',cyrano_pf).'/includes/inc_vue_actu_globale_actuasso_petit.php');
+              include (drupal_get_path('theme','susy2_pf_cyrano').'/includes/inc_vue_actu_globale_actuasso_petit.php');
               ?>
          <?php
  /* inclusion d'une region pour bloc */
-              include (drupal_get_path('theme',cyrano_pf).'/includes/inc_region_col_G2.php');
+              include (drupal_get_path('theme','susy2_pf_cyrano').'/includes/inc_region_col_2.php');
               ?>
 </div>
 <!-- ______________________ COLONNE INFOS FIXES RSS _______________________ -->
-<div class="col_220" id="infos_fixes_actu_globale">
+<div id="colonne-3" class="layout_3col_all4last infos_fixes_actu_globale">
      <?php
  /* inclusion d'une region pour bloc */
-              include (drupal_get_path('theme',cyrano_pf).'/includes/inc_region_col_G3.php');
+              include (drupal_get_path('theme','susy2_pf_cyrano').'/includes/inc_region_col_3.php');
               ?>
     
-        <div class="content contenu-actu-globale">
+        <div class="content">
       <?php print $content; ?>
     </div>
 
 </div>
-<br clear="all"/>
 
     <?php print $picture; ?>
 

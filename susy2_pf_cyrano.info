@@ -25,6 +25,9 @@ scripts[] = js/jquery.sidebar.min.js
 scripts[] = js/general.js
 ;scripts[] = js/jquery_plugin.js
 
+;Styles pour Superfish
+superfish_styles[assopf_superfish] = Style pour Superfish  - assopf_superfish.css
+
 stylesheets[all][] = css/application.css
 
 ;Pour utiliser Buttons Zocial compilé (librairie de bouttons CSS3)
@@ -100,9 +103,9 @@ regions[centre_partenaire] = Zone centrale page partenaire
 
 ;Region pour les node.tpl (ajouter dans template.php)
 regions[actuAssociation] = Zone pour RSS issu du site PF - Vue Bloc RSS
-regions[col_1] = Bloc pour colonne 1
-regions[col_2] = Bloc pour colonne 2
-regions[col_3] = Bloc pour colonne 3
+regions[node_col_1] = Bloc pour colonne 1
+regions[node_col_2] = Bloc pour colonne 2
+regions[node_col_3] = Bloc pour colonne 3
 ;Region pour page poles formation (ajouter dans template.php)
 regions[pole_bloc_G] = Bloc pour pole Gauche
 regions[pole_bloc_C] = Bloc pour pole Centre

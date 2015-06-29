@@ -7,8 +7,8 @@
 ?>
 
 <?php //regions pour inserer un bloc dans la colonne G1
-if ($col_G1): ?>
-   <?php  print $col_G1; ?>
+if ($node_col_1): ?>
+   <?php  print $node_col_1; ?>
  <?php endif; ?>
 <h3>La colonne 1 existe !</h3>
 

@@ -1,5 +1,5 @@
 <?php
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); 
 include ($theme_path.'/includes/inc_header.php');
 ?>
  <!-- ______________________ LAYOUT PAGE MODELE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->

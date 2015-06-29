@@ -1,9 +1,9 @@
-<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>
+<?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_header.php'); ?>
 <?php /*REDESIGN PAGE ACTU*/ ?>
  <!-- ______________________ LAYOUT PAGE ACTUS GLOBALE _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
-      <div id="contentPageActu">
+      
       
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
@@ -32,7 +32,7 @@
                     <?php print $actuAssociation; ?>
               </div><!-- /#actualite-association -->
                      <?php endif; ?>
-                  <div id="middle-content-actu-globale">
+                  <div id="middle-content">
           
                    
               <br clear="all"/>
@@ -86,8 +86,8 @@
             </div><!-- /#content-bottom -->
           <?php endif; ?>
             
-	 </div> <!-- /contentPage -->
+	 
 	  
-	  <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
+	  <?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_footer.php'); ?>
          <?php endif; ?>
      

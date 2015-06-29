@@ -13,7 +13,7 @@
             <?php endif; ?>
         
             <?php
-            global $theme_path;
+            $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); 
             include ($theme_path . '/includes/inc_region_col_1.php');
             ?>
         </div>

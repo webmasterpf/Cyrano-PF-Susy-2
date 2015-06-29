@@ -1,0 +1,213 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|             PAGE ACTU                |
+|--------------------------------------*/
+
+ //@include breakpoint ($mobile){}
+  //@include breakpoint ($desktop){}
+  //@include breakpoint ($tablet){}
+/*-----------  REDESIGN ACTU GLOBALE
+---------------------------------------*/
+/*TITRES*/
+.bloc_actus h3{
+ font-family: Arista,Trebuchet MS,sans serif;
+    font-size: larger;
+    font-weight: bold;
+    margin: em(10px) 0;
+    text-align:center;
+}
+.rp_actu_gloable .bloc_actus h3{
+    color: $rose-fushia;
+}
+.actu_asso_actu_globale .bloc_actus h3{
+    color: $rouge;
+}
+/*CONTENU*/
+.table_actu_globale{
+    width: auto; display: block;
+    height: em(215px);margin: 0;padding: 0;
+}
+.table_actu_globale tbody{border: none;}
+.table_actu_globale tr{}
+.table_actu_globale td{
+    vertical-align: top;
+}
+.titre_actu{
+    bottom: em(70px);
+    color: white;
+    left: em(3px);
+    position: relative;
+    width: em(190px);
+    z-index: 20;
+}
+.titre_actu a{
+    background: white;
+    color: black;
+    text-decoration: none;
+    padding: em(2px);
+}
+.titre_actu a:hover{
+   background: #E85231;
+    color: black;
+    text-decoration: none;
+}
+.texte_actu{
+    display: inline-block;
+    padding: em(5px) em(10px);
+}
+.image_actu{
+height:em(200px);
+position:relative;
+width:em(200px);
+z-index:15;
+border: em(3px) solid #ADC91F;
+/*left:0px;
+bottom:0px;*/
+}
+.actu-globale-grand-actuasso .image_actu{
+height:em(200px);
+position:relative;
+width:em(200px);
+z-index:15;
+border: em(3px) solid #E3007A;
+overflow: hidden;//pour cacher la partie image qui sort du cadre
+}
+/*LISTE ACTU GLOBALE PETITE ILLUSTRATION*/
+.table_actu_globale_petit{
+    width: auto;
+    display: block;
+    tbody{
+        display: block;
+        border: none;
+    }
+    tr{
+        display: block;
+        height: em(160px);
+        margin: em(5px) 0;
+        padding: 0;
+    }
+    td{
+        vertical-align: top;
+    }
+}
+
+.titre_actu_petit{
+    bottom: 8em;
+    color: white;
+    left: em(3px);
+    position: relative;
+    width: em(140px);
+    z-index: 20;
+}
+.titre_actu_petit a{
+    background: white;
+    color: black;
+
+    text-decoration: none;
+    padding: em(2px);
+}
+.titre_actu_petit a:hover{
+   background: #E85231;
+    color: black;
+    text-decoration: none;
+}
+.texte_actu_petit{
+    display: inline-block;
+    padding: em(5px);
+}
+.image_actu_petit{
+    border: em(3px) solid #ADC91F;
+    height: em(150px);
+    position: relative;
+    width: em(150px);
+    z-index: 15;
+}
+.actu-globale-petit-actuasso .image_actu_petit{
+border: em(3px) solid #E3007A;
+}
+
+.contenu-actu-globale{}
+.contenu-actu-globale a{
+     color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contenu-actu-globale a:hover{
+     text-decoration: underline;
+}
+.contenu-actu-globale{}  
+
+ .lien_archive {
+    background: none repeat scroll 0 0 AliceBlue;
+    color: #E2017B;
+    display: block;
+    float: none;
+    margin: 0 auto;
+    padding: em(2px);
+    text-align: center;
+    text-decoration: underline;
+    width: 95%;
+}
+.lien_archive a:hover{text-decoration: none;}
+.pager li.pager-current{color:#EFEFEF;padding: 2px;background: #4e4d5e; }
+/*BLOC FLUX RSS*/
+.block-aggregator a{
+    color: black;
+    text-decoration: none;
+}
+.block-aggregator a:hover{
+    text-decoration: underline;
+}
+#block-aggregator-category-1 h3, #block-aggregator-category-2 h3,#block-aggregator-category-3 h3,#block-aggregator-category-4 h3,#block-aggregator-category-5 h3{
+    }
+.infos_fixes_actu_globale h3.block-title{
+     font-family: Arista,Trebuchet MS,sans serif;
+    font-size: larger;
+    font-weight: bold;
+    margin: em(5px) 0;
+    text-align:center;
+     color: purple;
+}
+/*NODEQUEUE ACTUS BRULANTE*/
+#block-views-nodequeue_1-block {
+    margin: 0 auto;
+    width: 15em;//redesign : 210px - avant 240px
+    padding: em(10px) 0;
+}
+#block-views-nodequeue_1-block ul{
+    list-style: none;
+    display: block;
+    padding: em(5px);
+    background: transparent url(../images/zebra-gros-clair.gif) repeat ;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    -webkit-box-shadow: em(1px) em(1px) em(10px) #00abd1;
+    -moz-box-shadow: em(1px) em(1px) em(10px) #00abd1;
+    box-shadow: em(1px) em(1px) em(10px) #00abd1;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+}
+
+#block-views-nodequeue_1-block li{
+    list-style: none;
+    margin: em(10px) 0;
+}
+#block-views-nodequeue_1-block h3.block-title{
+    color: #01ABCF;
+}
+#block-views-nodequeue_1-block a{
+    text-decoration: none;
+    background: white;
+    padding: em(2px);
+    color: #606070;
+}
+#block-views-nodequeue_1-block a:hover{
+    color: white ;
+    background: #E85231;
+}
+.view-nodequeue-1 li,.view-nodequeue-1 ul li,.view-nodequeue-1 ul{
+     list-style: none;
+      margin: em(10px) 0;
+}
