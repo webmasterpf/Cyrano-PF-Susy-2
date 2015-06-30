@@ -1,0 +1,34 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|             PAGE CONTACT             |
+|--------------------------------------*/
+
+ //@include breakpoint ($mobile){}
+  //@include breakpoint ($desktop){}
+  //@include breakpoint ($tablet){}
+  
+  .page-contact #colonne-2{
+      table,tbody,tr,td,form,input[type="text"],input[type="email"]{
+          width: 98%;display: block;
+      }
+      tbody{
+          border: 0;
+      }
+      a{
+          color: $orange-fonce;
+          text-decoration:none;
+          &:hover{
+              text-decoration: underline;
+          }
+      }
+      @include breakpoint ($desktop){
+          @include border-orangePF-orangePF;
+      }
+
+  }
+  .page-contact #colonne-1 h1.titre_pl{
+      color: $orange-fonce;
+  }

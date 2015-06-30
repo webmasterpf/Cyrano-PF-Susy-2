@@ -5,7 +5,7 @@ include ($theme_path.'/includes/inc_header.php');
  <!-- ______________________ LAYOUT WEBFORM GENERIK OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
-      <div class="content-global">
+      
       
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
@@ -15,10 +15,10 @@ include ($theme_path.'/includes/inc_header.php');
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
 	  
-      
+       <?php endif; ?>
 
         
-        <div id="content-inner-webform">
+        <div class="content-inner">
 		             
 		
            
@@ -41,7 +41,7 @@ include ($theme_path.'/includes/inc_header.php');
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-webform">
+          <div class="middle-content">
           
             <?php print $content; ?>
               <?php print $feed_icons; ?>
@@ -61,10 +61,6 @@ include ($theme_path.'/includes/inc_header.php');
           </div> <!-- /navigation -->
         <?php endif; ?>
 
-       
-		
-   
-    	 <br clear="all"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div id="content-bottom">
@@ -76,4 +72,3 @@ include ($theme_path.'/includes/inc_header.php');
 global $theme_path;
 include ($theme_path.'/includes/inc_footer.php');
 ?>
-        <?php endif; ?>
