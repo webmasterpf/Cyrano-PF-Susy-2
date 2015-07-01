@@ -34,29 +34,41 @@
     h3{
         color: $bleu-turquoise;
     }
+    
 }   
-  /*BLOC BOUTONS PARTENAIRES*/
-#table-bouton-partenaire{
-    width: 210px;
+/*NAV SUPERFISH sur Mobile pour bien centrer*/
+aside#block-superfish-2{
+    width: 98%;
     margin: 0 auto;
-    padding: 0;
-    border: 0;
+    select{
+        width: 100%;
+    }
+
 }
-#table-bouton-partenaire img{
-    border: 0;
-     
-}
-#table-bouton-partenaire a{
-    color: white;
-    font-family: Arista,Trebuchet MS,sans serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.8em;
-    height:auto;
-    padding:11px 7px;
-    width:auto;
-}
+  /*BLOC BOUTONS PARTENAIRES*/
+  table#table-bouton-partenaire{
+      width: 13.4em;
+      margin: 0 auto;
+      padding: 0;
+      border: 0;
+      clear: both;
+      tbody,img{
+          border: 0;
+
+      }
+      a{
+          color: white;
+          font-family: Arista,Trebuchet MS,sans serif;
+          text-decoration: none;
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 1.8em;
+          height:auto;
+          padding:em(11px) em(7px);
+          width:auto;
+      }
+  }
+
 #table-bouton-partenaire td.stage a{
     background: url("../images/bt_proposer_stage.jpg") no-repeat top left;
     display: block;
@@ -67,17 +79,28 @@
 #table-bouton-partenaire td.objectif a{
     background: url("../images/bt_objectif_reussite.jpg") no-repeat top left;
     display: block;
-    margin: 5px 0;
+    margin: em(5px) 0;
 }
 #table-bouton-partenaire td.objectif a:hover{
     background: url("../images/bt_objectif_reussite_hover.jpg") no-repeat top left;
     }
 
-#formulaire_partenaire{
-        width: 500px;
+    
+    #formulaire_partenaire{
+        width: 98%;
         margin: 0 auto;
-        padding:5px 0;
-}
+        padding:em(5px) 0;
+        /*Champs formulaire RWD*/
+        form,input[type="text"],input[type="email"]{
+            width: 98%;display: block;
+        }
+        input[type="text"]#edit-submitted-duree-du-stage,
+        input[type="text"]#edit-submitted-remuneration{
+            width: 45%;display: block;float: left;
+        }
+    }
+
+
 
 
 
