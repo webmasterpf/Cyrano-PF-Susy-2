@@ -3,6 +3,9 @@
 |       Poste bts alternance           |
 |--------------------------------------*/
 
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
 
 #colonne-1.detail-offre-ctpro{
      
@@ -42,51 +45,71 @@
 .table-poste-bts a{color: #E7512F;text-decoration: none;font-weight: bold;}
 .table-poste-bts a:hover{text-decoration: underline;}
 /*Vue liste des offres - style par taxonomie*/
-.liste-offres-bts-pro ul {
-    list-style: none;
+.offre-ct-pro h1{
+    @include titre-page;
+    color: $orange-fonce;
 }
-.liste-offres-bts-pro ul li a{
-    text-decoration: none;
-    color: #606171;
+#colonne-2 .liste-offres-bts-pro {
+    ul {
+        list-style: none;
+    }
+    ul li a{
+        text-decoration: none;
+        color: #606171;
+        &:hover{
+            color: #E85231;
+        }
+    }
 }
-.liste-offres-bts-pro a:hover{
-    color: #E85231;
-}
-.offre-bts-titre{/*titre dans la liste*/
+h2.offre-bts-titre{/*titre dans la liste*/
     display:block;
     float:left;
-    font-size:em(14px);
+    font-size:large;
     margin:0 em(10px) 0 0;
     text-transform:uppercase;
 }
-.offre-bts-date{
-    margin: 0;
-    padding:em(3px) 0 0;
+#colonne-2{
+    .offre-bts-date{
+        margin: 0;
+        padding:em(3px) 0 0;
+    }
+    .offre-bts-teaser{
+        margin: 0;
+        padding: 0;
+    }
+    .ref-offre{
+
+        font-weight: bold;
+        padding: em(3px) em(55px) 0 0;
+        margin: 0;
+    }
+    .offres .views-exposed-form{
+        width: 98%;
+        margin: 0 auto;
+      label{text-align: center;}
+    }
+    @include breakpoint ($desktop){
+        .ref-offre{
+            float: left;
+
+        }
+    }
 }
-.offre-bts-teaser{
-    margin: 0;
-    padding: 0;
-}
-.ref-offre{
-    float: left;
-    font-weight: bold;
-    padding: em(3px) em(55px) 0 0;
-    margin: 0;
-}
+
 .etat-76{/*a pourvoir*/
          padding: em(5px);
          margin:0 0 em(5px);
-    border-left:3px solid #AEC81F;
+    border-left:0.3em solid $vert;
 }
 .etat-77{/*en cours*/
          padding: em(5px);
          margin:0 0 em(5px);
-   border-left:3px solid #F09500;
+   border-left:0.3em solid $orange;
 }
 .etat-78{/*pourvu*/
          padding: em(5px);
          margin:0 0 em(5px);
-   border-left:3px solid #E0001A;
+   border-left:0.3em solid $rouge;
 }
 #postule{
     float: right;
@@ -121,9 +144,9 @@
 
 /* Line up multi-line options nicely */
 .bef-group-items .form-item,
-.bef-select-as-radios .form-radios .form-item {
-  text-indent: -24px;
-  margin-left: em(24px);
+.bef-select-as-radios .form-item {
+  text-indent: -0.5em;
+  margin-left: 1.5em;
   float:left;
 }
 /*style lien en savoir plus*/
