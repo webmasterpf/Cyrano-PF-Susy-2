@@ -1,0 +1,162 @@
+/*--------------------------------
+|                                 |
+|       SUPERFISH MENU            |
+|         PARTENAIRES             |
+|      WHITE STYLE OVERRIDE       |
+----------------------------------*/
+.sf-menu.sf-style-white {
+  float: left;
+  margin-bottom: 1em;
+  padding: 0;
+  width:98%;
+}
+.sf-menu.sf-style-white.sf-navbar {
+  width: 100%;
+}
+.sf-menu.sf-style-white ul {
+  padding-left: 0;
+}
+.sf-menu.sf-style-white a {
+  border: 1px solid #e1e1e1;
+  color: #606070;
+  padding: 0.75em 1em;
+}
+.sf-menu.sf-style-white a.sf-with-ul {
+  padding-right: 2.25em;
+}
+.sf-menu.sf-style-white.rtl a.sf-with-ul {
+  padding-left: 2.25em;
+  padding-right: 1em;
+}
+.sf-menu.sf-style-white.sf-navbar a {
+  border: 0;
+}
+.sf-menu.sf-style-white span.sf-description {
+  color: #555555;
+  display: block;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 5px 0 0 5px;
+  padding: 0;
+}
+.sf-menu.sf-style-white li,
+.sf-menu.sf-style-white.sf-navbar
+{
+    //style des li
+           width:98%;
+           font-size:small;
+          
+           color:white;
+           text-decoration:none;
+           text-align: center;
+           //background: url("../superfish/images/bg_bt_menu_part.jpg") repeat-x top left;
+           border: 0.2em solid #7ca800;
+           cursor: pointer;
+           /*Gradient CSS3*/
+background: #b6e026; /* Old browsers */
+background: -moz-linear-gradient(top,  #b6e026 0%, #aede28 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b6e026), color-stop(100%,#aede28)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #b6e026 0%,#aede28 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #b6e026 0%,#aede28 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #b6e026 0%,#aede28 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #b6e026 0%,#aede28 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6e026', endColorstr='#aede28',GradientType=0 ); /* IE6-9 */
+
+}
+.sf-menu.sf-style-white li li {
+    //Sous rubrique
+    background:none;
+    border: 0;
+    text-align:left;
+    padding: 0 0 0 0.2em;
+    line-height: 2.0em;
+    margin: 0.1em;
+
+}
+.sf-menu.sf-style-white li li,
+.sf-menu.sf-style-white li li > a{
+    border: 0;background:#94127F;
+    -moz-border-radius: 1.2em;
+    -webkit-border-radius: 1.2em;
+    border-radius: 1.2em;
+    color:white; 
+}
+.sf-menu.sf-style-white li li > a:hover{
+    color:#94127F;
+ background:#ebebeb;
+}
+span.menu-item-container{
+      text-transform: none;
+  font-weight: inherit;
+}
+.sf-menu.sf-style-white li li li {
+  background: #f5f5f5;
+}
+.sf-menu.sf-style-white li:hover,
+.sf-menu.sf-style-white li.sfHover,
+.sf-menu.sf-style-white li.active a,
+.sf-menu.sf-style-white a:focus,
+.sf-menu.sf-style-white a:hover,
+.sf-menu.sf-style-white a:active,
+.sf-menu.sf-style-white.sf-navbar li li {
+  //background: #e9e9e9;
+  color: #91127D;
+}
+.sf-menu.sf-style-white.sf-navbar li ul {
+  background-color: #e9e9e9;
+}
+.sf-menu.sf-style-white.sf-navbar li ul li ul {
+  background-color: transparent;
+}
+.sf-menu.sf-style-white .sf-sub-indicator {
+  background-image: url('../images/arrows-777777.png');
+}
+.sf-menu.sf-style-white.rtl .sf-sub-indicator {
+  background-image: url('../images/arrows-777777-rtl.png');
+}
+.sf-menu.sf-style-white ul.sf-megamenu li.sf-megamenu-wrapper ol,
+.sf-menu.sf-style-white ul.sf-megamenu li.sf-megamenu-wrapper ol li {
+  margin: 0;
+  padding: 0;
+}
+.sf-menu.sf-style-white ul.sf-megamenu li.sf-megamenu-wrapper a.menuparent {
+  font-weight: bold;
+}
+.sf-menu.sf-style-white ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+  display: inline;
+  float: left;
+  width: 12em;
+}
+.sf-menu.sf-style-white.rtl ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+  float: right;
+}
+.sf-menu.sf-style-white li.sf-parent-children-1 ul.sf-megamenu {
+  width: 12em;
+}
+.sf-menu.sf-style-white li.sf-parent-children-2 ul.sf-megamenu {
+  width: 24em;
+}
+.sf-menu.sf-style-white li.sf-parent-children-3 ul.sf-megamenu {
+  width: 36em;
+}
+.sf-menu.sf-style-white li.sf-parent-children-4 ul.sf-megamenu {
+  width: 48em;
+}
+.sf-menu.sf-style-white li.sf-parent-children-5 ul.sf-megamenu {
+  width: 60em;
+}
+.sf-menu.sf-style-white li.sf-parent-children-6 ul.sf-megamenu {
+  width: 72em;
+}
+.sf-menu.sf-style-white li.sf-parent-children-7 ul.sf-megamenu {
+  width: 84em;
+}
+.sf-menu.sf-style-white li.sf-parent-children-8 ul.sf-megamenu {
+  width: 96em;
+}
+.sf-menu.sf-style-white li.sf-parent-children-9 ul.sf-megamenu {
+  width: 108em;
+}
+.sf-menu.sf-style-white li.sf-parent-children-10 ul.sf-megamenu {
+  width: 120em;
+}

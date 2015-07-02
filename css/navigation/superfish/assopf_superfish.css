@@ -1,8 +1,14 @@
-/*Style pour menu secondaire partenaire*/
+/*--------------------------------
+|                                 |
+|       SUPERFISH MENU            |
+|         PARTENAIRES             |
+|                                 |
+----------------------------------*/
 .sf-menu.sf-style-assopf_superfish {
   float: left;
   margin-bottom: 1em;
   padding: 0;
+  width:98%;
 }
 .sf-menu.sf-style-assopf_superfish.sf-navbar {
   width: 100%;
@@ -36,6 +42,7 @@
 .sf-menu.sf-style-assopf_superfish li,
 .sf-menu.sf-style-assopf_superfish.sf-navbar {
   background: #f9f9f9;
+  width:98%;
 }
 .sf-menu.sf-style-assopf_superfish li li {
   background: #f7f7f7;
