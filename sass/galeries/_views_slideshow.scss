@@ -86,7 +86,8 @@ VIEWS 3 CYCLE ===================================
 .views-slideshow-controls-bottom{float: right;margin: 0 0 em(10px) 0;}
 #widget_pager_bottom_annonce_accueil-block_1 {margin: em(2px) 0 0 em(280px) !important;margin: em(2px) 0 0 em(80px);}
 /*Style */
-.widget_pager .views_slideshow_pager_field_item{ 
+.widget_pager .views_slideshow_pager_field_item,.views_slideshow_pager_field_item .views-field-title,
+.views_slideshow_pager_field_item .views-content-title{ 
   background-color: #CFD0D2;
   @include arrondis (em(6px));
   
@@ -95,7 +96,8 @@ VIEWS 3 CYCLE ===================================
   width: em(12px);
   margin-right: em(5px);
   text-indent: em(-9999px);
-  cursor: pointer;}
+  cursor: pointer;
+}
 .widget_pager .active,.widget_pager :hover{background-color: #606171;@include arrondis (em(6px));}
 /*
 VIEWS 3 CYCLE: DIAPO CONTENU ===================================
