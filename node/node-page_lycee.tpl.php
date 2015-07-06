@@ -64,7 +64,11 @@ include($theme_path .'/includes/inc_region_col_2.php');
                  <?php  print $node->field_diapo_lycee_type[0]['view'] ?>
       </span>
              <?php endif; ?>      
-             
+       <?php if ($node->field_video_externe[0]['view']): ?>
+      <span class="video-lycee">
+                 <?php  print $node->field_video_externe[0]['view'] ?>
+      </span>
+             <?php endif; ?>           
        
              
       <?php if ($node->field_lycee_gmap[0]['view']): ?>
