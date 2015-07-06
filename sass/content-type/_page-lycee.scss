@@ -89,7 +89,9 @@ caption{
     margin:0 auto;display: block;width: 98%;
     img{border: em(2px) solid #E85231;padding: em(1px);}
 }
-
+.video-lycee{
+    border: em(2px) solid $rose-fushia;
+}
 #gmap-lycee {
     width: 98%;display: block;margin: em(20px) 0;
     iframe{border: em(2px) solid #00AAD2;padding: em(1px);}
