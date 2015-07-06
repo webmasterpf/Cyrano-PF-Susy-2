@@ -48,31 +48,7 @@ body .conteneur {
         }
 
 }
-//Pour le dev, code visuel sur les blocs selon le breakpoint
-// à commenter ou supprimer pour la production
-body .conteneur {
-    .annonceImg {background: greenyellow;}
-        .blocLycee{background: pink;}
-        .contentAnim{background: #C8D215;}
-        .textAnim{background: salmon;}
-    
-   
-    @include breakpoint($desktop) {/*    //Dimensions pour les pc*/
-    .annonceImg {background: blueviolet;}
-        .blocLycee{background: royalblue;}
-        .contentAnim{background: gold;}
-        .textAnim{background: bisque;}
-    
-    }
-   
-    @include breakpoint($tablet) {/*     //Dimensions pour les tablettes*/
-        .annonceImg {background: greenyellow;}
-        .blocLycee{background: pink;}
-        .contentAnim{background: #C8D215;}
-        .textAnim{background: red;}
-    
-    }
-}
+
 /********************/
 /*ZONES PAGE ACCUEIL*/
 
