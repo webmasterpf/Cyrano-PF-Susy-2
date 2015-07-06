@@ -25,22 +25,16 @@
         }
     }
     @include breakpoint ($mobile){
-        aside{
-        background-color: teal;     
-    }      
+         
          @include background-size();
     }
     @include breakpoint ($desktop){
          @include background-size(auto);
-          aside{
-      background: yellowgreen;
-    }  
+         
          
     }
     @include breakpoint ($tablet){
-        aside{
-      background:sandybrown;
-    }  
+       
     }
 }
 /*Bas de page  FOOTER*/
