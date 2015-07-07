@@ -6,6 +6,7 @@
  //Imbrication à 100% (full nested)
  body .conteneur #header {
      z-index : 30;
+     background:white;//couleur pour le header cause sticky header
      &:after{
                 content: " ";
                 display: block;
