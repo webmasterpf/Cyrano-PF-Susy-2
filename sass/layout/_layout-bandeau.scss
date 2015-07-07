@@ -28,7 +28,7 @@ Style - layout pour le bandeau des autres sites de l'ASSO
         }
     @include breakpoint ($desktop){
         display: block;
-        height: 3em;
+        height: auto;
         ul{
             background: $blanc-casse;
             display: block;

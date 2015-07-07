@@ -5,6 +5,7 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
 body .conteneur{
     @include breakpoint($desktop)
     {
+        padding-top: 2em;  
         @include container($desktopcol);
         //@debug susy-get(columns);
         #header{

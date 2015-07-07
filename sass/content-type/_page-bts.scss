@@ -38,10 +38,10 @@
 #content2-bts a{}
 #content2-bts a:hover{text-decoration: none;}
 table.table-bts-coord{
-    width: 97%;border: 0;
-    tbody{height: em(45px);margin: 0;padding: 0;border: 0;}
-    tr{}
-    td{vertical-align: middle;}
+    width: 97%;border: none;
+    tbody{height: em(45px);margin: 0;padding: 0;border: none;}
+    tr{border: none;}
+    td{vertical-align: middle;border: none;}
 }
 
 /*************************************/

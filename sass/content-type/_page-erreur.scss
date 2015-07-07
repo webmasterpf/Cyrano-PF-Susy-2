@@ -1,0 +1,26 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|             PAGE ERREUR              |
+|--------------------------------------*/
+
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+
+#colonne-2.page-erreur{
+    @include border-L-rose;
+}
+.page-erreur{
+    h1.titre_page{
+        color: $orange-fonce;
+    }
+    a{text-decoration: none;
+      color:$bleu-turquoise;
+      &:hover{text-decoration: underline;}
+    }
+}
+
+  

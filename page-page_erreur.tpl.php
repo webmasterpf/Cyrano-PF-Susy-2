@@ -1,27 +1,21 @@
-<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>  
+<?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_header.php'); ?>  
  <!-- ______________________ LAYOUT PAGE ERREUR _______________________ -->
 
   <!-- ______________________ CONTENU _______________________ -->
   
-      <div id="contentPage">
+      
       <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
-            <div id="content-top-pageErreur">
-	<span class="ariane"> <?php print $breadcrumb; ?></span>
+            <div id="content-top">
+			<span class="ariane"> <?php print $breadcrumb; ?></span>
+
               <?php print $content_top; ?>
-        
             </div> <!-- /#content-top -->
+            <?php endif; ?>
       
-       <!-- ______________________ COLONNE GAUCHE _______________________ -->
-		
-			
-         <div id="left-content-pageErreur">
-              
-            <?php print $left; ?>
-          </div>
-            	<!--fin du contenu gauche -->
+      
         
-        <div id="content-inner-pageErreur">
+        <div class="content-inner">
 		
 			
           <?php if ($mission || $messages || $help || $tabs): ?>
@@ -42,18 +36,23 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-pageErreur">
+          <div class="middle-content">
               
             <?php print $content; ?>
+         
+                   
+     
+
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
-
+     
+          
         
 		
           
       </div> <!-- /content-inner /content -->
+  
 
-            
         <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
           <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "with-main-menu"; } if (!empty($secondary_links)) { print " with-sub-menu"; } ?>">
             <?php if (!empty($primary_links)){ print theme('links', $primary_links, array('id' => 'primary', 'class' => 'links main-menu')); } ?>
@@ -62,25 +61,11 @@
         <?php endif; ?>
 
        
-		  <!-- ______________________ COLONNE DROITE _______________________ -->
-
-                   <!-- colonne droite pageErreur -->
-          <?php if ($right): ?>
-            <div id="right-content-pageErreur">
-              <?php print $right; ?>
-            </div>
-        <?php endif; ?> <!-- /colonne droite pageErreur -->
-		
 <!-- ______________________ CONTENU BAS _______________________ -->
-     <br clear="all" />
-          <?php if ($content_bottom): ?>
+<?php if ($content_bottom): ?>
             <div id="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-    
-		  
-	 </div> <!-- /contentPage -->
-	  
-	  <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
-         <?php endif; ?>    
+   
+   <?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_footer.php'); ?>    

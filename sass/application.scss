@@ -94,10 +94,11 @@ breakpoint-2.5.0
 @import "content-type/page-actualites";
 @import "content-type/page-contact";
 @import "content-type/page-recrutement";
+@import "content-type/page-erreur";
 
 //developpement
 //@import "content-type/page-agtest";
-@import "layout/layout-debug-colour";
+//@import "layout/layout-debug-colour";
 
 //Galeries slideshow views
 @import "galeries/_views_slideshow";

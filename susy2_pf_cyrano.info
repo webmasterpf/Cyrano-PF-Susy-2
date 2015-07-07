@@ -49,9 +49,10 @@ stylesheets[all][] = css/navigation/megamenu-skins.css
 ; CSS pour utiliser OM MaxiMenu
 stylesheets[all][] = css/navigation/om_maximenu/assopf-maximenu.css
 ; CSS pour utiliser Superfish menu
-;stylesheets[all][] = css/navigation/superfish/assopf-superfish.css
+;stylesheets[all][] = css/navigation/superfish/assopf_superfish.css
 ;stylesheets[all][] = css/navigation/superfish/superfish-navbar.css
 stylesheets[all][] = css/navigation/superfish/blue.css
+stylesheets[all][] = css/navigation/superfish/white.css
 ;CSS Override pour le site : Galeries (inclus dans application.css
 ;stylesheets[all][] = css/css_galeries/views_galleriffic_default.css
 ;stylesheets[all][] = css/css_galeries/views_showcase.css
