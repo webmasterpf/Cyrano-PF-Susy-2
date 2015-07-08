@@ -1,6 +1,6 @@
 <?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_header.php'); ?>  
 
-<!--     ______________________ LAYOUT HOMEPAGE VERTICAL D_______________________ -->
+<!--     ______________________ LAYOUT HOMEPAGE PF _______________________ -->
 
 
 <!--  ______________________ CONTENU _______________________ -->

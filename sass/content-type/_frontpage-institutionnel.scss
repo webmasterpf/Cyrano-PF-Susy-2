@@ -64,13 +64,18 @@ body .conteneur {
 }
 
 /****************/
-.textAnim {
-img{@include adaptable-img;
-    @include breakpoint($desktop){
-        @include squish(0.1,0); 
-    }}
-    ul li {
-        list-style: square;
+.HPGauche,.HPDroite {
+    aside img{
+        @include adaptable-img;
+    }
+    img,iframe{
+        @include adaptable-img;
+        @include breakpoint($desktop){
+            @include squish(0.1,0); 
+        }
+    }
+    ul li,ul.galerie-lycees li {
+        list-style: none;
     }
     a {
         text-decoration: none;
@@ -94,9 +99,12 @@ img{@include adaptable-img;
 }
 /* Défilant Actus brulante - Breaking news*/
 #block-views-annonce_accueil-block_2
-{margin: em(5px) auto;text-align: center;
+{
+    margin: em(5px) auto;text-align: center;width: auto;
  @include breakpoint($desktop){
-     width: em(375px);}}
+     width: em(375px);
+ }
+}
 
 #block-views-annonce_accueil-block_2 h3{
     font-family: Arista,Trebuchet MS,sans serif;
@@ -111,40 +119,46 @@ img{@include adaptable-img;
     background: #E2007A;
     @include arrondis (em(5px));
     margin: em(5px) 0;
+    a{
+        text-align: center;
+        color: white;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
 }
-.breaking-news a{
-    text-align: center;
-    color: white;
-}
-.breaking-news a:hover{
-    text-decoration: none;
-}
-.breaking-news{}
+
 
 
 
 /*-------- ANNONCE DEFILANTE ------*/
 .annonce {
-  color: $color-defilant;
-  display: block;
-  font-weight: bold;
-  margin: 0 auto;
-  padding: 11px 0 0;
-  text-align: center;
-  @include adjust-font-size-to(16px);
-  a {
-    color: $color-defilant-a;
-    text-decoration: none;
+    color: $color-defilant;
+    display: block;
     font-weight: bold;
-    &:hover {
-      text-decoration: underline;
+    margin: 0 auto;
+    padding: em(11px) 0 0;
+    text-align: center;
+    @include adjust-font-size-to(16px);
+    a {
+        color: $bleu-turquoise;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover {
+            text-decoration: underline;
+        }
     }
-  }
+    h2 a,h1 a{color: #93117E;text-decoration: none;
+              @include adjust-font-size-to(18px);
+    }  
 }
+
+
 /*DEFILANT CLASSIQUE*/
-#block-views-liste_annonce_accueil-block_1{display: block;margin: 5px 0;height: 50px;}
+#block-views-liste_annonce_accueil-block_1{display: block;margin: 5px 0;height: em(50px);}
 /*DEFILANT CONTENU PONCTUEL*/
-#block-views-liste_annonce_accueil-block_2{font-size: 16px;color: #E2017B;width: auto;display: block;text-align: center;font-weight: bold;margin: 10px 0;background: #CFD0D2;padding: 5px;height: 40px;}
+#block-views-liste_annonce_accueil-block_2{font-size: em(16px);color: #E2017B;width: auto;display: block;text-align: center;font-weight: bold;margin: 10px 0;background: #CFD0D2;padding: 5px;height: 40px;}
 #block-views-liste_annonce_accueil-block_2 #ponctuel{display: block;width: auto;}
 
 /*TABLE ACCES LYCEE*/

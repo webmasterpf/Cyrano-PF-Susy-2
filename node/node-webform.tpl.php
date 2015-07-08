@@ -17,9 +17,9 @@
          * .col1_layout_490_all{}  .col2_layout_490_all{}
          */?>
   
-<div id="colonne-1" class="col1_layout_2_7_3">
+<div id="colonne-1" class="col1_layout_3_9 webform">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
-     <h1 class="titre_pl"><?php print $title; ?></h1>
+     <h1 class="titre_webform"><?php print $title; ?></h1>
 
     <?php endif; ?>
       <br clear="all"/>
@@ -30,7 +30,7 @@
 </div>
 <!--______________COLONNE 2________________ -->
          
-        <div id="colonne-2" class="col2_layout_2_7_3">
+        <div id="colonne-2" class="col2_layout_3_9 webform">
 
      <?php if ($submitted) { ?>
     <span class="submitted"><?php print $submitted?></span>
@@ -58,21 +58,7 @@
   <?php }; ?>
 
 </div>
-<!--______________COLONNE 3________________ -->
-        <div id="colonne-3" class="col3_layout_2_7_3">
-     <?php print $picture; ?>
 
-
-
-    <div class="content">
-
-        <br clear="all"/>
-           <?php if ($node->field_vue_actus_lycee[0]['view']): ?>
-        <div id="bloc-actu-lycee">
-           <?php  print $node->field_vue_actus_lycee[0]['view'] /*Vue actus du lycée*/ ?>
-        </div>
-           <?php endif;?>
-    </div>
 
     <?php if ($terms): ?>
       <div class="taxonomy"><?php //print $terms; ?></div>

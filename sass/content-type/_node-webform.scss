@@ -1,0 +1,37 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|             WEBFORM GENERIK          |
+|--------------------------------------*/
+
+ //@include breakpoint ($mobile){}
+  //@include breakpoint ($desktop){}
+  //@include breakpoint ($tablet){}
+  
+  #colonne-1{
+      h1.titre_webform{
+          color: $orange-fonce;
+      }
+  }  
+#colonne-2.webform{
+      table,tbody,tr,td,form,input[type="text"],input[type="email"],
+      input[type="select"]{
+          width: 98%;display: block;
+      }
+      tbody{
+          border: 0;
+      }
+      a{
+          color: $orange-fonce;
+          text-decoration:none;
+          &:hover{
+              text-decoration: underline;
+          }
+      }
+      @include breakpoint ($desktop){
+          @include border-orangePF-orangePF;
+      }
+
+  }
