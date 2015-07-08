@@ -92,6 +92,9 @@ overflow: hidden;//pour cacher la partie image qui sort du cadre
     td{
         vertical-align: top;
     }
+    img{
+        overflow: hidden;//pour cacher la partie image qui sort du cadre
+    }
 }
 
 .titre_actu_petit{
@@ -127,6 +130,9 @@ overflow: hidden;//pour cacher la partie image qui sort du cadre
 }
 .actu-globale-petit-actuasso .image_actu_petit{
 border: em(3px) solid #E3007A;
+img{
+        overflow: hidden;//pour cacher la partie image qui sort du cadre
+    }
 }
 
 .contenu-actu-globale{}
