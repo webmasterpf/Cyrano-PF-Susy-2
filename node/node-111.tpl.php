@@ -4,9 +4,9 @@
 
       <!--_______________________ COLONNE 1 __________________ -->
       <div id="colonne-1" class="col1_layout_7_5 page-bts">
-    <?php if (!$page): ?>
-      <h2 class="title"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-    <?php endif; ?>
+     <?php if ($title): /*copier le titre dans la colonne desirée*/?>
+            <h1 class="titre-fiche-bts"><?php print $title; ?></h1>
+            <?php endif; ?>
 
     <?php print $picture; ?>
 
@@ -24,13 +24,14 @@
         OR $node->field_docs_bts_alternance[2]['view']
         OR $node->field_docs_bts_alternance[3]['view']
         )): ?>
-        <ul id="docs-alternance-bts">
-         <?php
+        
+         <?php print '<ul id="docs-alternance-bts">';
                foreach ($node->field_docs_bts_alternance as $key => $TYPE_CONTENU) {
                    print $node->field_docs_bts_alternance[$key]['view'];
                }
+               print '</ul>';
                ?>            
-           </ul>
+           
             <?php endif;?>
       
     <?php if ($terms): ?>

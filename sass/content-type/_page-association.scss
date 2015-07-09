@@ -14,14 +14,14 @@
 /*¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 == STYLE SPAN LYCEE CONTENU (reprise code visuel lycée) ==
 */
-span.celony{color: black;background: #c8d215;padding: 0pt 2px;}
-span.caucadis{color: black;background: #9c9e9f;padding: 0pt 2px;}
-span.brise-lames{color: black;background: #00ACD1;padding: 0pt 2px;}
-span.le-rocher{color: black;background: #970F7D;padding: 0pt 2px;}
-span.gasquet{color: black;background: #E2017B;padding: 0pt 2px;}
-span.grawitz{color: black;background: #F09500;padding: 0pt 2px;}
-span.rostand{color: black;background: #E3001C;padding: 0pt 2px;}
-span.pf{color: black;background: #E85231;padding: 0pt 2px;}
+span.celony{color: black;background: #c8d215;padding: 0 em(2px);}
+span.caucadis{color: black;background: #9c9e9f;padding: 0 em(2px);}
+span.brise-lames{color: black;background: #00ACD1;padding: 0 em(2px);}
+span.le-rocher{color: black;background: #970F7D;padding: 0 em(2px);}
+span.gasquet{color: black;background: #E2017B;padding: 0 em(2px);}
+span.grawitz{color: black;background: #F09500;padding: 0 em(2px);}
+span.rostand{color: black;background: #E3001C;padding: 0 em(2px);}
+span.pf{color: black;background: #E85231;padding: 0 em(2px);}
 
 #colonne-2.page-association{
     @include breakpoint ($desktop){
@@ -52,7 +52,25 @@ span.pf{color: black;background: #E85231;padding: 0pt 2px;}
         color:$orange-fonce;
         &:hover{color:$violet; }
     }
-    tbody{border: 0;}
+    
+    table{
+        width:98%;margin:0 auto;
+        tbody{border: 0;
+              tr{
+               &:nth-child(odd){
+                  color: #606171;
+                  background: #ACC624;
+              }
+              &:nth-child(even){
+                  color: #E85231;
+                  background: white;
+              }
+              }
+              
+        }
+        
+    }
+    
 } 
 .title-association{
     text-align: right;

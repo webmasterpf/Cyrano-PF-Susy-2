@@ -17,7 +17,7 @@ h1.titre-formation{
     }
 }
 .page-formations{
-    table.table-liste-formation{
+    table.table-liste-formation,table.table-revue-presse-archives{
         width: 98%;/*largeur du tableau contenant les formations*/
         background: none;
         margin: 0 auto;
@@ -28,11 +28,12 @@ h1.titre-formation{
             text-transform:uppercase;
         }
     }
-    th.titre-categorie-diplome{
+    th.titre-categorie-diplome,th.titre-categorie-revue{
         border-bottom: 0.125em dotted gray;
         color: black;
     }
-    .views-field-titre-categorie, .views-field-titre-categorie a{
+    .views-field-titre-categorie, .views-field-titre-categorie a,
+    .views-field-titre-revue-presse, .views-field-titre-revue-presse a{
     color: gray;
     text-align: right;
     text-decoration: none;

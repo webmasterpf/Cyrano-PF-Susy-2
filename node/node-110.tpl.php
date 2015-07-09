@@ -2,11 +2,11 @@
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
   <div class="node-inner">
 <!--_______________________ COLONNE 1 __________________ -->
-<div id="colonne-1" class="page-bts col1_layout_7_5">
+<div id="colonne-1" class="col1_layout_7_5 page-bts">
 
-    <?php if (!$page): ?>
-      <h2 class="title"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-    <?php endif; ?>
+  <?php if ($title): /*copier le titre dans la colonne desirée*/?>
+            <h1 class="titre-fiche-bts"><?php print $title; ?></h1>
+            <?php endif; ?>
 
     <?php print $picture; ?>
 
@@ -69,7 +69,7 @@
               ?>
 </div>
 <!--_______________________ COLONNE 2 __________________ -->
-<div id="colonne-2" class="page-bts col2_layout_7_5">
+<div id="colonne-2" class="col2_layout_7_5 page-bts">
      <?php
               global $theme_path;
               include ($theme_path.'/includes/inc_region_col_2.php');

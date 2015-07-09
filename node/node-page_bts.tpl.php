@@ -4,9 +4,12 @@
 <!--_______________________ COLONNE 1 __________________ -->
 <div id="colonne-1" class="page-bts col1_layout_7_5">
 
-    <?php if (!$page): ?>
-      <h2 class="title"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-    <?php endif; ?>
+    <?php //if ($title): ?>
+<!--      <h2 class="title"><a href="<?php //print $node_url; ?>"><?php //print $title; ?></a></h2>-->
+    <?php //endif; ?>
+    <?php if ($title): /*copier le titre dans la colonne desirée*/?>
+            <h1 class="titre-fiche-bts"><?php print $title; ?></h1>
+            <?php endif; ?>
 
     <?php print $picture; ?>
 

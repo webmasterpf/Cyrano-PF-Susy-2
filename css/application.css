@@ -1643,7 +1643,6 @@ body .conteneur .layout_4col_all3last {
 |--------------------------------------*/
 /* line 7, ../sass/layout/_layout-header.scss */
 body .conteneur #header {
-  z-index: 30;
   background: white;
 }
 /* line 10, ../sass/layout/_layout-header.scss */
@@ -3151,6 +3150,83 @@ table#doc-joints tbody, table#doc-joints tr {
   margin: 0 auto;
 }
 
+/*Galerie modale Actu*/
+/* line 70, ../sass/content-type/_contenu-actu-presse-asso.scss */
+table.galerie-modale-actu {
+  margin: 0 auto;
+  width: 95%;
+}
+/* line 73, ../sass/content-type/_contenu-actu-presse-asso.scss */
+table.galerie-modale-actu img {
+  border: 3px solid #E85231;
+}
+
+/*GA Theming*/
+/* line 81, ../sass/content-type/_contenu-actu-presse-asso.scss */
+#block-views-GA_theming-block_1 {
+  margin: 0.3125em auto;
+}
+/* line 83, ../sass/content-type/_contenu-actu-presse-asso.scss */
+#block-views-GA_theming-block_1 img {
+  border: 0.125em solid #00ACD1;
+  padding: 1px;
+}
+
+/*Table pour JPO*/
+/* line 87, ../sass/content-type/_contenu-actu-presse-asso.scss */
+.table-jpo {
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+}
+
+/* line 89, ../sass/content-type/_contenu-actu-presse-asso.scss */
+.table-jpo tr {
+  border-bottom: 0.0625em solid #E86064;
+  display: block;
+  margin: 0.3em 0;
+}
+
+/* line 90, ../sass/content-type/_contenu-actu-presse-asso.scss */
+.table-jpo tr:hover {
+  background: #F2F2F2;
+}
+
+/* line 91, ../sass/content-type/_contenu-actu-presse-asso.scss */
+.table-jpo td {
+  padding: 0 0.9em;
+}
+
+/*Zone actu au hasard (Views)*/
+/* line 95, ../sass/content-type/_contenu-actu-presse-asso.scss */
+#block-views-liste_actu-block_1 h3 {
+  font-size: larger;
+  font-style: italic;
+}
+
+/* line 96, ../sass/content-type/_contenu-actu-presse-asso.scss */
+table#actu-hasard {
+  background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
+  width: 98%;
+  margin: 0 auto;
+}
+/* line 100, ../sass/content-type/_contenu-actu-presse-asso.scss */
+table#actu-hasard a {
+  color: #E0001A;
+}
+/* line 101, ../sass/content-type/_contenu-actu-presse-asso.scss */
+table#actu-hasard img {
+  border: 0.0625em solid #ADC91F;
+  margin: 0.125em;
+  overflow: hidden;
+}
+/* line 102, ../sass/content-type/_contenu-actu-presse-asso.scss */
+table#actu-hasard td {
+  margin: 0.1875em;
+  width: 24%;
+  padding: 0.3125em 0;
+}
+
 /*-------------------------------------|
 |       CONTENU CUSTOM NODE.TPL        |
 |       CONTENU FICHE FORMATION        |
@@ -3487,56 +3563,56 @@ li.node_read_more a:hover {
 span.celony {
   color: black;
   background: #c8d215;
-  padding: 0pt 2px;
+  padding: 0 0.125em;
 }
 
 /* line 18, ../sass/content-type/_page-association.scss */
 span.caucadis {
   color: black;
   background: #9c9e9f;
-  padding: 0pt 2px;
+  padding: 0 0.125em;
 }
 
 /* line 19, ../sass/content-type/_page-association.scss */
 span.brise-lames {
   color: black;
   background: #00ACD1;
-  padding: 0pt 2px;
+  padding: 0 0.125em;
 }
 
 /* line 20, ../sass/content-type/_page-association.scss */
 span.le-rocher {
   color: black;
   background: #970F7D;
-  padding: 0pt 2px;
+  padding: 0 0.125em;
 }
 
 /* line 21, ../sass/content-type/_page-association.scss */
 span.gasquet {
   color: black;
   background: #E2017B;
-  padding: 0pt 2px;
+  padding: 0 0.125em;
 }
 
 /* line 22, ../sass/content-type/_page-association.scss */
 span.grawitz {
   color: black;
   background: #F09500;
-  padding: 0pt 2px;
+  padding: 0 0.125em;
 }
 
 /* line 23, ../sass/content-type/_page-association.scss */
 span.rostand {
   color: black;
   background: #E3001C;
-  padding: 0pt 2px;
+  padding: 0 0.125em;
 }
 
 /* line 24, ../sass/content-type/_page-association.scss */
 span.pf {
   color: black;
   background: #E85231;
-  padding: 0pt 2px;
+  padding: 0 0.125em;
 }
 
 @media (min-width: 990px) {
@@ -3576,12 +3652,27 @@ span.pf {
 .page-association a:hover {
   color: #911381;
 }
-/* line 55, ../sass/content-type/_page-association.scss */
-.page-association tbody {
+/* line 56, ../sass/content-type/_page-association.scss */
+.page-association table {
+  width: 98%;
+  margin: 0 auto;
+}
+/* line 58, ../sass/content-type/_page-association.scss */
+.page-association table tbody {
   border: 0;
 }
+/* line 60, ../sass/content-type/_page-association.scss */
+.page-association table tbody tr:nth-child(odd) {
+  color: #606171;
+  background: #ACC624;
+}
+/* line 64, ../sass/content-type/_page-association.scss */
+.page-association table tbody tr:nth-child(even) {
+  color: #E85231;
+  background: white;
+}
 
-/* line 57, ../sass/content-type/_page-association.scss */
+/* line 75, ../sass/content-type/_page-association.scss */
 .title-association {
   text-align: right;
   color: #EA703F;
@@ -3589,17 +3680,17 @@ span.pf {
 }
 
 /*Contenu du QT pour afficher temoignage anciens élèves sur page association*/
-/* line 64, ../sass/content-type/_page-association.scss */
+/* line 82, ../sass/content-type/_page-association.scss */
 #centre-asso h2 {
   text-align: left;
 }
 
-/* line 67, ../sass/content-type/_page-association.scss */
+/* line 85, ../sass/content-type/_page-association.scss */
 #centre-asso h3 {
   color: #E2017B;
 }
 
-/* line 70, ../sass/content-type/_page-association.scss */
+/* line 88, ../sass/content-type/_page-association.scss */
 #centre-asso li.active a {
   color: white;
 }
@@ -3756,71 +3847,72 @@ h1.titre-formation {
 }
 
 /* line 20, ../sass/content-type/_page-formations.scss */
-.page-formations table.table-liste-formation {
+.page-formations table.table-liste-formation, .page-formations table.table-revue-presse-archives {
   width: 98%;
   /*largeur du tableau contenant les formations*/
   background: none;
   margin: 0 auto;
 }
 /* line 24, ../sass/content-type/_page-formations.scss */
-.page-formations table.table-liste-formation caption {
+.page-formations table.table-liste-formation caption, .page-formations table.table-revue-presse-archives caption {
   color: black;
   font-weight: bold;
   text-align: left;
   text-transform: uppercase;
 }
 /* line 31, ../sass/content-type/_page-formations.scss */
-.page-formations th.titre-categorie-diplome {
+.page-formations th.titre-categorie-diplome, .page-formations th.titre-categorie-revue {
   border-bottom: 0.125em dotted gray;
   color: black;
 }
 /* line 35, ../sass/content-type/_page-formations.scss */
-.page-formations .views-field-titre-categorie, .page-formations .views-field-titre-categorie a {
+.page-formations .views-field-titre-categorie, .page-formations .views-field-titre-categorie a,
+.page-formations .views-field-titre-revue-presse, .page-formations .views-field-titre-revue-presse a {
   color: gray;
   text-align: right;
   text-decoration: none;
 }
-/* line 40, ../sass/content-type/_page-formations.scss */
+/* line 41, ../sass/content-type/_page-formations.scss */
 .page-formations .views-field-titre-categorie a:hover, .page-formations .views-field-titre-revue-presse a:hover {
   text-decoration: underline;
 }
-/* line 43, ../sass/content-type/_page-formations.scss */
+/* line 44, ../sass/content-type/_page-formations.scss */
 .page-formations span.complement {
   color: #911381;
   font-size: 0.95em;
 }
 
-/* line 51, ../sass/content-type/_page-formations.scss */
+/* line 52, ../sass/content-type/_page-formations.scss */
 .view-liste-formation-initiales {
   background: none;
   width: auto;
 }
 
-/* line 56, ../sass/content-type/_page-formations.scss */
+/* line 57, ../sass/content-type/_page-formations.scss */
 .tr-table-formations, .tr-table-revue-presse {
   background: none;
 }
 
-/* line 60, ../sass/content-type/_page-formations.scss */
+/* line 61, ../sass/content-type/_page-formations.scss */
 .views-field-table {
   color: black;
 }
 
-/* line 64, ../sass/content-type/_page-formations.scss */
+/* line 65, ../sass/content-type/_page-formations.scss */
 #colonne-2.page-formations a {
   color: #E10279;
   text-decoration: none;
 }
-/* line 68, ../sass/content-type/_page-formations.scss */
+/* line 69, ../sass/content-type/_page-formations.scss */
 #colonne-2.page-formations a:hover {
   text-decoration: underline;
 }
-/* line 72, ../sass/content-type/_page-formations.scss */
+/* line 73, ../sass/content-type/_page-formations.scss */
 #colonne-2.page-formations h3 {
   color: #94127F;
   margin: 0.125em;
 }
-/* line 73, ../sass/content-type/_page-formations.scss */
+/* line 74, ../sass/content-type/_page-formations.scss */
 #colonne-2.page-formations h5 {
   color: #888888;
 }
@@ -3867,54 +3959,64 @@ h1.titre-formation {
 ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 */
 /*___ STYLE GLOBAL PAGE BTS V2 ______*/
-/* line 21, ../sass/content-type/_page-bts.scss */
+/* line 20, ../sass/content-type/_page-bts.scss */
+#colonne-1.page-bts {
+  border-right: 0.0625em solid #ADC91F;
+}
+
+/* line 24, ../sass/content-type/_page-bts.scss */
 .page-bts a {
   text-decoration: none;
   color: #950F7E;
 }
-/* line 25, ../sass/content-type/_page-bts.scss */
+/* line 28, ../sass/content-type/_page-bts.scss */
 .page-bts a:hover {
   text-decoration: underline;
 }
-/* line 28, ../sass/content-type/_page-bts.scss */
+/* line 31, ../sass/content-type/_page-bts.scss */
 .page-bts p {
   padding: 0.125em 0;
 }
-/* line 31, ../sass/content-type/_page-bts.scss */
+/* line 34, ../sass/content-type/_page-bts.scss */
 .page-bts h3 {
   color: #AEC81F;
   text-decoration: none;
   font-size: large;
 }
-/* line 32, ../sass/content-type/_page-bts.scss */
+/* line 35, ../sass/content-type/_page-bts.scss */
 .page-bts h4 {
   text-decoration: none;
   font-size: medium;
   color: #950F7E;
 }
+/* line 36, ../sass/content-type/_page-bts.scss */
+.page-bts form, .page-bts input[type="text"], .page-bts input[type="email"] {
+  width: 98%;
+  display: block;
+}
 
-/* line 39, ../sass/content-type/_page-bts.scss */
+/* line 44, ../sass/content-type/_page-bts.scss */
 #content2-bts a:hover {
   text-decoration: none;
 }
 
-/* line 40, ../sass/content-type/_page-bts.scss */
+/* line 45, ../sass/content-type/_page-bts.scss */
 table.table-bts-coord {
   width: 97%;
   border: none;
 }
-/* line 42, ../sass/content-type/_page-bts.scss */
+/* line 47, ../sass/content-type/_page-bts.scss */
 table.table-bts-coord tbody {
   height: 2.8125em;
   margin: 0;
   padding: 0;
   border: none;
 }
-/* line 43, ../sass/content-type/_page-bts.scss */
+/* line 48, ../sass/content-type/_page-bts.scss */
 table.table-bts-coord tr {
   border: none;
 }
-/* line 44, ../sass/content-type/_page-bts.scss */
+/* line 49, ../sass/content-type/_page-bts.scss */
 table.table-bts-coord td {
   vertical-align: middle;
   border: none;
@@ -3922,43 +4024,43 @@ table.table-bts-coord td {
 
 /*************************************/
 /* POUR NODE.TPL PAGE BTS ACCUEIL */
-/* line 49, ../sass/content-type/_page-bts.scss */
+/* line 54, ../sass/content-type/_page-bts.scss */
 #vue-liste-bts {
   background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
   padding: 0;
   margin: 0.625em 0;
 }
 
-/* line 54, ../sass/content-type/_page-bts.scss */
+/* line 59, ../sass/content-type/_page-bts.scss */
 .vue-bloc-liste-bts {
   text-align: left;
   text-indent: 15px;
 }
 
-/* line 55, ../sass/content-type/_page-bts.scss */
+/* line 60, ../sass/content-type/_page-bts.scss */
 .vue-bloc-liste-bts ul {
   list-style: none;
 }
 
-/* line 59, ../sass/content-type/_page-bts.scss */
+/* line 64, ../sass/content-type/_page-bts.scss */
 .vue-bloc-liste-bts a {
   font-weight: bold;
   padding: 3px;
   color: #911381;
 }
 
-/* line 64, ../sass/content-type/_page-bts.scss */
+/* line 69, ../sass/content-type/_page-bts.scss */
 #vue-liste-bts .vue-bloc-liste-bts a:hover {
   background: #911381;
   color: white;
 }
 
-/* line 68, ../sass/content-type/_page-bts.scss */
+/* line 73, ../sass/content-type/_page-bts.scss */
 #vue-liste-bts h3, #vue-liste-bts .view-header {
   text-align: center;
 }
 
-/* line 69, ../sass/content-type/_page-bts.scss */
+/* line 74, ../sass/content-type/_page-bts.scss */
 span#DossierBTS {
   display: block;
   width: 90%;
@@ -3966,81 +4068,81 @@ span#DossierBTS {
   padding: 0.8em;
   border: 0.125em solid #01ABCF;
 }
-/* line 75, ../sass/content-type/_page-bts.scss */
+/* line 80, ../sass/content-type/_page-bts.scss */
 span#DossierBTS a {
   font-size: 0.875em;
   font-weight: bold;
 }
 
-/* line 86, ../sass/content-type/_page-bts.scss */
+/* line 91, ../sass/content-type/_page-bts.scss */
 #centres-bts a {
   font-size: 12px;
   margin: 5px 0;
 }
 
-/* line 90, ../sass/content-type/_page-bts.scss */
+/* line 95, ../sass/content-type/_page-bts.scss */
 #dossier-bts, #centres-bts {
   text-align: center;
 }
 
-/* line 93, ../sass/content-type/_page-bts.scss */
+/* line 98, ../sass/content-type/_page-bts.scss */
 #dossier-bts .filefield-icon, #centres-bts .filefield-icon {
   display: none;
 }
 
-/* line 101, ../sass/content-type/_page-bts.scss */
+/* line 106, ../sass/content-type/_page-bts.scss */
 #block-webform-client-block-109 td {
   display: block;
 }
 
 /*______Pour le node/111 BTS et entreprise______*/
-/* line 105, ../sass/content-type/_page-bts.scss */
+/* line 110, ../sass/content-type/_page-bts.scss */
 #docs-alternance-bts {
   margin: 0 auto;
   text-align: left;
   width: 90%;
 }
 
-/* line 108, ../sass/content-type/_page-bts.scss */
+/* line 113, ../sass/content-type/_page-bts.scss */
 #docs-alternance-bts li {
   list-style-position: outside;
   list-style-type: circle;
 }
 
-/* line 114, ../sass/content-type/_page-bts.scss */
+/* line 119, ../sass/content-type/_page-bts.scss */
 table#objectif-bts tbody {
   border: 0;
   width: 18.75em;
   margin: 0 auto;
   display: block;
 }
-/* line 115, ../sass/content-type/_page-bts.scss */
+/* line 120, ../sass/content-type/_page-bts.scss */
 table#objectif-bts tr {
   background: GhostWhite;
   margin: 0.125em 0;
   display: block;
 }
-/* line 120, ../sass/content-type/_page-bts.scss */
+/* line 125, ../sass/content-type/_page-bts.scss */
 table#objectif-bts tr, table#objectif-bts td {
   border: 0;
 }
-/* line 121, ../sass/content-type/_page-bts.scss */
+/* line 126, ../sass/content-type/_page-bts.scss */
 table#objectif-bts thead {
   text-align: center;
   background: none;
 }
-/* line 122, ../sass/content-type/_page-bts.scss */
+/* line 127, ../sass/content-type/_page-bts.scss */
 table#objectif-bts th {
   border: 0;
   font-size: medium;
   color: #00AACE;
   padding: 3px;
 }
-/* line 123, ../sass/content-type/_page-bts.scss */
+/* line 128, ../sass/content-type/_page-bts.scss */
 table#objectif-bts a {
   color: #91127D;
 }
-/* line 124, ../sass/content-type/_page-bts.scss */
+/* line 129, ../sass/content-type/_page-bts.scss */
 table#objectif-bts a:hover {
   text-decoration: underline;
 }

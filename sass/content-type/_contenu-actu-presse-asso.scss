@@ -66,3 +66,38 @@ table#doc-joints
 .slideshare,.video{width: em(500px);margin: 0 auto;}
 .slideshare{}
 .galerie{}
+/*Galerie modale Actu*/
+table.galerie-modale-actu {
+    margin: 0 auto;width: 95%;
+    tbody{}
+    img{
+        border: 3px solid #E85231;}
+    a{
+        &:hover{}
+    }
+}
+
+/*GA Theming*/
+#block-views-GA_theming-block_1{
+    margin: em(5px) auto;
+    img{
+        border: em(2px) solid #00ACD1;padding: 1px;}
+}
+/*Table pour JPO*/
+.table-jpo{display: block;margin: 0 auto;width: 95%;}
+.table-jpo tbody{}
+.table-jpo tr{ border-bottom: em(1px) solid #E86064;display: block;margin: 0.3em 0;}
+.table-jpo tr:hover{background: #F2F2F2;}
+.table-jpo td{padding: 0 0.9em;}
+.table-jpo a{}
+.table-jpo a:hover{}
+/*Zone actu au hasard (Views)*/
+#block-views-liste_actu-block_1 h3{font-size: larger;font-style: italic;}
+table#actu-hasard
+{
+    background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
+    width: 98%;margin: 0 auto;
+    a{color: #E0001A;}
+    img{border: em(1px) solid #ADC91F;margin: em(2px);overflow: hidden;}
+    td{margin: em(3px);width: 24%;padding: em(5px) 0;}
+}

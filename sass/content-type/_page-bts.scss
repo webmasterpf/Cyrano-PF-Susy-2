@@ -17,6 +17,9 @@
 */
 
 /*___ STYLE GLOBAL PAGE BTS V2 ______*/
+#colonne-1.page-bts{
+    @include border-R-vert;
+}
 .page-bts {
     a{
         text-decoration: none;
@@ -30,7 +33,9 @@
     }
     h3{color: #AEC81F;text-decoration: none;font-size: large;}
     h4{text-decoration: none;font-size: medium;color: #950F7E}
-    
+    form,input[type="text"],input[type="email"]{
+          width: 98%;display: block;
+      }
 }
 
 

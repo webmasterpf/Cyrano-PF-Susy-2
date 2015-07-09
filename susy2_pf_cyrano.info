@@ -2,8 +2,8 @@
 ;Ajouter les regions utiles dans la liste ci apres, idem pour les CSS.
 ;Changer le screenshot du site pour interface admin
 ;
-name = Provence Formation RWD Theme based on SUSY 2 Framework
-description = Theme Site PF - SCSS /HTML5 pour Drupal 6. Thème RWD utilisant Compass, Susy 2
+name = Provence Formation RWD Theme SUSY 2 
+description = Theme Site PF - SCSS /HTML5 pour Drupal 6. Theme RWD utilisant Compass, Susy 2 Framework
 version = VERSION
 core = 6.x
 engine = phptemplate
