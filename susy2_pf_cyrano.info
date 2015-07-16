@@ -115,9 +115,7 @@ regions[pole_bloc_D] = Bloc pour pole Droit
 regions[content_top] = Content top
 regions[content_top_node] = Content top node
 regions[formulaire] = Zone formulaire bloc
-regions[left] = Colonne Gauche
-regions[decoTitre] = Titre deco image - Fiche Formations
-regions[right] = Colonne Droite
+
 regions[content_bottom] = Content bottom
 regions[content_bottom_home] = Content bottom homepage
 regions[footer_block] = Footer
@@ -132,8 +130,10 @@ regions[formulaire] = Formulaire (centre) - Webform Bloc
 ;Region pour slideshow
 regions[frontpageSlideshow] = Zone Frontpage Slideshow
 
-
-
+,Regions inutiles
+;regions[left] = Colonne Gauche
+;regions[decoTitre] = Titre deco image - Fiche Formations
+;regions[right] = Colonne Droite
 
 settings[basic_zen_tabs]             = 1
 settings[basic_wireframe]            = 0

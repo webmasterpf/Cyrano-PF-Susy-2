@@ -64,8 +64,7 @@ position:relative;
 width:em(200px);
 z-index:15;
 border: em(3px) solid #ADC91F;
-/*left:0px;
-bottom:0px;*/
+overflow: hidden;//pour cacher la partie image qui sort du cadre
 }
 .actu-globale-grand-actuasso .image_actu{
 height:em(200px);
@@ -127,6 +126,7 @@ overflow: hidden;//pour cacher la partie image qui sort du cadre
     position: relative;
     width: em(150px);
     z-index: 15;
+    overflow: hidden;//pour cacher la partie image qui sort du cadre
 }
 .actu-globale-petit-actuasso .image_actu_petit{
 border: em(3px) solid #E3007A;
@@ -176,6 +176,15 @@ img{
     margin: em(5px) 0;
     text-align:center;
      color: purple;
+}
+.infos_fixes_actu_globale {
+    a{
+        color: $bleu-turquoise;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 }
 /*NODEQUEUE ACTUS BRULANTE*/
 #block-views-nodequeue_1-block {

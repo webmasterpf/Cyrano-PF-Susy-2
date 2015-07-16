@@ -18,7 +18,10 @@
 
 /*___ STYLE GLOBAL PAGE BTS V2 ______*/
 #colonne-1.page-bts{
-    @include border-R-vert;
+    //
+    @include breakpoint ($desktop){
+        @include border-R-vert;
+    }
 }
 .page-bts {
     a{

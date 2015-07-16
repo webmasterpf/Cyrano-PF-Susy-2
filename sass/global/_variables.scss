@@ -19,12 +19,12 @@ $susy: (
   math: if($container-style == magic, fluid, $container-style),
   
   //Debug
-  debug :(
+  //debug :(
   image: show,
-  color: rgba(#66f, .25),
-  output: overlay,
-  toggle: top right,
-  )
+  //color: rgba(#66f, .25),
+  //output: overlay,
+  //toggle: top right,
+  //)
   );
   
 

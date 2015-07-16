@@ -9,7 +9,7 @@
       
         <div id="colonne-1" class="col1_layout_2_7_3 page-contact">
             <?php if ($title): /*copier le titre dans la colonne desirée*/?>
-            <h1 class="titre_page"><?php print $title; ?></h1>
+            <h1 class="titre"><?php print $title; ?></h1>
             <?php endif; ?>
         
          

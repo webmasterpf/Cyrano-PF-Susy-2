@@ -5,7 +5,7 @@
 // Layout du header et de ses parties haute et basse (logique mobile first)
  //Imbrication à 100% (full nested)
  body .conteneur #header {
-    // z-index : 30;
+    z-index : 30;
      background:white;//couleur pour le header cause sticky header
      &:after{
                 content: " ";

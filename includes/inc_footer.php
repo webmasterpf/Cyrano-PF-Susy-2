@@ -4,8 +4,7 @@
           <?php print $footer_message; ?>
           <?php print $footer_block; ?>
      <div id="bloc_stats">
-         <p>V&eacute;rifier les codes pour les stats</p>
-      <?php
+          <?php
 global $theme_path;
 include ($theme_path.'/js/code_stats.php');
 ?>

@@ -13,6 +13,7 @@ body .conteneur {
     .transformer {
         @include trans-prep;
         transition: transform 0.3s ease;
+        
         &.is-open {
             transform: translate3d($off-canvas-width, 0, 0);
         }
@@ -37,6 +38,7 @@ body .conteneur {
         padding: 0.3em;
         top: 4em;
         left: -4em;
+        z-index:35;//pour passer au dessus du header en mobile
         
         /* quelques styles CSS3 */
         -ms-transform: rotate(270deg);

@@ -10,7 +10,7 @@
   //@include breakpoint ($desktop){}
   //@include breakpoint ($tablet){}
   
-  .page-contact #colonne-2{
+  #colonne-2.page-contact {
       table,tbody,tr,td,form,input[type="text"],input[type="email"]{
           width: 98%;display: block;
       }
@@ -29,6 +29,6 @@
       }
 
   }
-  .page-contact #colonne-1 h1.titre_pl{
+  #colonne-1.page-contact  h1.titre{
       color: $orange-fonce;
   }

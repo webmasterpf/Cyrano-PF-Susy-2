@@ -90,7 +90,10 @@ caption{
     img{border: em(2px) solid #E85231;padding: em(1px);}
 }
 .video-lycee{
-    border: em(2px) solid $rose-fushia;
+    object{
+        border: em(2px) solid $rose-fushia;
+    } 
+    
 }
 #gmap-lycee {
     width: 98%;display: block;margin: em(20px) 0;

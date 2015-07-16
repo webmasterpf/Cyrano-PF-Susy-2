@@ -34,8 +34,8 @@ body {
 body .conteneur{
     //Approche mobile-first,réglage pour mobile
     @include container($susy);// largeur stricte
-    @debug susy-get(columns);
-    @include show-grid(overlay);
+    //@debug susy-get(columns);
+   // @include show-grid(overlay);
     
     // This is the default clearfix from Compass. You can opt to use other clearfix methods
   
@@ -56,7 +56,7 @@ body .conteneur{
         }
         .content-top{
             //pour breakpoint voir _layout-bp-desktop.scss
-            .ariane{}
+            .ariane{display: none;}
         }
         .middle-content{
             //pour breakpoint voir _layout-bp-desktop.scss

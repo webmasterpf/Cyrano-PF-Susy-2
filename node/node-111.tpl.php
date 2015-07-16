@@ -26,7 +26,7 @@
         )): ?>
         
          <?php print '<ul id="docs-alternance-bts">';
-               foreach ($node->field_docs_bts_alternance as $key => $TYPE_CONTENU) {
+               foreach ($node->field_docs_bts_alternance as $key => $docs) {
                    print $node->field_docs_bts_alternance[$key]['view'];
                }
                print '</ul>';
