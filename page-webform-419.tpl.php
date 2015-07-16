@@ -43,7 +43,7 @@
     <div id="contentPage-squeeze" class="clear-block">
 
        <?php if ($content_top): ?>
-            <div id="content-top">
+            <div class="content-top">
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
           <?php endif; ?>

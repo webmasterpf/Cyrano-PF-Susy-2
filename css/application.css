@@ -827,6 +827,7 @@ h6, .h6 {
   background: white;
 }
 
+/*Reseaux Sociaux via Service Link*/
 /* line 7, ../sass/global/_sub-nav.scss */
 aside.navStatic .horizontal-nav {
   display: none;
@@ -961,7 +962,11 @@ body .conteneur:after {
   display: block;
   clear: both;
 }
-/* line 79, ../sass/layout/_layout.scss */
+/* line 57, ../sass/layout/_layout.scss */
+body .conteneur .content-top {
+  margin-top: 0.5em;
+}
+/* line 80, ../sass/layout/_layout.scss */
 body .conteneur #footer {
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
@@ -969,19 +974,19 @@ body .conteneur #footer {
   background-size: 100% auto;
 }
 
-/* line 92, ../sass/layout/_layout.scss */
+/* line 93, ../sass/layout/_layout.scss */
 aside.content_top {
   text-align: center;
 }
 
-/* line 95, ../sass/layout/_layout.scss */
+/* line 96, ../sass/layout/_layout.scss */
 .content-top-node {
   background-color: #999;
   margin: 0 auto;
   padding: 0.3125em;
 }
 
-/* line 103, ../sass/layout/_layout.scss */
+/* line 104, ../sass/layout/_layout.scss */
 .node-inner img, .node-inner iframe, .node-inner object, .node-inner embed {
   max-width: 100%;
 }

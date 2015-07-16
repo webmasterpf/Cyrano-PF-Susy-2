@@ -26,7 +26,7 @@
             </div> <!-- /#content-top-node -->
             <?php endif; ?>
             
-            <div id="content-top">
+            <div class="content-top">
 			 <?php print $breadcrumb; ?>
                 
                 

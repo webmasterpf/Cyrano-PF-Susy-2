@@ -13,7 +13,7 @@ include ($theme_path.'/includes/inc_header.php');
         <div class="content-inner">
               <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top): ?>
-            <div id="content-top">
+            <div class="content-top">
 	<span class="ariane"> <?php print $breadcrumb; ?></span>
 
               <?php print $content_top; ?>

@@ -7,7 +7,7 @@
       
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
-            <div id="content-top">
+            <div class="content-top">
 	<span class="ariane"> <?php print $breadcrumb; ?></span>
         <br clear="all"/>
          <?php if ($title): ?>
