@@ -9,7 +9,11 @@
  //@include breakpoint ($mobile){}
   //@include breakpoint ($desktop){}
   //@include breakpoint ($tablet){}
-
+  #colonne-2.page-partenaires{
+      @include breakpoint ($desktop){
+          @include border-L-bleu;
+      }
+  }
   .titre_partenaires{
       color: $orange-fonce;
   }  
@@ -62,7 +66,7 @@ aside#block-superfish-2{
           text-decoration: none;
           text-transform: uppercase;
           text-align: center;
-          font-size: 1.8em;
+          font-size: large;
           height:auto;
           padding:em(11px) em(7px);
           width:auto;

@@ -19,11 +19,11 @@
 
          
             <?php
-       if (!empty($node->field_docs_bts_alternance[0]['view']
-        OR $node->field_docs_bts_alternance[1]['view']
-        OR $node->field_docs_bts_alternance[2]['view']
-        OR $node->field_docs_bts_alternance[3]['view']
-        )): ?>
+       if (!empty($node->field_docs_bts_alternance[0]['view'])
+        OR !empty($node->field_docs_bts_alternance[1]['view'])
+        OR !empty($node->field_docs_bts_alternance[2]['view'])
+        OR !empty($node->field_docs_bts_alternance[3]['view'])
+        ): ?>
         
          <?php print '<ul id="docs-alternance-bts">';
                foreach ($node->field_docs_bts_alternance as $key => $docs) {

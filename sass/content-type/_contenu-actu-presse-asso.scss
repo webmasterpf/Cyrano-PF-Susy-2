@@ -10,6 +10,11 @@
 //@include susy-breakpoint ($desktop){}
 //@include susy-breakpoint ($tablet){}
 
+#colonne-2.actu-presse{
+    @include susy-breakpoint ($desktop){
+        @include border-L-violet;
+    }
+}
 .actu-presse 
 {
     h1.titre_page{
@@ -24,6 +29,9 @@
     h4{
         color: #01ABCF;
         font-size: 12px;
+    }
+    p{
+        padding: 0.3em;
     }
     img{padding: 0;}
     a{  color: #D63E2A;font-weight: bold;text-decoration: none;

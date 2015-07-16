@@ -20,7 +20,7 @@
          * .col1_layout_490_all{}  .col2_layout_490_all{}
          */?>
   
-<div id="colonne-1" class="col1_layout_225_720">
+<div id="colonne-1" class="col1_layout_3_9 webform">
      <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_pl"><?php print $title; ?></h1>
 
@@ -33,7 +33,7 @@
 </div>
 <!--______________COLONNE 2________________ -->
          
-        <div id="colonne-2" class="col2_layout_225_720 webform">
+        <div id="colonne-2" class="col2_layout_3_9 webform">
 
      <?php if ($submitted) { ?>
     <span class="submitted"><?php print $submitted?></span>
@@ -62,7 +62,5 @@
 
 </div>
 
-
-<div class="clear-block clear"></div>
 
 </div><!-- /node -->

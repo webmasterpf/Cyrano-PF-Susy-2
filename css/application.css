@@ -964,7 +964,7 @@ body .conteneur:after {
 }
 /* line 57, ../sass/layout/_layout.scss */
 body .conteneur .content-top {
-  margin-top: 0.5em;
+  margin-top: 1.5em;
 }
 /* line 80, ../sass/layout/_layout.scss */
 body .conteneur #footer {
@@ -2070,26 +2070,30 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
     display: block;
     clear: both;
   }
-  /* line 26, ../sass/layout/_layout-bp-desktop.scss */
+  /* line 25, ../sass/layout/_layout-bp-desktop.scss */
+  body .conteneur .content-top {
+    margin-top: 0.5em;
+  }
+  /* line 27, ../sass/layout/_layout-bp-desktop.scss */
   body .conteneur .content-top .ariane .breadcrumb {
     display: block;
   }
-  /* line 28, ../sass/layout/_layout-bp-desktop.scss */
+  /* line 29, ../sass/layout/_layout-bp-desktop.scss */
   body .conteneur .middle-content {
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 37, ../sass/layout/_layout-bp-desktop.scss */
+  /* line 38, ../sass/layout/_layout-bp-desktop.scss */
   body .conteneur .content-bottom-home {
     clear: both;
   }
-  /* line 39, ../sass/layout/_layout-bp-desktop.scss */
+  /* line 40, ../sass/layout/_layout-bp-desktop.scss */
   body .conteneur .content-bottom-home:before {
     content: " ";
     display: block;
     clear: both;
   }
-  /* line 49, ../sass/layout/_layout-bp-desktop.scss */
+  /* line 50, ../sass/layout/_layout-bp-desktop.scss */
   body .conteneur #footer {
     clear: both;
     -moz-background-size: auto;
@@ -2097,7 +2101,7 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
     -webkit-background-size: auto;
     background-size: auto;
   }
-  /* line 52, ../sass/layout/_layout-bp-desktop.scss */
+  /* line 53, ../sass/layout/_layout-bp-desktop.scss */
   body .conteneur #footer:before {
     content: " ";
     display: block;
@@ -2109,7 +2113,7 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
 ----------------------------------
 ---- RESEAUX SOCIAUX Service links
 ---------------------------------*/
-/* line 66, ../sass/layout/_layout-bp-desktop.scss */
+/* line 67, ../sass/layout/_layout-bp-desktop.scss */
 .service-links {
   background: none repeat scroll 0 0 #ECECED;
   display: block;
@@ -2123,23 +2127,23 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
   border-radius: 0.3125em;
   behavior: url(/sites/all/libraries/PIE/PIE.htc);
 }
-/* line 77, ../sass/layout/_layout-bp-desktop.scss */
+/* line 78, ../sass/layout/_layout-bp-desktop.scss */
 .service-links a {
   margin: 0 0.3125em;
   color: #DE603A;
 }
-/* line 80, ../sass/layout/_layout-bp-desktop.scss */
+/* line 81, ../sass/layout/_layout-bp-desktop.scss */
 .service-links a:hover {
   text-decoration: none;
 }
-/* line 85, ../sass/layout/_layout-bp-desktop.scss */
+/* line 86, ../sass/layout/_layout-bp-desktop.scss */
 .service-links iframe {
   height: 1.25em;
   overflow: hidden;
   *zoom: 1;
   width: auto;
 }
-/* line 91, ../sass/layout/_layout-bp-desktop.scss */
+/* line 92, ../sass/layout/_layout-bp-desktop.scss */
 .service-links ul {
   margin-left: 13.13776%;
 }
@@ -2148,7 +2152,7 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
 ----------------------------------
 ---- RESEAUX SOCIAUX Zocial ------
 ---------------------------------*/
-/* line 107, ../sass/layout/_layout-bp-desktop.scss */
+/* line 108, ../sass/layout/_layout-bp-desktop.scss */
 .social-button {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE86A43', endColorstr='#FFB03A15');
@@ -2202,11 +2206,11 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
 
 /********************/
 /*ZONES PAGE ACCUEIL*/
-/* line 113, ../sass/layout/_layout-bp-desktop.scss */
+/* line 114, ../sass/layout/_layout-bp-desktop.scss */
 .content-bottom-home table {
   width: auto;
 }
-/* line 117, ../sass/layout/_layout-bp-desktop.scss */
+/* line 118, ../sass/layout/_layout-bp-desktop.scss */
 .content-bottom-home ul {
   margin: 0;
   padding: 0;
@@ -2967,58 +2971,65 @@ li.item-galerie-lycees img {
 |       CONTENU CUSTOM NODE.TPL        |
 |       CONTENU ACTU PRESSE ASSO       |
 |--------------------------------------*/
-/* line 15, ../sass/content-type/_contenu-actu-presse-asso.scss */
+@media (min-width: 990px) {
+  /* line 13, ../sass/content-type/_contenu-actu-presse-asso.scss */
+  #colonne-2.actu-presse {
+    border-left: 0.0625em solid #93117E;
+  }
+}
+
+/* line 20, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse h1.titre_page {
   font-size: x-large;
   margin: 0.1em;
   line-height: 1.875em;
   color: #DE603A;
 }
-/* line 19, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 24, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse h3 {
   color: #931B7D;
   font-size: 14px;
   margin: 5px;
 }
-/* line 24, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 29, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse h4 {
   color: #01ABCF;
   font-size: 12px;
 }
-/* line 28, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 33, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse img {
   padding: 0;
 }
-/* line 29, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 34, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse a {
   color: #D63E2A;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 30, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 35, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse a:hover {
   text-decoration: underline;
 }
 @media (min-width: 800px) and (max-width: 989px) {
-  /* line 13, ../sass/content-type/_contenu-actu-presse-asso.scss */
+  /* line 18, ../sass/content-type/_contenu-actu-presse-asso.scss */
   .actu-presse {
     border-left: 0.0625em solid #E2007A;
   }
 }
 
-/* line 39, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 44, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-minipresse {
   float: right;
 }
 
-/* line 40, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 45, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-minipresse img {
   max-width: 100%;
   border: 0.125em solid #ADC91F;
   margin: 0.3125em;
 }
 
-/* line 45, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 50, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .field-field-minipresse img {
   float: right;
   padding: 3px;
@@ -3029,113 +3040,113 @@ li.item-galerie-lycees img {
   box-shadow: 0px 0px 5px #888;
 }
 
-/* line 54, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 59, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints {
   width: 12.5em;
   margin: 10px auto;
   background: transparent;
 }
-/* line 57, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 62, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints a {
   color: #911381;
 }
-/* line 58, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 63, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints th {
   text-align: center;
   font-size: 0.875em;
   color: #606070;
   border-bottom: 3px solid #E85231;
 }
-/* line 59, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 64, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints td {
   padding: 0.125em;
 }
-/* line 60, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 65, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints tbody, table#doc-joints tr {
   background: transparent;
   border-bottom: 1px dashed #606070;
 }
 
-/* line 66, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 71, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .slideshare, .video {
   width: 31.25em;
   margin: 0 auto;
 }
 
 /*Galerie modale Actu*/
-/* line 70, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 75, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table.galerie-modale-actu {
   margin: 0 auto;
   width: 95%;
 }
-/* line 73, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 78, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table.galerie-modale-actu img {
   border: 3px solid #E85231;
 }
 
 /*GA Theming*/
-/* line 81, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 86, ../sass/content-type/_contenu-actu-presse-asso.scss */
 #block-views-GA_theming-block_1 {
   margin: 0.3125em auto;
 }
-/* line 83, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 88, ../sass/content-type/_contenu-actu-presse-asso.scss */
 #block-views-GA_theming-block_1 img {
   border: 0.125em solid #00ACD1;
   padding: 1px;
 }
 
 /*Table pour JPO*/
-/* line 87, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 92, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .table-jpo {
   display: block;
   margin: 0 auto;
   width: 95%;
 }
 
-/* line 89, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 94, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .table-jpo tr {
   border-bottom: 0.0625em solid #E86064;
   display: block;
   margin: 0.3em 0;
 }
 
-/* line 90, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 95, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .table-jpo tr:hover {
   background: #F2F2F2;
 }
 
-/* line 91, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 96, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .table-jpo td {
   padding: 0 0.9em;
 }
 
 /*Zone actu au hasard (Views)*/
-/* line 95, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 100, ../sass/content-type/_contenu-actu-presse-asso.scss */
 #block-views-liste_actu-block_1 h3 {
   font-size: larger;
   font-style: italic;
 }
 
-/* line 96, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 101, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#actu-hasard {
   background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
   width: 98%;
   margin: 0 auto;
 }
-/* line 100, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 105, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#actu-hasard a {
   color: #E0001A;
 }
-/* line 101, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 106, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#actu-hasard img {
   border: 0.0625em solid #ADC91F;
   margin: 0.125em;
   overflow: hidden;
 }
-/* line 102, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 107, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#actu-hasard td {
   margin: 0.1875em;
-  width: 24%;
+  width: auto;
   padding: 0.3125em 0;
 }
 
@@ -4372,51 +4383,58 @@ td.col3 {
 |       CONTENU CUSTOM NODE.TPL        |
 |       PAGE BTS                       |
 |--------------------------------------*/
-/* line 13, ../sass/content-type/_page-partenaires.scss */
+@media (min-width: 990px) {
+  /* line 12, ../sass/content-type/_page-partenaires.scss */
+  #colonne-2.page-partenaires {
+    border-left: 0.0625em solid #02A7D5;
+  }
+}
+
+/* line 17, ../sass/content-type/_page-partenaires.scss */
 .titre_partenaires {
   color: #DE603A;
 }
 
-/* line 17, ../sass/content-type/_page-partenaires.scss */
+/* line 21, ../sass/content-type/_page-partenaires.scss */
 .page-partenaires img {
   padding: 10px;
 }
-/* line 20, ../sass/content-type/_page-partenaires.scss */
+/* line 24, ../sass/content-type/_page-partenaires.scss */
 .page-partenaires a {
   text-decoration: none;
   color: #02A7D5;
 }
-/* line 24, ../sass/content-type/_page-partenaires.scss */
+/* line 28, ../sass/content-type/_page-partenaires.scss */
 .page-partenairesa:hover {
   text-decoration: underline;
 }
-/* line 27, ../sass/content-type/_page-partenaires.scss */
+/* line 31, ../sass/content-type/_page-partenaires.scss */
 .page-partenaires b, .page-partenaires strong {
   color: #606070;
   padding: 0.3em;
 }
-/* line 31, ../sass/content-type/_page-partenaires.scss */
+/* line 35, ../sass/content-type/_page-partenaires.scss */
 .page-partenaires h2 {
   color: #911381;
 }
-/* line 34, ../sass/content-type/_page-partenaires.scss */
+/* line 38, ../sass/content-type/_page-partenaires.scss */
 .page-partenaires h3 {
   color: #01ABCF;
 }
 
 /*NAV SUPERFISH sur Mobile pour bien centrer*/
-/* line 40, ../sass/content-type/_page-partenaires.scss */
+/* line 44, ../sass/content-type/_page-partenaires.scss */
 aside#block-superfish-2 {
   width: 98%;
   margin: 0 auto;
 }
-/* line 43, ../sass/content-type/_page-partenaires.scss */
+/* line 47, ../sass/content-type/_page-partenaires.scss */
 aside#block-superfish-2 select {
   width: 100%;
 }
 
 /*BLOC BOUTONS PARTENAIRES*/
-/* line 49, ../sass/content-type/_page-partenaires.scss */
+/* line 53, ../sass/content-type/_page-partenaires.scss */
 table#table-bouton-partenaire {
   width: 13.4em;
   margin: 0 auto;
@@ -4424,59 +4442,59 @@ table#table-bouton-partenaire {
   border: 0;
   clear: both;
 }
-/* line 55, ../sass/content-type/_page-partenaires.scss */
+/* line 59, ../sass/content-type/_page-partenaires.scss */
 table#table-bouton-partenaire tbody, table#table-bouton-partenaire img {
   border: 0;
 }
-/* line 59, ../sass/content-type/_page-partenaires.scss */
+/* line 63, ../sass/content-type/_page-partenaires.scss */
 table#table-bouton-partenaire a {
   color: white;
   font-family: Arista,Trebuchet MS,sans serif;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.8em;
+  font-size: large;
   height: auto;
   padding: 0.6875em 0.4375em;
   width: auto;
 }
 
-/* line 72, ../sass/content-type/_page-partenaires.scss */
+/* line 76, ../sass/content-type/_page-partenaires.scss */
 #table-bouton-partenaire td.stage a {
   background: url("../images/bt_proposer_stage.jpg") no-repeat top left;
   display: block;
 }
 
-/* line 76, ../sass/content-type/_page-partenaires.scss */
+/* line 80, ../sass/content-type/_page-partenaires.scss */
 #table-bouton-partenaire td.stage a:hover {
   background: url("../images/bt_proposer_stage_hover.jpg") no-repeat top left;
 }
 
-/* line 79, ../sass/content-type/_page-partenaires.scss */
+/* line 83, ../sass/content-type/_page-partenaires.scss */
 #table-bouton-partenaire td.objectif a {
   background: url("../images/bt_objectif_reussite.jpg") no-repeat top left;
   display: block;
   margin: 0.3125em 0;
 }
 
-/* line 84, ../sass/content-type/_page-partenaires.scss */
+/* line 88, ../sass/content-type/_page-partenaires.scss */
 #table-bouton-partenaire td.objectif a:hover {
   background: url("../images/bt_objectif_reussite_hover.jpg") no-repeat top left;
 }
 
-/* line 89, ../sass/content-type/_page-partenaires.scss */
+/* line 93, ../sass/content-type/_page-partenaires.scss */
 #formulaire_partenaire {
   width: 98%;
   margin: 0 auto;
   padding: 0.3125em 0;
   /*Champs formulaire RWD*/
 }
-/* line 94, ../sass/content-type/_page-partenaires.scss */
+/* line 98, ../sass/content-type/_page-partenaires.scss */
 #formulaire_partenaire form, #formulaire_partenaire input[type="text"], #formulaire_partenaire input[type="email"] {
   width: 98%;
   display: block;
 }
-/* line 97, ../sass/content-type/_page-partenaires.scss */
+/* line 101, ../sass/content-type/_page-partenaires.scss */
 #formulaire_partenaire input[type="text"]#edit-submitted-duree-du-stage,
 #formulaire_partenaire input[type="text"]#edit-submitted-remuneration {
   width: 45%;
@@ -4485,19 +4503,19 @@ table#table-bouton-partenaire a {
 }
 
 /*Contenu du QT pour afficher temoignage partenaires*/
-/* line 109, ../sass/content-type/_page-partenaires.scss */
+/* line 113, ../sass/content-type/_page-partenaires.scss */
 #centre-partenaire h3 {
   color: #E2017B;
   margin: 5px;
 }
 
-/* line 113, ../sass/content-type/_page-partenaires.scss */
+/* line 117, ../sass/content-type/_page-partenaires.scss */
 #centre-partenaire img.portrait, #middle-content-partenaire img.portrait {
   border: 2px solid #AEC81F;
   padding: 5px;
 }
 
-/* line 117, ../sass/content-type/_page-partenaires.scss */
+/* line 121, ../sass/content-type/_page-partenaires.scss */
 .cartouche {
   padding: 3px;
   background: #EFEFEF;
@@ -4507,38 +4525,38 @@ table#table-bouton-partenaire a {
 }
 
 /*Contenu du QT pour afficher temoignage anciens élèves sur page association*/
-/* line 128, ../sass/content-type/_page-partenaires.scss */
+/* line 132, ../sass/content-type/_page-partenaires.scss */
 #centre-asso h2 {
   text-align: left;
 }
 
-/* line 131, ../sass/content-type/_page-partenaires.scss */
+/* line 135, ../sass/content-type/_page-partenaires.scss */
 #centre-asso h3 {
   color: #E2017B;
 }
 
-/* line 134, ../sass/content-type/_page-partenaires.scss */
+/* line 138, ../sass/content-type/_page-partenaires.scss */
 #centre-asso li.active a {
   color: white;
 }
 
 /*----- Liste partenaires associatifs vue ------*/
-/* line 141, ../sass/content-type/_page-partenaires.scss */
+/* line 145, ../sass/content-type/_page-partenaires.scss */
 #liste_part_asso ul {
   list-style: none;
 }
-/* line 144, ../sass/content-type/_page-partenaires.scss */
+/* line 148, ../sass/content-type/_page-partenaires.scss */
 #liste_part_asso li {
   margin: 3px 0;
   padding: 5px;
   background: #EFEFEF;
 }
-/* line 149, ../sass/content-type/_page-partenaires.scss */
+/* line 153, ../sass/content-type/_page-partenaires.scss */
 #liste_part_asso li a {
   font-weight: bold;
   text-decoration: none;
 }
-/* line 153, ../sass/content-type/_page-partenaires.scss */
+/* line 157, ../sass/content-type/_page-partenaires.scss */
 #liste_part_asso li a:hover {
   color: white;
   background: #E85231;
