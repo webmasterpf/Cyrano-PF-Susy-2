@@ -13,12 +13,13 @@ body .conteneur {
     .transformer {
         @include trans-prep;
         transition: transform 0.3s ease;
-        
+        //display: none;
         &.is-open {
             transform: translate3d($off-canvas-width, 0, 0);
         }
     }
     .off-canvas {
+       // display: none;
         position: absolute;
         width: $off-canvas-width;
         left: -$off-canvas-width;
@@ -28,6 +29,7 @@ body .conteneur {
 
     }
     .menu-toggle, .transformer.is-open > .menu-toggle{
+       // display: none;
         position: absolute;
         padding: 0 gutter();
         /*Coins arrondis*/

@@ -20,6 +20,7 @@
     h1.titre_page{
         @include titre-page;
         color: $orange-fonce;
+        line-height: normal;
     }
     h3{
         color: #931B7D;
@@ -37,7 +38,7 @@
     a{  color: #D63E2A;font-weight: bold;text-decoration: none;
         &:hover{text-decoration: underline;}
     }
-    @include breakpoint($desktop);@include breakpoint($tablet)
+    @include breakpoint(($desktop,$tablet))
     {
         @include border-L-rose;
     }
@@ -99,8 +100,36 @@ table.galerie-modale-actu {
 .table-jpo td{padding: 0 0.9em;}
 .table-jpo a{}
 .table-jpo a:hover{}
-/*Zone actu au hasard (Views)*/
+/*Zone actu au hasard (Views) = devient liste avec Susy*/
 #block-views-liste_actu-block_1 h3{font-size: larger;font-style: italic;}
+/*nouvelle classe pour le wrapper (div) : actu-hasard-list*/
+.actu-hasard-list{
+    background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
+    width: 98%;
+    padding: gutter();
+    li{
+        list-style: none;
+    }
+    ul.actu-hasard-list-ul{}
+
+    a{color: #E0001A;font-size: medium;}
+    img{border: em(1px) solid #ADC91F;margin: em(2px);overflow: hidden;}
+
+    @include breakpoint(($desktop,$tablet)){
+        /* Adding a clearfix because all children elements are floated */
+        @include clearfix;
+        li{
+
+            @include span(1 of 4);
+            &:last-child {
+                @include last;
+            }
+        }
+    }
+
+
+}
+
 table#actu-hasard
 {
     background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;

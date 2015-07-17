@@ -140,7 +140,7 @@ body .conteneur {
     margin: 0 auto;
     padding: em(11px) 0 0;
     text-align: center;
-    @include adjust-font-size-to(16px);
+    font-size: medium;
     a {
         color: $bleu-turquoise;
         text-decoration: none;
@@ -150,7 +150,7 @@ body .conteneur {
         }
     }
     h2 a,h1 a{color: #93117E;text-decoration: none;
-              @include adjust-font-size-to(18px);
+              font-size: large;
     }  
 }
 

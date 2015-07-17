@@ -1987,7 +1987,7 @@ body .conteneur .off-canvas {
   bottom: 0;
   height: auto;
 }
-/* line 30, ../sass/layout/_layout-off-canvas-susy.scss */
+/* line 31, ../sass/layout/_layout-off-canvas-susy.scss */
 body .conteneur .menu-toggle, body .conteneur .transformer.is-open > .menu-toggle {
   position: absolute;
   padding: 0 5.10204%;
@@ -2007,15 +2007,15 @@ body .conteneur .menu-toggle, body .conteneur .transformer.is-open > .menu-toggl
   transform: rotate(270deg);
 }
 @media (min-width: 990px) {
-  /* line 51, ../sass/layout/_layout-off-canvas-susy.scss */
+  /* line 53, ../sass/layout/_layout-off-canvas-susy.scss */
   body .conteneur .transformer {
     transition: transform 0.3s ease;
   }
-  /* line 54, ../sass/layout/_layout-off-canvas-susy.scss */
+  /* line 56, ../sass/layout/_layout-off-canvas-susy.scss */
   body .conteneur .transformer.is-open {
     transform: translate3d(0, 10em, 0);
   }
-  /* line 58, ../sass/layout/_layout-off-canvas-susy.scss */
+  /* line 60, ../sass/layout/_layout-off-canvas-susy.scss */
   body .conteneur .off-canvas {
     position: absolute;
     width: 100%;
@@ -2024,7 +2024,7 @@ body .conteneur .menu-toggle, body .conteneur .transformer.is-open > .menu-toggl
     bottom: 0;
     height: 10em;
   }
-  /* line 66, ../sass/layout/_layout-off-canvas-susy.scss */
+  /* line 68, ../sass/layout/_layout-off-canvas-susy.scss */
   body .conteneur .menu-toggle, body .conteneur .transformer.is-open > .menu-toggle {
     position: relative;
     padding: 0.3em;
@@ -2697,8 +2697,7 @@ body .conteneur .HPGauche {
   margin: 0 auto;
   padding: 0.6875em 0 0;
   text-align: center;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: medium;
 }
 /* line 144, ../sass/content-type/_frontpage-institutionnel.scss */
 .annonce a {
@@ -2714,8 +2713,7 @@ body .conteneur .HPGauche {
 .annonce h2 a, .annonce h1 a {
   color: #93117E;
   text-decoration: none;
-  font-size: 1.125em;
-  line-height: 1.33333em;
+  font-size: large;
 }
 
 /*DEFILANT CLASSIQUE*/
@@ -2997,16 +2995,20 @@ li.item-galerie-lycees img {
   font-size: 12px;
 }
 /* line 33, ../sass/content-type/_contenu-actu-presse-asso.scss */
+.actu-presse p {
+  padding: 0.3em;
+}
+/* line 36, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse img {
   padding: 0;
 }
-/* line 34, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 37, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse a {
   color: #D63E2A;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 35, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 38, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse a:hover {
   text-decoration: underline;
 }
@@ -3017,19 +3019,19 @@ li.item-galerie-lycees img {
   }
 }
 
-/* line 44, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 47, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-minipresse {
   float: right;
 }
 
-/* line 45, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 48, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-minipresse img {
   max-width: 100%;
   border: 0.125em solid #ADC91F;
   margin: 0.3125em;
 }
 
-/* line 50, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 53, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .field-field-minipresse img {
   float: right;
   padding: 3px;
@@ -3040,110 +3042,110 @@ li.item-galerie-lycees img {
   box-shadow: 0px 0px 5px #888;
 }
 
-/* line 59, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 62, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints {
   width: 12.5em;
   margin: 10px auto;
   background: transparent;
 }
-/* line 62, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 65, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints a {
   color: #911381;
 }
-/* line 63, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 66, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints th {
   text-align: center;
   font-size: 0.875em;
   color: #606070;
   border-bottom: 3px solid #E85231;
 }
-/* line 64, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 67, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints td {
   padding: 0.125em;
 }
-/* line 65, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 68, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints tbody, table#doc-joints tr {
   background: transparent;
   border-bottom: 1px dashed #606070;
 }
 
-/* line 71, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 74, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .slideshare, .video {
   width: 31.25em;
   margin: 0 auto;
 }
 
 /*Galerie modale Actu*/
-/* line 75, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 78, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table.galerie-modale-actu {
   margin: 0 auto;
   width: 95%;
 }
-/* line 78, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 81, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table.galerie-modale-actu img {
   border: 3px solid #E85231;
 }
 
 /*GA Theming*/
-/* line 86, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 89, ../sass/content-type/_contenu-actu-presse-asso.scss */
 #block-views-GA_theming-block_1 {
   margin: 0.3125em auto;
 }
-/* line 88, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 91, ../sass/content-type/_contenu-actu-presse-asso.scss */
 #block-views-GA_theming-block_1 img {
   border: 0.125em solid #00ACD1;
   padding: 1px;
 }
 
 /*Table pour JPO*/
-/* line 92, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 95, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .table-jpo {
   display: block;
   margin: 0 auto;
   width: 95%;
 }
 
-/* line 94, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 97, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .table-jpo tr {
   border-bottom: 0.0625em solid #E86064;
   display: block;
   margin: 0.3em 0;
 }
 
-/* line 95, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 98, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .table-jpo tr:hover {
   background: #F2F2F2;
 }
 
-/* line 96, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 99, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .table-jpo td {
   padding: 0 0.9em;
 }
 
 /*Zone actu au hasard (Views)*/
-/* line 100, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 103, ../sass/content-type/_contenu-actu-presse-asso.scss */
 #block-views-liste_actu-block_1 h3 {
   font-size: larger;
   font-style: italic;
 }
 
-/* line 101, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 104, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#actu-hasard {
   background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
   width: 98%;
   margin: 0 auto;
 }
-/* line 105, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 108, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#actu-hasard a {
   color: #E0001A;
 }
-/* line 106, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 109, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#actu-hasard img {
   border: 0.0625em solid #ADC91F;
   margin: 0.125em;
   overflow: hidden;
 }
-/* line 107, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 110, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#actu-hasard td {
   margin: 0.1875em;
   width: auto;
@@ -5133,22 +5135,27 @@ VIEWS 3 CYCLE ===================================
   width: 98%;
   margin: 0 auto;
 }
+/* line 95, ../sass/galeries/_views_slideshow.scss */
+.HPGauche .views_slideshow_cycle_teaser_section, .HPDroite .views_slideshow_cycle_teaser_section, .HPBasDroit .views_slideshow_cycle_teaser_section, .HPBasGauche .views_slideshow_cycle_teaser_section,
+.HPDroite1 .views_slideshow_cycle_teaser_section, .HPDroite2 .views_slideshow_cycle_teaser_section, .HPDroite3 .views_slideshow_cycle_teaser_section,
+.HPGauche1 .views_slideshow_cycle_teaser_section, .HPGauche2 .views_slideshow_cycle_teaser_section, .HPGauche3 .views_slideshow_cycle_teaser_section {
+  height: 11em;
+}
 
 /*Place le bloc du pager*/
-/* line 98, ../sass/galeries/_views_slideshow.scss */
+/* line 101, ../sass/galeries/_views_slideshow.scss */
 .views-slideshow-controls-bottom {
-  float: right;
   margin: 0 0 0.625em 0;
 }
 
-/* line 99, ../sass/galeries/_views_slideshow.scss */
+/* line 102, ../sass/galeries/_views_slideshow.scss */
 #widget_pager_bottom_annonce_accueil-block_1 {
   margin: 0.125em 0 0 17.5em !important;
   margin: 0.125em 0 0 5em;
 }
 
 /*Style */
-/* line 101, ../sass/galeries/_views_slideshow.scss */
+/* line 104, ../sass/galeries/_views_slideshow.scss */
 .widget_pager .views_slideshow_pager_field_item, .views_slideshow_pager_field_item .views-field-title,
 .views_slideshow_pager_field_item .views-content-title {
   background-color: #CFD0D2;
@@ -5163,7 +5170,7 @@ VIEWS 3 CYCLE ===================================
   cursor: pointer;
 }
 
-/* line 113, ../sass/galeries/_views_slideshow.scss */
+/* line 116, ../sass/galeries/_views_slideshow.scss */
 .widget_pager .active, .widget_pager :hover {
   background-color: #606171;
   -moz-border-radius: 0.375em;
@@ -5174,7 +5181,7 @@ VIEWS 3 CYCLE ===================================
 /*
 VIEWS 3 CYCLE: DIAPO CONTENU ===================================
 */
-/* line 117, ../sass/galeries/_views_slideshow.scss */
+/* line 120, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_cycle_slide img {
   border: 0.2em #D63E2A solid;
   padding: 0.2em;
@@ -5183,7 +5190,7 @@ VIEWS 3 CYCLE: DIAPO CONTENU ===================================
   position: relative;
 }
 
-/* line 121, ../sass/galeries/_views_slideshow.scss */
+/* line 124, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_previous a, .galerie .views_slideshow_controls_text_next a {
   width: 4.4em;
   height: 4.4em;
@@ -5192,30 +5199,30 @@ VIEWS 3 CYCLE: DIAPO CONTENU ===================================
   position: relative;
 }
 
-/* line 124, ../sass/galeries/_views_slideshow.scss */
+/* line 127, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_pause {
   display: none;
 }
 
-/* line 125, ../sass/galeries/_views_slideshow.scss */
+/* line 128, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_previous a {
   background: url("../css_galeries/images/arrow-rond-pf.png") 4.3em 4.3em;
   float: left;
 }
 
-/* line 127, ../sass/galeries/_views_slideshow.scss */
+/* line 130, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_previous a:hover {
   background: url("../css_galeries/images/arrow-rond-pf.png") 4.3em 11.2em;
   float: left;
 }
 
-/* line 129, ../sass/galeries/_views_slideshow.scss */
+/* line 132, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_next a {
   background: url("../css_galeries/images/arrow-rond-pf.png") 0 4.3em;
   float: right;
 }
 
-/* line 131, ../sass/galeries/_views_slideshow.scss */
+/* line 134, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_next a:hover {
   background: url("../css_galeries/images/arrow-rond-pf.png") 0 11.2em;
   float: right;
