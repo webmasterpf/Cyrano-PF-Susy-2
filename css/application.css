@@ -1845,7 +1845,15 @@ Style - layout pour le bandeau des autres sites de l'ASSO
 }
 /* line 15, ../sass/layout/_layout-bandeau.scss */
 .bandeau-pagetop ul li {
+  width: 28.71972%;
+  float: left;
+  margin-right: 6.92042%;
   list-style: none;
+}
+/* line 19, ../sass/layout/_layout-bandeau.scss */
+.bandeau-pagetop ul li:last-child {
+  float: right;
+  margin-right: 0;
 }
 /* line 22, ../sass/layout/_layout-bandeau.scss */
 .bandeau-pagetop ul li a {
@@ -1964,6 +1972,7 @@ Quand la réorganisation via susy ne suffit pas
 \\\\\\\\\\\\//////////////////////*/
 /* line 13, ../sass/layout/_layout-off-canvas-susy.scss */
 body .conteneur .transformer {
+  height: 10em;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
@@ -1974,48 +1983,46 @@ body .conteneur .transformer {
   perspective: 1000;
   transition: transform 0.3s ease;
 }
-/* line 17, ../sass/layout/_layout-off-canvas-susy.scss */
+/* line 18, ../sass/layout/_layout-off-canvas-susy.scss */
 body .conteneur .transformer.is-open {
-  transform: translate3d(52.55102%, 0, 0);
+  transform: translate3d(0, 10em, 0);
 }
-/* line 21, ../sass/layout/_layout-off-canvas-susy.scss */
+/* line 23, ../sass/layout/_layout-off-canvas-susy.scss */
 body .conteneur .off-canvas {
   position: absolute;
-  width: 52.55102%;
-  left: -52.55102%;
-  top: 1em;
+  width: 100%;
+  left: 0;
+  top: -10em;
   bottom: 0;
-  height: auto;
+  height: 10em;
 }
-/* line 31, ../sass/layout/_layout-off-canvas-susy.scss */
+/* line 33, ../sass/layout/_layout-off-canvas-susy.scss */
 body .conteneur .menu-toggle, body .conteneur .transformer.is-open > .menu-toggle {
-  position: absolute;
-  padding: 0 5.10204%;
-  /*Coins arrondis*/
+  position: relative;
+  padding: 0.3em;
+  left: 30%;
+  top: 0em;
   border-radius: 0 0 0.5em 0.5em;
   background: #555;
   color: #fff;
   text-decoration: none;
-  padding: 0.3em;
-  top: 4em;
-  left: -4em;
   z-index: 35;
-  /* quelques styles CSS3 */
-  -ms-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
+  /* CSS3 : pour IE, fixer rotation */
+  -ms-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 @media (min-width: 990px) {
-  /* line 53, ../sass/layout/_layout-off-canvas-susy.scss */
+  /* line 54, ../sass/layout/_layout-off-canvas-susy.scss */
   body .conteneur .transformer {
     transition: transform 0.3s ease;
   }
-  /* line 56, ../sass/layout/_layout-off-canvas-susy.scss */
+  /* line 57, ../sass/layout/_layout-off-canvas-susy.scss */
   body .conteneur .transformer.is-open {
     transform: translate3d(0, 10em, 0);
   }
-  /* line 60, ../sass/layout/_layout-off-canvas-susy.scss */
+  /* line 61, ../sass/layout/_layout-off-canvas-susy.scss */
   body .conteneur .off-canvas {
     position: absolute;
     width: 100%;
@@ -2024,7 +2031,7 @@ body .conteneur .menu-toggle, body .conteneur .transformer.is-open > .menu-toggl
     bottom: 0;
     height: 10em;
   }
-  /* line 68, ../sass/layout/_layout-off-canvas-susy.scss */
+  /* line 69, ../sass/layout/_layout-off-canvas-susy.scss */
   body .conteneur .menu-toggle, body .conteneur .transformer.is-open > .menu-toggle {
     position: relative;
     padding: 0.3em;
@@ -2038,6 +2045,47 @@ body .conteneur .menu-toggle, body .conteneur .transformer.is-open > .menu-toggl
   }
 }
 
+/*Volet sur coté gauche en mobile*/
+/*    $off-canvas-width: span(2 wide);
+
+    .transformer {
+        @include trans-prep;
+        transition: transform 0.3s ease;
+        //display: none;
+        &.is-open {
+            transform: translate3d($off-canvas-width, 0, 0);
+        }
+    }
+    .off-canvas {
+       // display: none;
+        position: absolute;
+        width: $off-canvas-width;
+        left: -$off-canvas-width;
+        top: 1em;//position de départ
+        bottom: 0;
+        height: auto;//limite la hauteur du bloc
+
+    }
+    .menu-toggle, .transformer.is-open > .menu-toggle{
+       // display: none;
+        position: absolute;
+        padding: 0 gutter();
+        Coins arrondis
+        border-radius: 0 0 em(8px) em(8px);
+        background: #555;
+        color: #fff;
+        text-decoration: none;
+        padding: 0.3em;
+        top: 4em;
+        left: -4em;
+        z-index:35;//pour passer au dessus du header en mobile
+        
+         quelques styles CSS3 
+        -ms-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }*/
 /*
 2015/03 - Layout TABLET
 Layout pour les tablettes.Breakpoint définit par variable dans _variables.scss
@@ -2969,69 +3017,64 @@ li.item-galerie-lycees img {
 |       CONTENU CUSTOM NODE.TPL        |
 |       CONTENU ACTU PRESSE ASSO       |
 |--------------------------------------*/
-@media (min-width: 990px) {
+@media (min-width: 990px), (min-width: 800px) and (max-width: 989px) {
   /* line 13, ../sass/content-type/_contenu-actu-presse-asso.scss */
   #colonne-2.actu-presse {
-    border-left: 0.0625em solid #93117E;
+    border-left: 0.0625em solid #E2007A;
   }
 }
 
-/* line 20, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 21, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse h1.titre_page {
   font-size: x-large;
   margin: 0.1em;
   line-height: 1.875em;
   color: #DE603A;
+  line-height: normal;
 }
-/* line 24, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 26, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse h3 {
   color: #931B7D;
   font-size: 14px;
   margin: 5px;
 }
-/* line 29, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 31, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse h4 {
   color: #01ABCF;
   font-size: 12px;
 }
-/* line 33, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 35, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse p {
   padding: 0.3em;
 }
-/* line 36, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 38, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse img {
   padding: 0;
 }
-/* line 37, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 39, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse a {
   color: #D63E2A;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 38, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 40, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-presse a:hover {
   text-decoration: underline;
 }
-@media (min-width: 800px) and (max-width: 989px) {
-  /* line 18, ../sass/content-type/_contenu-actu-presse-asso.scss */
-  .actu-presse {
-    border-left: 0.0625em solid #E2007A;
-  }
-}
 
-/* line 47, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 46, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-minipresse {
   float: right;
 }
 
-/* line 48, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 47, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .actu-minipresse img {
   max-width: 100%;
   border: 0.125em solid #ADC91F;
   margin: 0.3125em;
 }
 
-/* line 53, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 52, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .field-field-minipresse img {
   float: right;
   padding: 3px;
@@ -3042,110 +3085,152 @@ li.item-galerie-lycees img {
   box-shadow: 0px 0px 5px #888;
 }
 
-/* line 62, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 61, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints {
   width: 12.5em;
   margin: 10px auto;
   background: transparent;
 }
-/* line 65, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 64, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints a {
   color: #911381;
 }
-/* line 66, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 65, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints th {
   text-align: center;
   font-size: 0.875em;
   color: #606070;
   border-bottom: 3px solid #E85231;
 }
-/* line 67, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 66, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints td {
   padding: 0.125em;
 }
-/* line 68, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 67, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#doc-joints tbody, table#doc-joints tr {
   background: transparent;
   border-bottom: 1px dashed #606070;
 }
 
-/* line 74, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 73, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .slideshare, .video {
   width: 31.25em;
   margin: 0 auto;
 }
 
 /*Galerie modale Actu*/
-/* line 78, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 77, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table.galerie-modale-actu {
   margin: 0 auto;
   width: 95%;
 }
-/* line 81, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 80, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table.galerie-modale-actu img {
   border: 3px solid #E85231;
 }
 
 /*GA Theming*/
-/* line 89, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 88, ../sass/content-type/_contenu-actu-presse-asso.scss */
 #block-views-GA_theming-block_1 {
   margin: 0.3125em auto;
 }
-/* line 91, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 90, ../sass/content-type/_contenu-actu-presse-asso.scss */
 #block-views-GA_theming-block_1 img {
   border: 0.125em solid #00ACD1;
   padding: 1px;
 }
 
 /*Table pour JPO*/
-/* line 95, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 94, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .table-jpo {
   display: block;
   margin: 0 auto;
   width: 95%;
 }
 
-/* line 97, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 96, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .table-jpo tr {
   border-bottom: 0.0625em solid #E86064;
   display: block;
   margin: 0.3em 0;
 }
 
-/* line 98, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 97, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .table-jpo tr:hover {
   background: #F2F2F2;
 }
 
-/* line 99, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 98, ../sass/content-type/_contenu-actu-presse-asso.scss */
 .table-jpo td {
   padding: 0 0.9em;
 }
 
-/*Zone actu au hasard (Views)*/
-/* line 103, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/*Zone actu au hasard (Views) = devient liste avec Susy*/
+/* line 102, ../sass/content-type/_contenu-actu-presse-asso.scss */
 #block-views-liste_actu-block_1 h3 {
   font-size: larger;
   font-style: italic;
 }
 
+/*nouvelle classe pour le wrapper (div) : actu-hasard-list*/
 /* line 104, ../sass/content-type/_contenu-actu-presse-asso.scss */
+.actu-hasard-list {
+  background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
+  width: 98%;
+  padding: 5.10204%;
+}
+/* line 108, ../sass/content-type/_contenu-actu-presse-asso.scss */
+.actu-hasard-list li {
+  list-style: none;
+}
+/* line 113, ../sass/content-type/_contenu-actu-presse-asso.scss */
+.actu-hasard-list a {
+  color: #E0001A;
+  font-size: medium;
+}
+/* line 114, ../sass/content-type/_contenu-actu-presse-asso.scss */
+.actu-hasard-list img {
+  border: 0.0625em solid #ADC91F;
+  margin: 0.125em;
+  overflow: hidden;
+}
+@media (min-width: 990px), (min-width: 800px) and (max-width: 989px) {
+  /* line 104, ../sass/content-type/_contenu-actu-presse-asso.scss */
+  .actu-hasard-list {
+    /* Adding a clearfix because all children elements are floated */
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 119, ../sass/content-type/_contenu-actu-presse-asso.scss */
+  .actu-hasard-list li {
+    width: 21.17347%;
+    float: left;
+    margin-right: 5.10204%;
+  }
+  /* line 122, ../sass/content-type/_contenu-actu-presse-asso.scss */
+  .actu-hasard-list li:last-child {
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/* line 131, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#actu-hasard {
   background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
   width: 98%;
   margin: 0 auto;
 }
-/* line 108, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 135, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#actu-hasard a {
   color: #E0001A;
 }
-/* line 109, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 136, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#actu-hasard img {
   border: 0.0625em solid #ADC91F;
   margin: 0.125em;
   overflow: hidden;
 }
-/* line 110, ../sass/content-type/_contenu-actu-presse-asso.scss */
+/* line 137, ../sass/content-type/_contenu-actu-presse-asso.scss */
 table#actu-hasard td {
   margin: 0.1875em;
   width: auto;
@@ -5150,12 +5235,18 @@ VIEWS 3 CYCLE ===================================
 
 /* line 102, ../sass/galeries/_views_slideshow.scss */
 #widget_pager_bottom_annonce_accueil-block_1 {
-  margin: 0.125em 0 0 17.5em !important;
-  margin: 0.125em 0 0 5em;
+  margin: 1.125em 0px 0px 8.5em !important;
+}
+@media (min-width: 990px), (min-width: 800px) and (max-width: 989px) {
+  /* line 102, ../sass/galeries/_views_slideshow.scss */
+  #widget_pager_bottom_annonce_accueil-block_1 {
+    margin: 0.125em 0 0 17.5em !important;
+    margin: 0.125em 0 0 5em;
+  }
 }
 
 /*Style */
-/* line 104, ../sass/galeries/_views_slideshow.scss */
+/* line 112, ../sass/galeries/_views_slideshow.scss */
 .widget_pager .views_slideshow_pager_field_item, .views_slideshow_pager_field_item .views-field-title,
 .views_slideshow_pager_field_item .views-content-title {
   background-color: #CFD0D2;
@@ -5170,8 +5261,8 @@ VIEWS 3 CYCLE ===================================
   cursor: pointer;
 }
 
-/* line 116, ../sass/galeries/_views_slideshow.scss */
-.widget_pager .active, .widget_pager :hover {
+/* line 124, ../sass/galeries/_views_slideshow.scss */
+.widget_pager :active, .widget_pager :hover {
   background-color: #606171;
   -moz-border-radius: 0.375em;
   -webkit-border-radius: 0.375em;
@@ -5181,7 +5272,7 @@ VIEWS 3 CYCLE ===================================
 /*
 VIEWS 3 CYCLE: DIAPO CONTENU ===================================
 */
-/* line 120, ../sass/galeries/_views_slideshow.scss */
+/* line 128, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_cycle_slide img {
   border: 0.2em #D63E2A solid;
   padding: 0.2em;
@@ -5190,7 +5281,7 @@ VIEWS 3 CYCLE: DIAPO CONTENU ===================================
   position: relative;
 }
 
-/* line 124, ../sass/galeries/_views_slideshow.scss */
+/* line 132, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_previous a, .galerie .views_slideshow_controls_text_next a {
   width: 4.4em;
   height: 4.4em;
@@ -5199,30 +5290,30 @@ VIEWS 3 CYCLE: DIAPO CONTENU ===================================
   position: relative;
 }
 
-/* line 127, ../sass/galeries/_views_slideshow.scss */
+/* line 135, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_pause {
   display: none;
 }
 
-/* line 128, ../sass/galeries/_views_slideshow.scss */
+/* line 136, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_previous a {
   background: url("../css_galeries/images/arrow-rond-pf.png") 4.3em 4.3em;
   float: left;
 }
 
-/* line 130, ../sass/galeries/_views_slideshow.scss */
+/* line 138, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_previous a:hover {
   background: url("../css_galeries/images/arrow-rond-pf.png") 4.3em 11.2em;
   float: left;
 }
 
-/* line 132, ../sass/galeries/_views_slideshow.scss */
+/* line 140, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_next a {
   background: url("../css_galeries/images/arrow-rond-pf.png") 0 4.3em;
   float: right;
 }
 
-/* line 134, ../sass/galeries/_views_slideshow.scss */
+/* line 142, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_next a:hover {
   background: url("../css_galeries/images/arrow-rond-pf.png") 0 11.2em;
   float: right;

@@ -13,11 +13,11 @@ Style - layout pour le bandeau des autres sites de l'ASSO
             
             
             li{
-                //@include span (1 of 7);
+                @include span (1 of 3);
                 list-style : none;
 
                 &:last-child{
-                    //@include last;
+                    @include last;
                 }
                 a{
                     text-decoration: none;font-size:small;

@@ -11,8 +11,9 @@
 //@include susy-breakpoint ($tablet){}
 
 #colonne-2.actu-presse{
-    @include susy-breakpoint ($desktop){
-        @include border-L-violet;
+    @include breakpoint(($desktop,$tablet))
+    {
+        @include border-L-rose;
     }
 }
 .actu-presse 
@@ -38,10 +39,7 @@
     a{  color: #D63E2A;font-weight: bold;text-decoration: none;
         &:hover{text-decoration: underline;}
     }
-    @include breakpoint(($desktop,$tablet))
-    {
-        @include border-L-rose;
-    }
+    
 
 }
 

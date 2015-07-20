@@ -4,6 +4,9 @@
 |         PARTENAIRES             |
 |      WHITE STYLE OVERRIDE       |
 ----------------------------------*/
+#superfish-2.sf-menu{
+    z-index: 5;
+}
 .sf-menu.sf-style-white {
   float: left;
   margin-bottom: 1em;

@@ -99,7 +99,15 @@ VIEWS 3 CYCLE ===================================
 
 /*Place le bloc du pager*/
 .views-slideshow-controls-bottom{margin: 0 0 em(10px) 0;}
-#widget_pager_bottom_annonce_accueil-block_1 {margin: em(2px) 0 0 em(280px) !important;margin: em(2px) 0 0 em(80px);}
+#widget_pager_bottom_annonce_accueil-block_1 {
+    margin: 1.125em 0px 0px 8.5em !important;
+     @include breakpoint(($desktop,$tablet))
+    {
+    margin: em(2px) 0 0 em(280px) !important;
+    margin: em(2px) 0 0 em(80px);
+    }
+    
+}
 /*Style */
 .widget_pager .views_slideshow_pager_field_item,.views_slideshow_pager_field_item .views-field-title,
 .views_slideshow_pager_field_item .views-content-title{ 
@@ -113,7 +121,7 @@ VIEWS 3 CYCLE ===================================
   text-indent: em(-9999px);
   cursor: pointer;
 }
-.widget_pager .active,.widget_pager :hover{background-color: #606171;@include arrondis (em(6px));}
+.widget_pager :active,.widget_pager :hover{background-color: #606171;@include arrondis (em(6px));}
 /*
 VIEWS 3 CYCLE: DIAPO CONTENU ===================================
 */
