@@ -144,9 +144,11 @@ filter : alpha(opacity=$opacite); /* IE < 8 */
 @mixin border-orangePF-orangePF{border-left: em(1px) solid #da5714;border-right: em(1px) solid #da5714;}
 
 /*//////////////// BORDER LEFT \\\\\\\\\\\\\\\\*/
-@mixin border-L-bleu{border-left: em(1px) solid #02A7D5;}
-@mixin border-L-grisclair{border-left: em(1px) solid #CFD0D2;}
-@mixin border-L-vert{border-left: em(1px) solid #ADC91F;}
-@mixin border-L-violet{border-left: em(1px) solid #93117E;}
-@mixin border-L-anthracite{border-left: em(1px) solid #606171;}
-@mixin border-L-rose { border-left: em(1px) solid #E2007A;}
+@mixin border-L-bleu{border-left: em(1px) solid $bleu-turquoise;}
+@mixin border-L-grisclair{border-left: em(1px) solid $gris-clair;}
+@mixin border-L-vert{border-left: em(1px) solid $vert;}
+@mixin border-L-violet{border-left: em(1px) solid $violet;}
+@mixin border-L-anthracite{border-left: em(1px) solid $gris-anthracite;}
+@mixin border-L-rose { border-left: em(1px) solid $rose-fushia;}
+@mixin border-L-orangePF { border-left: em(1px) solid $orange-fonce;}
+@mixin border-L-orange { border-left: em(1px) solid $orange;}
