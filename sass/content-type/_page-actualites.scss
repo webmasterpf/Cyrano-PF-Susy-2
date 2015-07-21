@@ -9,6 +9,12 @@
  //@include breakpoint ($mobile){}
   //@include breakpoint ($desktop){}
   //@include breakpoint ($tablet){}
+  #colonne-3.infos_fixes_actu_globale{
+      @include breakpoint(($desktop,$tablet)){
+          @include border-L-orangePF;
+      }
+  }
+  
 /*-----------  REDESIGN ACTU GLOBALE
 ---------------------------------------*/
 /*TITRES*/
