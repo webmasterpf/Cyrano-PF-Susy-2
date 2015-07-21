@@ -101,9 +101,9 @@ body .conteneur {
 #block-views-annonce_accueil-block_2
 {
     margin: em(5px) auto;text-align: center;width: auto;
- @include breakpoint($desktop){
-     width: em(375px);
- }
+    @include breakpoint($desktop){
+        width: em(375px);
+    }
 }
 
 #block-views-annonce_accueil-block_2 h3{
@@ -156,13 +156,13 @@ body .conteneur {
 
 
 /*DEFILANT CLASSIQUE*/
-#block-views-liste_annonce_accueil-block_1{display: block;margin: 5px 0;height: em(50px);}
+#block-views-liste_annonce_accueil-block_1{display: block;margin: 5px 0;height: em(50px);width: auto;}
 /*DEFILANT CONTENU PONCTUEL*/
 #block-views-liste_annonce_accueil-block_2{font-size: em(16px);color: #E2017B;width: auto;display: block;text-align: center;font-weight: bold;margin: 10px 0;background: #CFD0D2;padding: 5px;height: 40px;}
 #block-views-liste_annonce_accueil-block_2 #ponctuel{display: block;width: auto;}
 
 /*TABLE ACCES LYCEE*/
-.blocLycee {
+.HPGauche .blocLycee {
     table, tbody{
         width:95%;
         margin: 0 auto;
@@ -172,8 +172,9 @@ body .conteneur {
     }
     img{
         max-width: 65%;
-         @include breakpoint($desktop){
-        @include adaptable-img;}    
+         @include breakpoint(($desktop,$tablet)){
+             max-width: 95%;
+        }    
     }
 }
 ul.galerie-lycees{
@@ -181,12 +182,12 @@ ul.galerie-lycees{
 }
 li.item-galerie-lycees{
     list-style: none;
-     @include squish(0.25,0); 
-      img{@include adaptable-img;}
-      @include breakpoint($desktop){
-         @include gallery(3 of 6);
-    
-    
-      }
-}
+    @include squish(0.25,0); 
+    img{@include adaptable-img;
+    }
+    @include breakpoint(($desktop,$tablet)){
+        @include gallery(3 of 6);
 
+
+    }
+}
