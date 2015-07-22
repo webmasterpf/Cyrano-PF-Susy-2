@@ -17,7 +17,7 @@
  <div id="colonne-1" class="col1_form_squeeze">
     <?php
  /* inclusion d'une region pour bloc */
-include (drupal_get_path('theme','cyrano_pf').'/includes/inc_region_col_G1.php');
+include (drupal_get_path('theme','cyrano_pf').'/includes/inc_region_col_1.php');
     ?>
      </div>
 <!--______________COLONNE ________________ -->
@@ -59,7 +59,7 @@ include (drupal_get_path('theme','cyrano_pf').'/includes/inc_region_col_G1.php')
  <div id="colonne-3" class="col3_form_squeeze">
     <?php
  /* inclusion d'une region pour bloc */
-include (drupal_get_path('theme','cyrano_pf').'/includes/inc_region_col_G2.php');
+include (drupal_get_path('theme','cyrano_pf').'/includes/inc_region_col_2.php');
     ?>
      </div>
 <div class="clear-block clear"></div>

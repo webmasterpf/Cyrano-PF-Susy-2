@@ -2678,7 +2678,13 @@ body .conteneur .HPGauche {
   text-decoration: underline;
 }
 
-/* line 89, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 88, ../sass/content-type/_frontpage-institutionnel.scss */
+.HPDroite iframe {
+  border: 0.125em solid #DE603A;
+  padding: 0.3em;
+}
+
+/* line 92, ../sass/content-type/_frontpage-institutionnel.scss */
 .savoir-plus a {
   color: #E2007A;
   text-decoration: none;
@@ -2686,7 +2692,7 @@ body .conteneur .HPGauche {
   float: right;
 }
 
-/* line 95, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 98, ../sass/content-type/_frontpage-institutionnel.scss */
 .savoir-plus a:hover {
   background: #E2007A;
   color: #606171;
@@ -2694,20 +2700,20 @@ body .conteneur .HPGauche {
 }
 
 /* Défilant Actus brulante - Breaking news*/
-/* line 101, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 104, ../sass/content-type/_frontpage-institutionnel.scss */
 #block-views-annonce_accueil-block_2 {
   margin: 0.3125em auto;
   text-align: center;
   width: auto;
 }
 @media (min-width: 990px) {
-  /* line 101, ../sass/content-type/_frontpage-institutionnel.scss */
+  /* line 104, ../sass/content-type/_frontpage-institutionnel.scss */
   #block-views-annonce_accueil-block_2 {
     width: 23.4375em;
   }
 }
 
-/* line 109, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 112, ../sass/content-type/_frontpage-institutionnel.scss */
 #block-views-annonce_accueil-block_2 h3 {
   font-family: Arista,Trebuchet MS,sans serif;
   font-size: 1.125em;
@@ -2718,7 +2724,7 @@ body .conteneur .HPGauche {
   text-decoration: blink;
 }
 
-/* line 118, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 121, ../sass/content-type/_frontpage-institutionnel.scss */
 .breaking-news {
   background: #E2007A;
   -moz-border-radius: 0.3125em;
@@ -2726,18 +2732,18 @@ body .conteneur .HPGauche {
   border-radius: 0.3125em;
   margin: 0.3125em 0;
 }
-/* line 122, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 125, ../sass/content-type/_frontpage-institutionnel.scss */
 .breaking-news a {
   text-align: center;
   color: white;
 }
-/* line 125, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 128, ../sass/content-type/_frontpage-institutionnel.scss */
 .breaking-news a:hover {
   text-decoration: none;
 }
 
 /*-------- ANNONCE DEFILANTE ------*/
-/* line 136, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 139, ../sass/content-type/_frontpage-institutionnel.scss */
 .annonce {
   color: #606070;
   display: block;
@@ -2747,17 +2753,17 @@ body .conteneur .HPGauche {
   text-align: center;
   font-size: medium;
 }
-/* line 144, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 147, ../sass/content-type/_frontpage-institutionnel.scss */
 .annonce a {
   color: #01ABCF;
   text-decoration: none;
   font-weight: bold;
 }
-/* line 148, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 151, ../sass/content-type/_frontpage-institutionnel.scss */
 .annonce a:hover {
   text-decoration: underline;
 }
-/* line 152, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 155, ../sass/content-type/_frontpage-institutionnel.scss */
 .annonce h2 a, .annonce h1 a {
   color: #93117E;
   text-decoration: none;
@@ -2765,15 +2771,16 @@ body .conteneur .HPGauche {
 }
 
 /*DEFILANT CLASSIQUE*/
-/* line 159, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 162, ../sass/content-type/_frontpage-institutionnel.scss */
 #block-views-liste_annonce_accueil-block_1 {
   display: block;
   margin: 5px 0;
   height: 3.125em;
+  width: auto;
 }
 
 /*DEFILANT CONTENU PONCTUEL*/
-/* line 161, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 164, ../sass/content-type/_frontpage-institutionnel.scss */
 #block-views-liste_annonce_accueil-block_2 {
   font-size: 1em;
   color: #E2017B;
@@ -2787,49 +2794,49 @@ body .conteneur .HPGauche {
   height: 40px;
 }
 
-/* line 162, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 165, ../sass/content-type/_frontpage-institutionnel.scss */
 #block-views-liste_annonce_accueil-block_2 #ponctuel {
   display: block;
   width: auto;
 }
 
 /*TABLE ACCES LYCEE*/
-/* line 166, ../sass/content-type/_frontpage-institutionnel.scss */
-.blocLycee table, .blocLycee tbody {
+/* line 169, ../sass/content-type/_frontpage-institutionnel.scss */
+.HPGauche .blocLycee table, .HPGauche .blocLycee tbody {
   width: 95%;
   margin: 0 auto;
   padding: 0;
   border: 0;
 }
-/* line 173, ../sass/content-type/_frontpage-institutionnel.scss */
-.blocLycee img {
+/* line 176, ../sass/content-type/_frontpage-institutionnel.scss */
+.HPGauche .blocLycee img {
   max-width: 65%;
 }
-@media (min-width: 990px) {
-  /* line 173, ../sass/content-type/_frontpage-institutionnel.scss */
-  .blocLycee img {
-    max-width: 100%;
+@media (min-width: 990px), (min-width: 800px) and (max-width: 989px) {
+  /* line 176, ../sass/content-type/_frontpage-institutionnel.scss */
+  .HPGauche .blocLycee img {
+    max-width: 95%;
   }
 }
 
-/* line 179, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 183, ../sass/content-type/_frontpage-institutionnel.scss */
 ul.galerie-lycees {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 182, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 186, ../sass/content-type/_frontpage-institutionnel.scss */
 li.item-galerie-lycees {
   list-style: none;
   margin-left: 6.56888%;
   margin-right: 0%;
 }
-/* line 185, ../sass/content-type/_frontpage-institutionnel.scss */
+/* line 189, ../sass/content-type/_frontpage-institutionnel.scss */
 li.item-galerie-lycees img {
   max-width: 100%;
 }
-@media (min-width: 990px) {
-  /* line 182, ../sass/content-type/_frontpage-institutionnel.scss */
+@media (min-width: 990px), (min-width: 800px) and (max-width: 989px) {
+  /* line 186, ../sass/content-type/_frontpage-institutionnel.scss */
   li.item-galerie-lycees {
     width: 48.32776%;
     float: left;
@@ -3020,7 +3027,7 @@ li.item-galerie-lycees img {
 @media (min-width: 990px), (min-width: 800px) and (max-width: 989px) {
   /* line 13, ../sass/content-type/_contenu-actu-presse-asso.scss */
   #colonne-2.actu-presse {
-    border-left: 0.0625em solid #E2007A;
+    border-left: 0.0625em solid #E30078;
   }
 }
 
@@ -3244,7 +3251,7 @@ table#actu-hasard td {
 @media (min-width: 990px) {
   /* line 12, ../sass/content-type/_fiche-formation-pf.scss */
   #colonne-2.fiche-formation {
-    border-left: 0.0625em solid #CFD0D2;
+    border-left: 0.0625em solid #ECECED;
   }
 }
 
@@ -3316,7 +3323,7 @@ table#actu-hasard td {
 @media (min-width: 800px) and (max-width: 989px) {
   /* line 67, ../sass/content-type/_fiche-formation-pf.scss */
   div#colonne-2.fiche-formation {
-    border-left: 0.0625em solid #CFD0D2;
+    border-left: 0.0625em solid #ECECED;
   }
 }
 
@@ -3628,7 +3635,7 @@ span.pf {
 @media (min-width: 990px) {
   /* line 26, ../sass/content-type/_page-association.scss */
   #colonne-2.page-association {
-    border-left: 0.0625em solid #02A7D5;
+    border-left: 0.0625em solid #01ABCF;
   }
 }
 
@@ -3934,7 +3941,7 @@ h1.titre-formation {
 @media (min-width: 990px) {
   /* line 12, ../sass/content-type/_page-bourses.scss */
   #colonne-2.page-bourses {
-    border-left: 0.0625em solid #93117E;
+    border-left: 0.0625em solid #911381;
   }
 }
 
@@ -4473,7 +4480,7 @@ td.col3 {
 @media (min-width: 990px) {
   /* line 12, ../sass/content-type/_page-partenaires.scss */
   #colonne-2.page-partenaires {
-    border-left: 0.0625em solid #02A7D5;
+    border-left: 0.0625em solid #01ABCF;
   }
 }
 
@@ -4653,10 +4660,17 @@ table#table-bouton-partenaire a {
 |       CONTENU CUSTOM NODE.TPL        |
 |             PAGE ACTU                |
 |--------------------------------------*/
+@media (min-width: 990px), (min-width: 800px) and (max-width: 989px) {
+  /* line 12, ../sass/content-type/_page-actualites.scss */
+  #colonne-3.infos_fixes_actu_globale {
+    border-left: 0.0625em solid #DE603A;
+  }
+}
+
 /*-----------  REDESIGN ACTU GLOBALE
 ---------------------------------------*/
 /*TITRES*/
-/* line 15, ../sass/content-type/_page-actualites.scss */
+/* line 21, ../sass/content-type/_page-actualites.scss */
 .bloc_actus h3 {
   font-family: Arista,Trebuchet MS,sans serif;
   font-size: larger;
@@ -4665,18 +4679,18 @@ table#table-bouton-partenaire a {
   text-align: center;
 }
 
-/* line 22, ../sass/content-type/_page-actualites.scss */
+/* line 28, ../sass/content-type/_page-actualites.scss */
 .rp_actu_gloable .bloc_actus h3 {
   color: #E30078;
 }
 
-/* line 25, ../sass/content-type/_page-actualites.scss */
+/* line 31, ../sass/content-type/_page-actualites.scss */
 .actu_asso_actu_globale .bloc_actus h3 {
   color: #E3001C;
 }
 
 /*CONTENU*/
-/* line 29, ../sass/content-type/_page-actualites.scss */
+/* line 35, ../sass/content-type/_page-actualites.scss */
 .table_actu_globale {
   width: auto;
   display: block;
@@ -4685,17 +4699,17 @@ table#table-bouton-partenaire a {
   padding: 0;
 }
 
-/* line 33, ../sass/content-type/_page-actualites.scss */
+/* line 39, ../sass/content-type/_page-actualites.scss */
 .table_actu_globale tbody {
   border: none;
 }
 
-/* line 35, ../sass/content-type/_page-actualites.scss */
+/* line 41, ../sass/content-type/_page-actualites.scss */
 .table_actu_globale td {
   vertical-align: top;
 }
 
-/* line 38, ../sass/content-type/_page-actualites.scss */
+/* line 44, ../sass/content-type/_page-actualites.scss */
 .titre_actu {
   bottom: 4.375em;
   color: white;
@@ -4705,7 +4719,7 @@ table#table-bouton-partenaire a {
   z-index: 20;
 }
 
-/* line 46, ../sass/content-type/_page-actualites.scss */
+/* line 52, ../sass/content-type/_page-actualites.scss */
 .titre_actu a {
   background: white;
   color: black;
@@ -4713,20 +4727,20 @@ table#table-bouton-partenaire a {
   padding: 0.125em;
 }
 
-/* line 52, ../sass/content-type/_page-actualites.scss */
+/* line 58, ../sass/content-type/_page-actualites.scss */
 .titre_actu a:hover {
   background: #E85231;
   color: black;
   text-decoration: none;
 }
 
-/* line 57, ../sass/content-type/_page-actualites.scss */
+/* line 63, ../sass/content-type/_page-actualites.scss */
 .texte_actu {
   display: inline-block;
   padding: 0.3125em 0.625em;
 }
 
-/* line 61, ../sass/content-type/_page-actualites.scss */
+/* line 67, ../sass/content-type/_page-actualites.scss */
 .image_actu {
   height: 12.5em;
   position: relative;
@@ -4736,7 +4750,7 @@ table#table-bouton-partenaire a {
   overflow: hidden;
 }
 
-/* line 69, ../sass/content-type/_page-actualites.scss */
+/* line 75, ../sass/content-type/_page-actualites.scss */
 .actu-globale-grand-actuasso .image_actu {
   height: 12.5em;
   position: relative;
@@ -4747,33 +4761,33 @@ table#table-bouton-partenaire a {
 }
 
 /*LISTE ACTU GLOBALE PETITE ILLUSTRATION*/
-/* line 78, ../sass/content-type/_page-actualites.scss */
+/* line 84, ../sass/content-type/_page-actualites.scss */
 .table_actu_globale_petit {
   width: auto;
   display: block;
 }
-/* line 81, ../sass/content-type/_page-actualites.scss */
+/* line 87, ../sass/content-type/_page-actualites.scss */
 .table_actu_globale_petit tbody {
   display: block;
   border: none;
 }
-/* line 85, ../sass/content-type/_page-actualites.scss */
+/* line 91, ../sass/content-type/_page-actualites.scss */
 .table_actu_globale_petit tr {
   display: block;
   height: 10em;
   margin: 0.3125em 0;
   padding: 0;
 }
-/* line 91, ../sass/content-type/_page-actualites.scss */
+/* line 97, ../sass/content-type/_page-actualites.scss */
 .table_actu_globale_petit td {
   vertical-align: top;
 }
-/* line 94, ../sass/content-type/_page-actualites.scss */
+/* line 100, ../sass/content-type/_page-actualites.scss */
 .table_actu_globale_petit img {
   overflow: hidden;
 }
 
-/* line 99, ../sass/content-type/_page-actualites.scss */
+/* line 105, ../sass/content-type/_page-actualites.scss */
 .titre_actu_petit {
   bottom: 8em;
   color: white;
@@ -4783,7 +4797,7 @@ table#table-bouton-partenaire a {
   z-index: 20;
 }
 
-/* line 107, ../sass/content-type/_page-actualites.scss */
+/* line 113, ../sass/content-type/_page-actualites.scss */
 .titre_actu_petit a {
   background: white;
   color: black;
@@ -4791,20 +4805,20 @@ table#table-bouton-partenaire a {
   padding: 0.125em;
 }
 
-/* line 114, ../sass/content-type/_page-actualites.scss */
+/* line 120, ../sass/content-type/_page-actualites.scss */
 .titre_actu_petit a:hover {
   background: #E85231;
   color: black;
   text-decoration: none;
 }
 
-/* line 119, ../sass/content-type/_page-actualites.scss */
+/* line 125, ../sass/content-type/_page-actualites.scss */
 .texte_actu_petit {
   display: inline-block;
   padding: 0.3125em;
 }
 
-/* line 123, ../sass/content-type/_page-actualites.scss */
+/* line 129, ../sass/content-type/_page-actualites.scss */
 .image_actu_petit {
   border: 0.1875em solid #ADC91F;
   height: 9.375em;
@@ -4814,28 +4828,28 @@ table#table-bouton-partenaire a {
   overflow: hidden;
 }
 
-/* line 131, ../sass/content-type/_page-actualites.scss */
+/* line 137, ../sass/content-type/_page-actualites.scss */
 .actu-globale-petit-actuasso .image_actu_petit {
   border: 0.1875em solid #E3007A;
 }
-/* line 133, ../sass/content-type/_page-actualites.scss */
+/* line 139, ../sass/content-type/_page-actualites.scss */
 .actu-globale-petit-actuasso .image_actu_petit img {
   overflow: hidden;
 }
 
-/* line 139, ../sass/content-type/_page-actualites.scss */
+/* line 145, ../sass/content-type/_page-actualites.scss */
 .contenu-actu-globale a {
   color: #d63e2a;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 144, ../sass/content-type/_page-actualites.scss */
+/* line 150, ../sass/content-type/_page-actualites.scss */
 .contenu-actu-globale a:hover {
   text-decoration: underline;
 }
 
-/* line 149, ../sass/content-type/_page-actualites.scss */
+/* line 155, ../sass/content-type/_page-actualites.scss */
 .lien_archive {
   background: none repeat scroll 0 0 AliceBlue;
   color: #E2017B;
@@ -4848,12 +4862,12 @@ table#table-bouton-partenaire a {
   width: 95%;
 }
 
-/* line 160, ../sass/content-type/_page-actualites.scss */
+/* line 166, ../sass/content-type/_page-actualites.scss */
 .lien_archive a:hover {
   text-decoration: none;
 }
 
-/* line 161, ../sass/content-type/_page-actualites.scss */
+/* line 167, ../sass/content-type/_page-actualites.scss */
 .pager li.pager-current {
   color: #EFEFEF;
   padding: 2px;
@@ -4861,18 +4875,18 @@ table#table-bouton-partenaire a {
 }
 
 /*BLOC FLUX RSS*/
-/* line 163, ../sass/content-type/_page-actualites.scss */
+/* line 169, ../sass/content-type/_page-actualites.scss */
 .block-aggregator a {
   color: black;
   text-decoration: none;
 }
 
-/* line 167, ../sass/content-type/_page-actualites.scss */
+/* line 173, ../sass/content-type/_page-actualites.scss */
 .block-aggregator a:hover {
   text-decoration: underline;
 }
 
-/* line 172, ../sass/content-type/_page-actualites.scss */
+/* line 178, ../sass/content-type/_page-actualites.scss */
 .infos_fixes_actu_globale h3.block-title {
   font-family: Arista,Trebuchet MS,sans serif;
   font-size: larger;
@@ -4882,25 +4896,25 @@ table#table-bouton-partenaire a {
   color: purple;
 }
 
-/* line 181, ../sass/content-type/_page-actualites.scss */
+/* line 187, ../sass/content-type/_page-actualites.scss */
 .infos_fixes_actu_globale a {
   color: #01ABCF;
   text-decoration: none;
 }
-/* line 184, ../sass/content-type/_page-actualites.scss */
+/* line 190, ../sass/content-type/_page-actualites.scss */
 .infos_fixes_actu_globale a:hover {
   text-decoration: underline;
 }
 
 /*NODEQUEUE ACTUS BRULANTE*/
-/* line 190, ../sass/content-type/_page-actualites.scss */
+/* line 196, ../sass/content-type/_page-actualites.scss */
 #block-views-nodequeue_1-block {
   margin: 0 auto;
   width: 15em;
   padding: 0.625em 0;
 }
 
-/* line 195, ../sass/content-type/_page-actualites.scss */
+/* line 201, ../sass/content-type/_page-actualites.scss */
 #block-views-nodequeue_1-block ul {
   list-style: none;
   display: block;
@@ -4914,18 +4928,18 @@ table#table-bouton-partenaire a {
   behavior: url(/sites/all/libraries/PIE/PIE.htc);
 }
 
-/* line 208, ../sass/content-type/_page-actualites.scss */
+/* line 214, ../sass/content-type/_page-actualites.scss */
 #block-views-nodequeue_1-block li {
   list-style: none;
   margin: 0.625em 0;
 }
 
-/* line 212, ../sass/content-type/_page-actualites.scss */
+/* line 218, ../sass/content-type/_page-actualites.scss */
 #block-views-nodequeue_1-block h3.block-title {
   color: #01ABCF;
 }
 
-/* line 215, ../sass/content-type/_page-actualites.scss */
+/* line 221, ../sass/content-type/_page-actualites.scss */
 #block-views-nodequeue_1-block a {
   text-decoration: none;
   background: white;
@@ -4933,13 +4947,13 @@ table#table-bouton-partenaire a {
   color: #606070;
 }
 
-/* line 221, ../sass/content-type/_page-actualites.scss */
+/* line 227, ../sass/content-type/_page-actualites.scss */
 #block-views-nodequeue_1-block a:hover {
   color: white;
   background: #E85231;
 }
 
-/* line 225, ../sass/content-type/_page-actualites.scss */
+/* line 231, ../sass/content-type/_page-actualites.scss */
 .view-nodequeue-1 li, .view-nodequeue-1 ul li, .view-nodequeue-1 ul {
   list-style: none;
   margin: 0.625em 0;
@@ -5009,7 +5023,7 @@ table#table-bouton-partenaire a {
 @media (min-width: 990px) {
   /* line 13, ../sass/content-type/_page-recrutement.scss */
   #colonne-2.page-recrutement {
-    border-left: 0.0625em solid #93117E;
+    border-left: 0.0625em solid #911381;
   }
 }
 
@@ -5024,7 +5038,7 @@ table#table-bouton-partenaire a {
 |--------------------------------------*/
 /* line 13, ../sass/content-type/_page-erreur.scss */
 #colonne-2.page-erreur {
-  border-left: 0.0625em solid #E2007A;
+  border-left: 0.0625em solid #E30078;
 }
 
 /* line 17, ../sass/content-type/_page-erreur.scss */
@@ -5262,6 +5276,8 @@ VIEWS 3 CYCLE ===================================
 }
 
 /* line 124, ../sass/galeries/_views_slideshow.scss */
+.widget_pager .views_slideshow_pager_field_item.active,
+.widget_pager .views_slideshow_pager_field_item :active,
 .widget_pager :active, .widget_pager :hover {
   background-color: #606171;
   -moz-border-radius: 0.375em;
@@ -5272,7 +5288,7 @@ VIEWS 3 CYCLE ===================================
 /*
 VIEWS 3 CYCLE: DIAPO CONTENU ===================================
 */
-/* line 128, ../sass/galeries/_views_slideshow.scss */
+/* line 130, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_cycle_slide img {
   border: 0.2em #D63E2A solid;
   padding: 0.2em;
@@ -5281,7 +5297,7 @@ VIEWS 3 CYCLE: DIAPO CONTENU ===================================
   position: relative;
 }
 
-/* line 132, ../sass/galeries/_views_slideshow.scss */
+/* line 134, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_previous a, .galerie .views_slideshow_controls_text_next a {
   width: 4.4em;
   height: 4.4em;
@@ -5290,30 +5306,30 @@ VIEWS 3 CYCLE: DIAPO CONTENU ===================================
   position: relative;
 }
 
-/* line 135, ../sass/galeries/_views_slideshow.scss */
+/* line 137, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_pause {
   display: none;
 }
 
-/* line 136, ../sass/galeries/_views_slideshow.scss */
+/* line 138, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_previous a {
   background: url("../css_galeries/images/arrow-rond-pf.png") 4.3em 4.3em;
   float: left;
 }
 
-/* line 138, ../sass/galeries/_views_slideshow.scss */
+/* line 140, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_previous a:hover {
   background: url("../css_galeries/images/arrow-rond-pf.png") 4.3em 11.2em;
   float: left;
 }
 
-/* line 140, ../sass/galeries/_views_slideshow.scss */
+/* line 142, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_next a {
   background: url("../css_galeries/images/arrow-rond-pf.png") 0 4.3em;
   float: right;
 }
 
-/* line 142, ../sass/galeries/_views_slideshow.scss */
+/* line 144, ../sass/galeries/_views_slideshow.scss */
 .galerie .views_slideshow_controls_text_next a:hover {
   background: url("../css_galeries/images/arrow-rond-pf.png") 0 11.2em;
   float: right;

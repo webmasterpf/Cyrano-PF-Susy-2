@@ -121,6 +121,8 @@ VIEWS 3 CYCLE ===================================
   text-indent: em(-9999px);
   cursor: pointer;
 }
+.widget_pager .views_slideshow_pager_field_item.active,
+.widget_pager .views_slideshow_pager_field_item :active,
 .widget_pager :active,.widget_pager :hover{background-color: #606171;@include arrondis (em(6px));}
 /*
 VIEWS 3 CYCLE: DIAPO CONTENU ===================================

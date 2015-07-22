@@ -19,7 +19,7 @@
       <br clear="all"/>
        <?php
               global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_G1.php');
+              include ($theme_path.'/includes/inc_region_col_1.php');
               ?>
 </div>
 <!--______________COLONNE 2________________ -->
