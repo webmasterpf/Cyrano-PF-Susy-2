@@ -1,0 +1,21 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM PAGE.TPL   |
+|        NEWSLETTER LISTE ITEM        |
+|--------------------------------------*/
+
+ //@include breakpoint ($mobile){}
+  //@include breakpoint ($desktop){}
+  //@include breakpoint ($tablet){}
+  //@include breakpoint(($desktop,$tablet)){}
+
+  .page-base{
+      .field-field-nl-deco{
+           img{border: 0.1em $rose-fushia solid;
+          padding: 0.2em;margin-right: 0.3em;
+           float: left;}
+      }
+      
+  }

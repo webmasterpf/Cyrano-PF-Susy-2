@@ -336,11 +336,11 @@ body .conteneur{
         
 
         @include breakpoint ($tablet){
-            @include span(2 omega of $tabletcol);
+            @include span(last 2 of $tabletcol);
 
         }
         @include breakpoint ($desktop){
-           @include span(3 omega of $desktopcol);
+           @include span(last 3 of $desktopcol);
 
         }
     }

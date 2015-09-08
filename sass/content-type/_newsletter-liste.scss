@@ -1,0 +1,35 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM PAGE.TPL    |
+|             NEWSLETTER LISTE            |
+|--------------------------------------*/
+
+ //@include breakpoint ($mobile){}
+  //@include breakpoint ($desktop){}
+  //@include breakpoint ($tablet){}
+  //@include breakpoint(($desktop,$tablet)){}
+
+  .view-Liste-contenu-newsletter {
+      ul li{list-style: none inside;
+            border-bottom: 0.1em $bleu-turquoise dotted;
+           padding: 0 0 1.3em 0;
+      }
+      .views-field-title{
+          a{color: $rose-fushia;}
+      }
+      img{border: 0.1em $orange-fonce solid;
+          padding: 0.2em;}
+      @include breakpoint ($desktop){
+           ul li{
+      @include clearfix;
+           }
+           
+          img{float: left;
+          margin: 0 1.3em 0 0;}
+      }
+
+  }
+ 
+  

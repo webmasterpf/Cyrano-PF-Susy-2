@@ -24,6 +24,7 @@ body {
  //@include susy-breakpoint ($mobile){}
   //@include susy-breakpoint ($desktop){}
   //@include susy-breakpoint ($tablet){}
+  //@include breakpoint(($desktop,$tablet)){}
   
 // il faut utiliser pour un même bloc et pour chaque breakpoint 
 //soit span pour partitionner un bloc
