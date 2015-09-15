@@ -76,7 +76,7 @@ td.colonne-2-nl  .view-Liste-contenu-newsletter img{border: 0.1em #E25132 solid;
  </style>
  <![endif]-->
 </head>
-<!-- TEMPLATE CUSTOM NEWSLETTER BODY TID 112 -->
+<!-- TEMPLATE CUSTOM NEWSLETTER BODY TID 111 PROD -->
 <table align="center" id="table-nl-bordure" style="border:0;margin:0 auto;width:703px;" >
   <tbody>
   <tr><td>
@@ -106,7 +106,7 @@ td.colonne-2-nl  .view-Liste-contenu-newsletter img{border: 0.1em #E25132 solid;
     <p>Association Provence Formation - 13008 MARSEILLE</p>
 </div></td></tr>
 <tr border="0"><td colspan="3"  style="color: #E25132;height:55px;">
-<div align="right"><img src="http://www.lycee-charlotte-grawitz.com/sites/all/themes/Cyrano_CG/images/bg_footer.jpg"/></div>
+
 </td></tr>
 <tr><td colspan="3" style="text-align:center"><?php if ($key == 'test'): ?>- <?php print $test_message ?>  -<?php endif ?></td></tr><!-- /table Footer NL-->
 </tbody></table>
