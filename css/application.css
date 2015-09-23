@@ -1869,8 +1869,16 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
   body .conteneur .content-top {
     margin-top: 0.5em;
   }
-  body .conteneur .content-top .ariane .breadcrumb {
+  body .conteneur .content-top .ariane .breadcrumb, body .conteneur .content-top .breadcrumb {
     display: block;
+    font-size: small;
+  }
+  body .conteneur .content-top .ariane .breadcrumb a, body .conteneur .content-top .breadcrumb a {
+    color: #606070;
+    text-decoration: none;
+  }
+  body .conteneur .content-top .ariane .breadcrumb a:hover, body .conteneur .content-top .breadcrumb a:hover {
+    text-decoration: underline;
   }
   body .conteneur .middle-content {
     overflow: hidden;
@@ -2230,6 +2238,10 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
 .item-list ul li {
   margin: 0 0 0.25em 1.5em;
   padding: 0;
+}
+
+div.tabs ul li a {
+  color: #911381;
 }
 
 /*----page login------*/
@@ -4404,6 +4416,24 @@ table#table-bouton-partenaire a {
 }
 .page-base a:hover {
   text-decoration: underline;
+}
+.page-base .view view-Diapo-multichoix .views_slideshow_cycle_slide img {
+  border: 0.0625em solid #01ABCF;
+}
+.page-base .field-field-diapo-lycee img {
+  margin: 0 0.3em 0.3em 0;
+  border: 0.0625em solid #DE603A;
+  width: 25%;
+  height: 25%;
+}
+@media (min-width: 990px), (min-width: 800px) and (max-width: 989px) {
+  .page-base .field-field-diapo-lycee img {
+    float: left;
+    padding: 0.3em;
+    margin: 0 0.3em 0 0;
+    width: 10%;
+    height: 10%;
+  }
 }
 
 /*-------------------------------------|

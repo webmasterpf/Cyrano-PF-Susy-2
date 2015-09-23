@@ -31,9 +31,7 @@
 <table align="center">
 <div id="txt-footer">
     <?php print $site_slogan; ?>
-    Lyc&eacute;e Priv&eacute; Professionnel Charlotte Grawitz - 13013 MARSEILLE<br/>
-    <a href="<?php print $front_page; ?>" title="Accueil du site" rel="home" id="logo">
-            Aller sur le site</a> - <a href="<?php print $front_page; ?>/node/<?php print $node->nid ?>" target="_blank">Voir la newsletter sur le site</a><br/>
+   
     <?php if ($format == 'html'): ?>
   <p class="newsletter-footer"><a href="[simplenews-unsubscribe-url]"><?php print $unsubscribe_text ?></a></p>
 <?php else: ?>
