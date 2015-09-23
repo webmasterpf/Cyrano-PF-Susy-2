@@ -84,7 +84,7 @@ td.colonne-2-nl  .view-Liste-contenu-newsletter img{border: 1px solid #E25132 ;p
          
    </tr></thead>   
 <tbody>
-<tr><td colspan="3" style="text-align:center"> <a href="<?php print $base_url.'/node/'.$node->nid.'?utm_source=newsletter-'.$node->nid.'&utm_medium=email&utm_campaign='.$node->title ?>" target="_blank" style="color: #E7512F;">Voir la newsletter sur le site</a></td></tr>
+<tr><td colspan="3" style="text-align:center"> <a href="<?php print $base_url.'/node/'.$node->nid.'?utm_source=newsletter-'.$node->nid.'&utm_medium=email&utm_campaign='.$node->title.'&utmac=UA-10621674-1' ?>" target="_blank" style="color: #E7512F;">Voir la newsletter sur le site</a></td></tr>
     <tr border="0">
      
 
