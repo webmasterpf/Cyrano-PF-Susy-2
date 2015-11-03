@@ -12,14 +12,13 @@
     <meta name="msvalidate.01" content="" />
     <?php print $head; ?>
     <?php print $styles; ?>
-    <?php print $scripts; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-        
-    <?php
- global $theme_path; include ($theme_path . '/includes/inc_jquery_plugin.php');
- ?>
+    <?php // IMPORTANT : charger les librairies externes avant les scripts !! ?>
+   <?php print $scripts; ?>
+ 
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
   </head>
 
  <body class="<?php print $body_classes; ?>">

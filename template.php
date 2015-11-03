@@ -74,7 +74,34 @@ if ( in_array($node->type,$lesTypes) ) {
     }
 }
 ?>
+<?php
+function susy2_pf_cyrano_preprocess_page(&$vars){
+// permet usage de vieilles versions de jQuery
+        //drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/js/jquery-migrate-1.2.1.min.js', 'theme');
+//chargement des plugins qui utilisent la version de jQuery par défaut du site
+//   drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/js/responsive-nav.js','theme');
+//   drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/js/tinynav.min.js','theme');
+    //   drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/js/jquery.navobile.min.js','theme');
+    //   drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/js/jquery.jpanelmenu.min.js','theme');
+    drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/js/selectnav.min.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/js/jquery.sticky.js', 'theme');
+  //  drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/js/jquery.sidebar.min.js', 'theme');
 
+//chargement des scripts qui utilisent la version de jQuery par défaut du site
+    drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/js/js_jquery_defaut.js', 'theme');
+// mise en place du noConflict pour utiliser plusieurs versions de jQuery   
+    drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/js/jquery_init.js', 'theme');
+//chargement des plugins qui utilisent une version de jQuery plus récente
+    drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/js/jquery.flexslider.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/js/jquery.bxslider.min.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/3rdparty/buttons/js/buttons.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/js/js_jquery_new.js', 'theme');
+    //  mise à disposition des 2 versions de jQuery
+    drupal_add_js(drupal_get_path('theme', 'susy2_pf_cyrano') . '/js/jquery_exit.js', 'theme');
+
+    //die('les JS sont chargés');
+}
+?>
 <?php
 // fonction pour avoir la possibilité de faire un template pour page recherche
 function phptemplate_preprocess_page(&$vars) {
