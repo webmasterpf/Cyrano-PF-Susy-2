@@ -1,0 +1,87 @@
+/*
+Override du style de galerie flexslider
+*/
+
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+.galerie .flexslider{
+    margin: 0 auto;
+    width: 95%;
+    display:inline-block;
+    li{
+        padding: 0;
+    }
+    .slides img{
+        padding: 0em;
+        width: 95%;
+        margin: 0 auto;
+        border: 0.1em solid $gris-clair;
+        @include arrondis;
+        @include breakpoint ($desktop){
+            border: 0.3em solid $gris-clair;
+        }
+    }
+    .flex-control-nav{
+        bottom: -2.1em;
+    }
+    .flex-control-paging {
+        li a{
+            margin:  0.1em;
+            background: $gris-anthracite;//couleur du pager
+            @include ombrage(0.1em,0.1em,0.1em);
+            &:hover{
+                background: $orange-fonce;//couleur du pager actif et hover
+            }
+        }
+        li a.flex-active  {
+            background: $vert;
+        }
+    }
+    .flex-caption {
+  position: relative;
+  z-index: 3;
+  padding: 2%;
+  width: 94%;
+  left: 0.8em;
+  bottom: 4em;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: small;
+  line-height: 1.15em;
+    }
+}        
+.flexslider{
+    .flex-direction-nav a{
+        height: 2em;
+    }
+    .flex-direction-nav a:before {
+  font-size: em(40px);
+  display: inline-block;
+}
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
+.flex-direction-nav .flex-prev {
+  left: em(-50px);
+}
+.flex-direction-nav .flex-next {
+  right: em(-50px);
+  
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: em(10px);
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: em(10px);
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+}
