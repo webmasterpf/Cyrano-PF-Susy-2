@@ -66,4 +66,5 @@
   $('.bxslider').bxSlider();
    pagerCustom: '#bx-pager'
 });
+
 })(jQuery);

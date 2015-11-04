@@ -106,5 +106,7 @@ breakpoint-2.5.0
 //@import "content-type/page-agtest";
 //@import "layout/layout-debug-colour";
 
-//Galeries slideshow views
-@import "galeries/_views_slideshow";
+//Galeries slideshow views gérées par jQuery
+@import "galeries/views_slideshow";
+@import "galeries/bxslider-cyrano";
+@import "galeries/flexslider-cyrano";

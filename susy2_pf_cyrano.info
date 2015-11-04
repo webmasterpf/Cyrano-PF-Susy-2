@@ -10,20 +10,12 @@ engine = phptemplate
 
 ;chargement des plugins Jquery
 
-;scripts[] = js/responsive-nav.js
-;scripts[] = js/tinynav.min.js
-;scripts[] = js/jquery.navobile.min.js
-;scripts[] = js/jquery.jpanelmenu.min.js
-scripts[] = js/selectnav.min.js
-;pour header / menu collant haut de page
-scripts[] = js/jquery.sticky.js
-;pour bandeau coulissant
-scripts[] = js/jquery.sidebar.js
-scripts[] = js/jquery.sidebar.min.js
+;tous les scripts sont chargés via template.php !!!
 
 ;Action des plugins Jquery
-scripts[] = js/general.js
-;scripts[] = js/jquery_plugin.js
+;chargé via le template.php
+
+
 
 ;Styles pour Superfish
 superfish_styles[assopf_superfish] = Style pour Superfish  - assopf_superfish.css
@@ -37,8 +29,12 @@ stylesheets[all][] = css/vendor/buttons/buttons.css
 ;stylesheets[all][] = 3rdparty/buttons/css/buttons.css
 ;stylesheets[all][] = 3rdparty/buttons/css/font-awesome-ie7.min.css
 ;stylesheets[all][] = 3rdparty/buttons/css/font-awesome.min.css
-scripts[] = 3rdparty/buttons/js/buttons.js
 
+;Style pour Flexslider
+stylesheets[all][] = 3rdparty/flexslider/flexslider.css
+
+;Style pour Bxslider
+stylesheets[all][] = 3rdparty/bxslider/jquery.bxslider.css
 
 ; CSS pour utiliser NiceMenu
 ;stylesheets[all][] = css/navigation/nice_menus_custom.css

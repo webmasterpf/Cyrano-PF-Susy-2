@@ -32,7 +32,7 @@ $term = preg_replace('<code>\s+</code>', '<em>', trim($term));
   return ($NomTermeValide);
 }
 
-function susy2_pf_cyrano_preprocess_node(&$vars, $hook) {
+function susy2_pf_cyrano_preprocess_node(&$vars) {
  //Pour avoir un template du type node-ID.tpl
  $vars['template_files'][] = 'node-'. $vars['node']->nid;      
 //Partie regions dans node.tpl- ajoute les regions utiles au node.tpl

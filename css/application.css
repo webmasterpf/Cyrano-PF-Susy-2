@@ -4702,4 +4702,108 @@ VIEWS 3 CYCLE: DIAPO CONTENU ===================================
   float: right;
 }
 
+/*
+Override du style de galerie Bxslider
+*/
+#bloc-galerie-vdl .bx-wrapper {
+  margin: 0 auto;
+  width: 95%;
+}
+#bloc-galerie-vdl .bx-wrapper li {
+  padding: 0;
+}
+#bloc-galerie-vdl .bx-wrapper .bx-viewport {
+  height: auto;
+}
+#bloc-galerie-vdl .bx-wrapper .bx-pager {
+  margin: 0 0.1em;
+}
+
+/*
+Override du style de galerie flexslider
+*/
+.galerie .flexslider {
+  margin: 0 auto;
+  width: 95%;
+  display: inline-block;
+}
+.galerie .flexslider li {
+  padding: 0;
+}
+.galerie .flexslider .slides img {
+  padding: 0em;
+  width: 95%;
+  margin: 0 auto;
+  border: 0.1em solid #ECECED;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+@media (min-width: 990px) {
+  .galerie .flexslider .slides img {
+    border: 0.3em solid #ECECED;
+  }
+}
+.galerie .flexslider .flex-control-nav {
+  bottom: -2.1em;
+}
+.galerie .flexslider .flex-control-paging li a {
+  margin: 0.1em;
+  background: #606070;
+  border: 0.1em solid #fff;
+  -moz-box-shadow: 0.1em 0.1em 12px #aaa;
+  -webkit-box-shadow: 0.1em 0.1em 12px #aaa;
+  box-shadow: 0.1em 0.1em 12px #aaa;
+}
+.galerie .flexslider .flex-control-paging li a:hover {
+  background: #DE603A;
+}
+.galerie .flexslider .flex-control-paging li a.flex-active {
+  background: #ADC91F;
+}
+.galerie .flexslider .flex-caption {
+  position: relative;
+  z-index: 3;
+  padding: 2%;
+  width: 94%;
+  left: 0.8em;
+  bottom: 4em;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  font-size: small;
+  line-height: 1.15em;
+}
+
+.flexslider .flex-direction-nav a {
+  height: 2em;
+}
+.flexslider .flex-direction-nav a:before {
+  font-size: 2.5em;
+  display: inline-block;
+}
+.flexslider .flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
+.flexslider .flex-direction-nav .flex-prev {
+  left: -3.125em;
+}
+.flexslider .flex-direction-nav .flex-next {
+  right: -3.125em;
+}
+.flexslider .flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 0.625em;
+}
+.flexslider .flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+.flexslider .flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 0.625em;
+}
+.flexslider .flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=application.css.map */
