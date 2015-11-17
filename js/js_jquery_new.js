@@ -6,11 +6,16 @@
  */
 
 (function ($) {
+ jQuery(document).ready(function ()
+    {
+        //<!--Pour utiliser selectnav en RWD-->
+        console.log('Chargement du script pour selectnav');
+        selectnav('subnav', {label: '- Accès rapide -'});
+    });
+    
 
     jQuery(document).ready(function ()
     {
-
-
 
 //OffCanvas avec fonction anonyme
         console.log('Chargement du script pour volet coulissant');
@@ -27,6 +32,9 @@
             $transformer.removeClass('is-open');
         });
 });
+
+
+
 //// Script pour Masonry
 // jQuery(document).ready(function (){
 //        var $masonryContainer = $('.content-page-globale');
@@ -66,5 +74,4 @@
   $('.bxslider').bxSlider();
    pagerCustom: '#bx-pager'
 });
-
 })(jQuery);

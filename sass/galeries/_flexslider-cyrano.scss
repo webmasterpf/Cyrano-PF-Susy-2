@@ -31,25 +31,26 @@ Override du style de galerie flexslider
             background: $gris-anthracite;//couleur du pager
             @include ombrage(0.1em,0.1em,0.1em);
             &:hover{
-                background: $orange-fonce;//couleur du pager actif et hover
+                background: $orange-fonce;//couleur du pager hover
             }
         }
         li a.flex-active  {
-            background: $vert;
+            background: $bleu-turquoise;//couleur du pager actif
         }
     }
     .flex-caption {
   position: relative;
   z-index: 3;
   padding: 2%;
-  width: 94%;
-  left: 0.8em;
+  width: 90%;
+  left: 0em;
   bottom: 4em;
   background: rgba(0,0,0,.5);
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0,0,0,.3);
   font-size: small;
   line-height: 1.15em;
+  margin: 0 auto;
     }
 }        
 .flexslider{

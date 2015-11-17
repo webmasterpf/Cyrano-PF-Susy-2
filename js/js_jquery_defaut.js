@@ -3,24 +3,15 @@
  * jquery update 1.3.2
  */
 (function ($) {
-//<!--Pour utiliser selectnav en RWD-->
-    jQuery(document).ready(function () {
-//        console.log('Dans la boucle Defaut :  Version de jquery utilisée pour les plugins :' + jQuery111().jquery +
-//            ' -- Version de Jquery pour var $ :' + $.fn.jquery +
-//            ' -- Version de Jquery pour var jQuery :' + jQuery().jquery+
-//            ' -- Version de Jquery pour var jQuery111 :' + jQuery111().jquery
-//            );
 
-        selectnav('subnav', {label: '- Accès rapide -'});
-
-        //Header collant haut de page
-$("#header").sticky({topSpacing: 10});
-
-
-
-
-
-    });
+//    jQuery(document).ready(function ()
+//    {
+//        //Header collant haut de page
+//        console.log('Chargement du script pour header fixe');
+//      $("#header").sticky({topSpacing: 10});
+//    });
+    
+  
 
 
 

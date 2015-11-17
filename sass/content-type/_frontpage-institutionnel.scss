@@ -12,7 +12,7 @@
 
 //Code imbriqué à 100%
 body .conteneur {
-    background:transparent image-url ("bg_content_etoile.gif") no-repeat left bottom;
+    background:transparent url ("bg_content_etoile.gif") no-repeat left bottom;
     .HPGauche{
          @include clearfix;
         .annonceImg{}
@@ -90,14 +90,14 @@ body .conteneur {
   padding: 0.3em;
 }
 .savoir-plus a{
-    color: #E2007A;
+    color: $rose-fushia;
     text-decoration: none;
     padding: 2px;
     float: right;
 }
 .savoir-plus a:hover{
-    background: #E2007A;
-    color: #606171;
+    background: $rose-fushia;
+    color: $gris-anthracite;
     text-decoration: none;
 }
 /* Défilant Actus brulante - Breaking news*/
@@ -115,16 +115,17 @@ body .conteneur {
     font-weight: bold;
     margin: em(10px) 0;
     text-align:center;
-    color: #E3001B;
+    color: $rouge;
     text-decoration: blink;
 }
 .breaking-news{
-    background: #E2007A;
+    background: $gris-clair url('../images/deuil.png') no-repeat top left;
+    background-size: 20%;
     @include arrondis (em(5px));
     margin: em(5px) 0;
     a{
         text-align: center;
-        color: white;
+        color: $gris-anthracite;
         &:hover{
             text-decoration: none;
         }

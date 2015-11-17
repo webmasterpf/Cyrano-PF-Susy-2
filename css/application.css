@@ -2264,7 +2264,7 @@ div.tabs ul li a {
 |       FRONTPAGE INSTITUTIONNEL       |
 |--------------------------------------*/
 body .conteneur {
-  background: transparent image-url "bg_content_etoile.gif" no-repeat left bottom;
+  background: transparent url "bg_content_etoile.gif" no-repeat left bottom;
 }
 body .conteneur .HPGauche {
   overflow: hidden;
@@ -2363,15 +2363,15 @@ body .conteneur .HPGauche {
 }
 
 .savoir-plus a {
-  color: #E2007A;
+  color: #E30078;
   text-decoration: none;
   padding: 2px;
   float: right;
 }
 
 .savoir-plus a:hover {
-  background: #E2007A;
-  color: #606171;
+  background: #E30078;
+  color: #606070;
   text-decoration: none;
 }
 
@@ -2393,12 +2393,13 @@ body .conteneur .HPGauche {
   font-weight: bold;
   margin: 0.625em 0;
   text-align: center;
-  color: #E3001B;
+  color: #E3001C;
   text-decoration: blink;
 }
 
 .breaking-news {
-  background: #E2007A;
+  background: #ECECED url("../images/deuil.png") no-repeat top left;
+  background-size: 20%;
   -moz-border-radius: 0.3125em;
   -webkit-border-radius: 0.3125em;
   border-radius: 0.3125em;
@@ -2406,7 +2407,7 @@ body .conteneur .HPGauche {
 }
 .breaking-news a {
   text-align: center;
-  color: white;
+  color: #606070;
 }
 .breaking-news a:hover {
   text-decoration: none;
@@ -4759,20 +4760,21 @@ Override du style de galerie flexslider
   background: #DE603A;
 }
 .galerie .flexslider .flex-control-paging li a.flex-active {
-  background: #ADC91F;
+  background: #01ABCF;
 }
 .galerie .flexslider .flex-caption {
   position: relative;
   z-index: 3;
   padding: 2%;
-  width: 94%;
-  left: 0.8em;
+  width: 90%;
+  left: 0em;
   bottom: 4em;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
   font-size: small;
   line-height: 1.15em;
+  margin: 0 auto;
 }
 
 .flexslider .flex-direction-nav a {
