@@ -10,6 +10,13 @@
     <meta name="google-site-verification" content="" />
     <meta name="y_key" content=""/>
     <meta name="msvalidate.01" content="" />
+    <?php /* Code pour scan par https://detectify.com */ ?>
+    <meta name="detectify-verification" content="8497102470e46552eeca2eb8a07b7910" />
+    <meta name="Generator" content="Drupal 6 (http://drupal.org)" />
+    <!-- Meta pour tuile Windows 8 -->
+    <meta name="msapplication-TileColor" content="white"/>
+    <meta name="msapplication-TileImage" content="<?php Global $base_url;$theme_path = drupal_get_path('theme','susy2_pf_cyrano');print $base_url.$base_path.$theme_path.'/pinned-favicon.png'?>"/>
+    <meta name="application-name" content="Provence Formation"/>
     <?php print $head; ?>
     <?php print $styles; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
