@@ -2376,13 +2376,13 @@ body .conteneur .HPGauche {
 }
 
 /* Défilant Actus brulante - Breaking news*/
-#block-views-annonce_accueil-block_2 {
+#block-views-annonce_accueil-block_2, #block-views-annonce_accueil-block_3 {
   margin: 0.3125em auto;
   text-align: center;
   width: auto;
 }
 @media (min-width: 990px) {
-  #block-views-annonce_accueil-block_2 {
+  #block-views-annonce_accueil-block_2, #block-views-annonce_accueil-block_3 {
     width: 23.4375em;
   }
 }
@@ -2398,7 +2398,7 @@ body .conteneur .HPGauche {
 }
 
 .breaking-news {
-  background: #ECECED url("../images/deuil.png") no-repeat top left;
+  background: #E30078;
   background-size: 20%;
   -moz-border-radius: 0.3125em;
   -webkit-border-radius: 0.3125em;
@@ -2407,9 +2407,25 @@ body .conteneur .HPGauche {
 }
 .breaking-news a {
   text-align: center;
-  color: #606070;
+  color: #ECECED;
 }
 .breaking-news a:hover {
+  text-decoration: none;
+}
+
+.badnews .breaking-news {
+  background: #ECECED url("../images/deuil.png") no-repeat top left;
+  background-size: 20%;
+  -moz-border-radius: 0.3125em;
+  -webkit-border-radius: 0.3125em;
+  border-radius: 0.3125em;
+  margin: 0.3125em 0;
+}
+.badnews .breaking-news a {
+  text-align: center;
+  color: #606070;
+}
+.badnews .breaking-news a:hover {
   text-decoration: none;
 }
 
