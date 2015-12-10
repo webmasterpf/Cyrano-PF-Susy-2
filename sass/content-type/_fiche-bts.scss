@@ -9,7 +9,17 @@
  //@include breakpoint ($mobile){}
   //@include breakpoint ($desktop){}
   //@include breakpoint ($tablet){}
-/************** NODE.TPL ***********************/
+
+  /*######-------- ||| BORDURES ||| --------######*/
+  body .conteneur {
+      @include breakpoint ($desktop){
+          #bloc-4.fiche-bts{
+              @include border-L-orangePF;
+              padding: 0.3em;
+          }
+      }
+  }
+/*######-------- ||| STYLE ||| --------######*/
 h1.titre-fiche-bts{
     margin: 0 0 0.3em 0;
     padding: em(5px);
@@ -111,6 +121,13 @@ table#infos-pratiques-bts {
           behavior: url(/sites/all/libraries/PIE/PIE.htc);
           position: relative;
           font-size: large;
+    }
+    ul{
+         padding: 0;
+         margin:0;
+        li{
+            line-height: 2.1em;
+        }
     }
 }
 td.col1{

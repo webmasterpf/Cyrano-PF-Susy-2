@@ -101,7 +101,7 @@ body .conteneur {
     text-decoration: none;
 }
 /* Défilant Actus brulante - Breaking news*/
-#block-views-annonce_accueil-block_2
+#block-views-annonce_accueil-block_2,#block-views-annonce_accueil-block_3
 {
     margin: em(5px) auto;text-align: center;width: auto;
     @include breakpoint($desktop){
@@ -119,6 +119,21 @@ body .conteneur {
     text-decoration: blink;
 }
 .breaking-news{
+    background: $rose-fushia;
+    background-size: 20%;
+    @include arrondis (em(5px));
+    margin: em(5px) 0;
+    a{
+        text-align: center;
+        color: $gris-clair;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+}
+.badnews{
+    .breaking-news{
     background: $gris-clair url('../images/deuil.png') no-repeat top left;
     background-size: 20%;
     @include arrondis (em(5px));
@@ -133,6 +148,7 @@ body .conteneur {
 
 }
 
+}
 
 
 
