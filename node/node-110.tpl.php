@@ -31,6 +31,10 @@
 </span>
                   </div>
    <?php endif; ?>
+         <?php
+              global $theme_path;
+              include ($theme_path.'/includes/inc_region_col_1.php');
+              ?>
         
          <?php if ($node->field_centres_bts[0]['view']): ?>
         <div id="centres-bts">
@@ -63,10 +67,7 @@
     <?php if ($links): ?> 
       <div class="links"> <?php print $links; ?></div>
     <?php endif; ?>
-      <?php
-              global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_1.php');
-              ?>
+ 
 </div>
 <!--_______________________ COLONNE 2 __________________ -->
 <div id="colonne-2" class="col2_layout_7_5 page-bts">

@@ -101,7 +101,23 @@ span#DossierBTS{
 #dossier-bts .filefield-icon, #centres-bts .filefield-icon{
      display: none;
 }
-
+.page-bts aside.bloc-dossier-bts{
+    form{
+        width: 65%;
+        margin: 0 auto;
+        @include arrondis;
+    }
+    h3{color: $bleu-turquoise;}
+    label{font-size: smaller;}
+    p{padding: 0;margin: 0;}
+    input[type="text"],input[type="email"],select{
+          width: 98%;display: block;
+      }
+    input[type="submit"]{
+          margin: 0 auto;  display: block;
+    }
+    .form-item{margin-bottom: 0.5em;margin-top: 0.5em;}
+}
 #block-webform-client-block-109{}
 #block-webform-client-block-109 table{}
 #block-webform-client-block-109 tbody{}

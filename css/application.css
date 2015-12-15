@@ -2872,7 +2872,7 @@ table#actu-hasard td {
 }
 .fiche-formation h2 {
   font-size: 1em;
-  color: #333333;
+  color: #DE603A;
   font-weight: bold;
   text-align: left;
   padding: 0.3em;
@@ -2889,6 +2889,9 @@ table#actu-hasard td {
 }
 .fiche-formation p {
   padding: 0.3125em;
+}
+.fiche-formation strong {
+  color: #01ABCF;
 }
 .fiche-formation ul {
   list-style: inside;
@@ -3577,6 +3580,36 @@ span#DossierBTS a {
 
 #dossier-bts .filefield-icon, #centres-bts .filefield-icon {
   display: none;
+}
+
+.page-bts aside.bloc-dossier-bts form {
+  width: 65%;
+  margin: 0 auto;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+.page-bts aside.bloc-dossier-bts h3 {
+  color: #01ABCF;
+}
+.page-bts aside.bloc-dossier-bts label {
+  font-size: smaller;
+}
+.page-bts aside.bloc-dossier-bts p {
+  padding: 0;
+  margin: 0;
+}
+.page-bts aside.bloc-dossier-bts input[type="text"], .page-bts aside.bloc-dossier-bts input[type="email"], .page-bts aside.bloc-dossier-bts select {
+  width: 98%;
+  display: block;
+}
+.page-bts aside.bloc-dossier-bts input[type="submit"] {
+  margin: 0 auto;
+  display: block;
+}
+.page-bts aside.bloc-dossier-bts .form-item {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 #block-webform-client-block-109 td {
@@ -4439,6 +4472,10 @@ table#table-bouton-partenaire a {
 |       PAGE BASE.TPL                        |
 |                                                      |
 |--------------------------------------*/
+#content-header .messages .status p {
+  background: #ECECED;
+}
+
 .page-base h1.title {
   color: #DE603A;
 }

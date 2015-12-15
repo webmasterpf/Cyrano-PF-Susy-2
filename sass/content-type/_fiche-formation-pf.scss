@@ -24,7 +24,7 @@
     }
     h2{
         font-size: 1em;
-        color: #333333;
+        color: $orange-fonce;
         font-weight: bold;
         text-align: left;
         padding: 0.3em;
@@ -42,6 +42,9 @@
     p{
         padding: em(5px);
         
+    }
+    strong{
+        color: $bleu-turquoise;
     }
     ul{
         list-style: inside;

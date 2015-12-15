@@ -10,7 +10,9 @@
   //@include breakpoint ($desktop){}
   //@include breakpoint ($tablet){}
   //@include breakpoint(($desktop,$tablet)){}
-  
+  #content-header .messages .status{
+     p{ background: $gris-clair;}
+  } 
   .page-base {
       h1.title{
           color: $orange-fonce;
