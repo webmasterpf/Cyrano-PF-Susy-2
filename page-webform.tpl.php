@@ -1,11 +1,7 @@
-<?php
-global $theme_path;
-include ($theme_path.'/includes/inc_header.php');
-?>
+<?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_header.php'); ?>  
  <!-- ______________________ LAYOUT WEBFORM GENERIK OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
-      
       
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
@@ -47,13 +43,7 @@ include ($theme_path.'/includes/inc_header.php');
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
 
-        
-
-          
-          
-      </div> <!-- /content-inner /content -->
-
-            
+       
         <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
           <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "with-main-menu"; } if (!empty($secondary_links)) { print " with-sub-menu"; } ?>">
             <?php if (!empty($primary_links)){ print theme('links', $primary_links, array('id' => 'primary', 'class' => 'links main-menu')); } ?>
@@ -67,8 +57,4 @@ include ($theme_path.'/includes/inc_header.php');
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-	 </div> <!-- /content-global -->
-  <?php
-global $theme_path;
-include ($theme_path.'/includes/inc_footer.php');
-?>
+   <?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_footer.php'); ?>         
