@@ -41,7 +41,7 @@
           <div id="middle-content-ficheFormation">
                
             <?php print $content; ?>
-<!-- <?php print_r($node->taxonomy)?> -->
+<!-- <?php //print_r($node->taxonomy)?> -->
  <?php if ($terms): ?>
       <div id="taxonomy">
 <?php print Cyrano_PF_print_terms($node->taxonomy);?>

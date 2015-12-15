@@ -4,7 +4,7 @@
         <div class="close">
             
             <img class="close-btn" 
-                 src="<?php global $theme_path; print $theme_path.'/images/close.svg'; ?>" alt="Fermer">
+                 src="../<?php global $theme_path; print $theme_path.'/images/close.svg'; ?>" alt="Fermer" title="Fermer">
             
         </div>
         <div class="bandeau-pagetop">

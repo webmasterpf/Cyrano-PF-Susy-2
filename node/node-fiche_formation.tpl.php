@@ -14,20 +14,20 @@
                 <h1 class="titre-fiche-formation"><?php print $title; ?></h1>
               <?php endif; ?>
           <?php if ($node->field_complement_info_formation[0]['view']): ?>
-                    <div class="complement_titre_fiche">
+                    <div class="complement_titre_fiche complement_info">
                         <?php (print $node->field_complement_info_formation[0]['view']); /* Info complementaire sur formation */ ?>
                     </div>
                 <?php endif; ?>
                 
    <?php if ($node->field_intro_fiche_formation[0]['view']): ?>
-                    <div class="complement_titre_fiche">
+                    <div class="complement_titre_fiche intro_fiche">
                         <?php (print $node->field_intro_fiche_formation[0]['view']); /* Info complementaire sur formation */ ?>
                     </div>
                 <?php endif; ?>
                 
    <?php if ($node->field_savoir_plus_fiche_formatio[0]['view']): ?>
-                    <div class="complement_titre_fiche">
-                        <?php (print $node->field_savoir_plus_fiche_formatio[0]['view']); /* Info complementaire sur formation */ ?>
+                    <div class="complement_titre_fiche savoir_plus_fiche">
+                        <?php (print $node->field_savoir_plus_fiche_formatio[0]['view']); /* Savoir plus sur formation */ ?>
                     </div>
                 <?php endif; ?>                
        <?php
