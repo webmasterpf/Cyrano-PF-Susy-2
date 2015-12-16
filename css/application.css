@@ -4528,7 +4528,7 @@ table#table-bouton-partenaire a {
 |       PAGE BASE.TPL                        |
 |                                                      |
 |--------------------------------------*/
-#content-header .messages .status p {
+#content-header .status ul, #content-header .status li, #content-header .status p {
   background: #ECECED;
 }
 
