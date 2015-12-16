@@ -2253,7 +2253,9 @@ div.tabs ul li a {
 
 /*Workspace*/
 .sticky-table {
-  color: #606071;
+  color: #606070;
+  width: 98%;
+  margin: 0 auto;
 }
 .sticky-table a {
   color: red;
@@ -3197,14 +3199,14 @@ span.pf {
   list-style-position: inside;
 }
 .page-association h3, .page-association h2 {
-  color: #EA703F;
+  color: #DE603A;
   padding: 0.125em;
 }
 .page-association h2 {
   text-align: center;
 }
 .page-association h4 {
-  color: #94127F;
+  color: #911381;
   padding: 0.125em;
   text-indent: 0.1875em;
 }
@@ -3233,7 +3235,7 @@ span.pf {
 
 .title-association {
   text-align: right;
-  color: #EA703F;
+  color: #DE603A;
   font-size: 1.5em;
 }
 
@@ -3248,6 +3250,45 @@ span.pf {
 
 #centre-asso li.active a {
   color: white;
+}
+
+.page-association aside.bloc-dossier-prepas form {
+  background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
+  padding: 0.3em;
+  width: 65%;
+  margin: 0 auto;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+.page-association aside.bloc-dossier-prepas h3 {
+  color: #01ABCF;
+}
+.page-association aside.bloc-dossier-prepas label {
+  font-size: smaller;
+}
+.page-association aside.bloc-dossier-prepas p {
+  padding: 0;
+  margin: 0;
+}
+.page-association aside.bloc-dossier-prepas input[type="text"], .page-association aside.bloc-dossier-prepas input[type="email"], .page-association aside.bloc-dossier-prepas input[type="submit"], .page-association aside.bloc-dossier-prepas select {
+  width: 98%;
+  display: block;
+}
+.page-association aside.bloc-dossier-prepas input[type="submit"] {
+  margin: 0 auto;
+  display: block;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  -ms-word-break: break-word;
+  word-break: break-word;
+}
+.page-association aside.bloc-dossier-prepas .form-item {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 /*-------------------------------------|
@@ -3599,13 +3640,20 @@ span#DossierBTS a {
   padding: 0;
   margin: 0;
 }
-.page-bts aside.bloc-dossier-bts input[type="text"], .page-bts aside.bloc-dossier-bts input[type="email"], .page-bts aside.bloc-dossier-bts select {
+.page-bts aside.bloc-dossier-bts input[type="text"], .page-bts aside.bloc-dossier-bts input[type="email"], .page-bts aside.bloc-dossier-bts input[type="submit"], .page-bts aside.bloc-dossier-bts select {
   width: 98%;
   display: block;
 }
 .page-bts aside.bloc-dossier-bts input[type="submit"] {
   margin: 0 auto;
   display: block;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  -ms-word-break: break-word;
+  word-break: break-word;
 }
 .page-bts aside.bloc-dossier-bts .form-item {
   margin-bottom: 0.5em;
@@ -3760,6 +3808,8 @@ h1.titre-fiche-bts {
   -ms-hyphens: auto;
   -o-hyphens: auto;
   hyphens: auto;
+  -ms-word-break: break-word;
+  word-break: break-word;
   -webkit-animation-name: blinker;
   -webkit-animation-duration: 1s;
   -webkit-animation-timing-function: linear;
