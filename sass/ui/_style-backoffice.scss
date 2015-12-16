@@ -45,11 +45,19 @@ div.tabs ul li{
   padding: em(10px) 0;
 }
 
-/*Workspace*/
+/*Workspace - Revisions*/
 
 .sticky-table {
-  color: #606071;
+  color: $gris-anthracite;
+  width: 98%;
+  margin: 0 auto;
   a {
     color: red;
   }
+}
+/*-- EDIT MODE --*/
+ul.primary{
+    a{
+        color: $violet;
+    }
 }

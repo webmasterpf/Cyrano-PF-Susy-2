@@ -90,7 +90,7 @@ span.pf{color: black;background: #E85231;padding: 0 em(2px);}
 }
 #centre-asso a:hover{}
 #centre-asso img{}
-//Formulaire telechargement dossier prepas
+//Formulaire telechargement dossier prepas (depuis 12-2015) node/108
 .page-association aside.bloc-dossier-prepas{
     form{
         background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
@@ -100,7 +100,7 @@ span.pf{color: black;background: #E85231;padding: 0 em(2px);}
         margin: 0 auto;
         @include arrondis;
     }
-    h3{color: $bleu-turquoise;}
+    h2,h3{color: $rose-fushia;text-align: center;}
     label{font-size: smaller;}
     p{padding: 0;margin: 0;}
     input[type="text"],input[type="email"],input[type="submit"],select{

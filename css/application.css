@@ -2251,7 +2251,7 @@ div.tabs ul li a {
   padding: 0.625em 0;
 }
 
-/*Workspace*/
+/*Workspace - Revisions*/
 .sticky-table {
   color: #606070;
   width: 98%;
@@ -2259,6 +2259,11 @@ div.tabs ul li a {
 }
 .sticky-table a {
   color: red;
+}
+
+/*-- EDIT MODE --*/
+ul.primary a {
+  color: #911381;
 }
 
 /*-------------------------------------|
@@ -3261,8 +3266,9 @@ span.pf {
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
 }
-.page-association aside.bloc-dossier-prepas h3 {
-  color: #01ABCF;
+.page-association aside.bloc-dossier-prepas h2, .page-association aside.bloc-dossier-prepas h3 {
+  color: #E30078;
+  text-align: center;
 }
 .page-association aside.bloc-dossier-prepas label {
   font-size: smaller;
@@ -3630,7 +3636,7 @@ span#DossierBTS a {
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
 }
-.page-bts aside.bloc-dossier-bts h3 {
+.page-bts aside.bloc-dossier-bts h2, .page-bts aside.bloc-dossier-bts h3 {
   color: #01ABCF;
 }
 .page-bts aside.bloc-dossier-bts label {
