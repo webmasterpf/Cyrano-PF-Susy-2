@@ -59,18 +59,25 @@ table.table-bts-coord{
     padding: 0;
     margin: em(10px) 0;
 }
-.vue-bloc-liste-bts{text-align: left;text-indent: 15px;}
-.vue-bloc-liste-bts ul{
-    list-style: none;
+.vue-bloc-liste-bts{
+    text-align: left;text-indent: em(15px);
+    ul{
+        list-style: none;
+    }
+    li{}
+    a{
+        font-weight: bold;
+        padding: em(3px);
+        color: $violet;
+    }
+    span.complement-bts{
+        font-size: small;
+        color: $orange-fonce;
+    }
 }
-.vue-bloc-liste-bts li{}
-.vue-bloc-liste-bts a{
-    font-weight: bold;
-    padding: 3px;
-    color: #911381;
-}
+
 #vue-liste-bts .vue-bloc-liste-bts a:hover{
-    background: #911381;
+    background: $violet;
     color: white;
 }
 #vue-liste-bts h3,#vue-liste-bts .view-header{text-align: center;}

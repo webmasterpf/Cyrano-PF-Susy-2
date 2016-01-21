@@ -100,6 +100,9 @@ h1.titre-fiche-bts{
        @include clignote();//avec 1 to 0 duration 1s
     }
     h3{color: $bleu-turquoise;padding: 1.5em 0;font-size: small;}
+    p{
+        padding: 0; margin: 0;font-size: small;line-height: 0.95em;
+    }
 }
  
  
@@ -187,20 +190,21 @@ td.col1 :hover{
 .fiche-bts{
     h3{
         font-size: 1.2em;
-        color: #91127D;
+        color: $violet;
        }
     h2{
         font-size:x-large;
         color: $vert;
     }
     strong {
-        color: #EA703F;
+        color: $orange-fonce;
     }
     p{
-        padding:5px 0;
+        padding:em(5px) 0;
+        margin: 0;
     }
     a{
-        color: #d63e2a;
+        color: $rouge;
         text-decoration: none;
         font-weight: bold;
     }
@@ -227,7 +231,7 @@ td.col1 :hover{
         }
     }
     a{
-        color: #d63e2a;
+        color: $rouge;
         text-decoration:none;
     }
     &a:hover{

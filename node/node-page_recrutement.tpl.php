@@ -13,6 +13,16 @@
             <?php endif; ?>
            <div class="content">
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
+               
+                     <?php if (!empty($node->field_fichier_joint[0]['view'])): ?>
+           <div class="docs-enseignant">
+               <?php
+               foreach ($node->field_fichier_joint as $key => $docs) {
+                   print $node->field_fichier_joint[$key]['view'];
+               }
+               ?>            
+           </div>
+            <?php endif;?>
             </div>
      
                 <?php
