@@ -42,6 +42,7 @@ function susy2_pf_cyrano_preprocess_node(&$vars) {
  $vars['node_col_1'] = theme('blocks', 'node_col_1');
  $vars['node_col_2'] = theme('blocks', 'node_col_2');
  $vars['node_col_3'] = theme('blocks', 'node_col_3');
+ $vars['node_col_4'] = theme('blocks', 'node_col_4');
  //Regions custom pour theme PF suite generalisation node.tpl
  $vars['centralBloc'] = theme('blocks', 'centralBloc');
  $vars['centre_partenaire'] = theme('blocks', 'centre_partenaire');
