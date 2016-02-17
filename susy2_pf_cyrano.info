@@ -100,13 +100,14 @@ regions[centre_partenaire] = Zone centrale page partenaire
 
 ;Region pour les node.tpl (ajouter dans template.php)
 regions[actuAssociation] = Zone pour RSS issu du site PF - Vue Bloc RSS
-regions[node_col_1] = Bloc pour colonne 1
-regions[node_col_2] = Bloc pour colonne 2
-regions[node_col_3] = Bloc pour colonne 3
+regions[node_col_1] = Région pour colonne 1
+regions[node_col_2] = Région pour colonne 2
+regions[node_col_3] = Région pour colonne 3
+regions[node_col_4] = Région pour colonne 4
 ;Region pour page poles formation (ajouter dans template.php)
-regions[pole_bloc_G] = Bloc pour pole Gauche
-regions[pole_bloc_C] = Bloc pour pole Centre
-regions[pole_bloc_D] = Bloc pour pole Droit
+regions[pole_bloc_G] = Région pour pole Gauche
+regions[pole_bloc_C] = Région pour pole Centre
+regions[pole_bloc_D] = Région pour pole Droit
 
 regions[content_top] = Content top
 regions[content_top_node] = Content top node
