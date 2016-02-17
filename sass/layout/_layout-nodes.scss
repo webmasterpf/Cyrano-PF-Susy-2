@@ -7,11 +7,16 @@ Ne s'applique que si présence d'un node-TYPE.tpl.php
 ********** LAYOUT NODE.TPL OVERRIDE **********
 \\\\\\\\\\\\\\\\\\\\\\\//////////////////////*/
 
-/*//////////////// 1 COLONNE \\\\\\\\\\\\\\\\*/
+/*//////////////// 1 COLONNE PLEINE LARGEUR \\\\\\\\\\\\\\\\*/
 body .conteneur{
-    .col1_12{
-        max-width: container();
+    .col1_layout_max{
+        //max-width: container();
+        @include span($mobilecol);
+        @include breakpoint ($desktop){
+           @include span($desktopcol);
+          }
     }
+      
 }
 
 /*//////////////// 3 COLONNES \\\\\\\\\\\\\\\\*/
@@ -211,6 +216,7 @@ body .conteneur{
         
         }
         @include breakpoint ($desktop){
+            
            @include span(4 of $desktopcol (gutter-override:.5em));//sinon colonne trop large, 
            //possible aussi avec no-gutters
         

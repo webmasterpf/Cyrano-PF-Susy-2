@@ -20,11 +20,17 @@ body .conteneur .conteneur-flexchild{
        @include flex-flow(column wrap);//besoin d'envelopper le contenu + colonne
         
 }
+/*Wrapper horizontal Flexbox - Enveloppe horizontale Flexbox*/
 /*//////////////// 1 COLONNE \\\\\\\\\\\\\\\\*/
 body .conteneur {
-    .col1_layoutflex_12{
-        max-width: container();
+    .col1_layoutflex_max{
+        max-width: container();      
+            @include breakpoint ($desktop){
+         @include flex(1 0 span(12 of $desktopcol));
+                      
+        }
     }
+
 }
 
 /*//////////////// 3 COLONNES \\\\\\\\\\\\\\\\*/
@@ -227,6 +233,33 @@ body .conteneur {
                 }
                   .layoutflex_3col_all4last{
                 @include flex(1 0 span(last 4 of $desktopcol));//sinon colonne trop large, 
+                //possible aussi avec no-gutters
+            }
+            }
+    }
+}
+//Pour un 4 colonnes egales : page pole
+body .conteneur {
+    .conteneur-flex {
+        @include flexbox;
+        @include flex-flow(column wrap);//besoin d'envelopper le contenu dans une colonne
+        //Values: none | <flex-grow> <flex-shrink> || <flex-basis>
+        // Default: See individual properties (1 1 0).
+        @include flex(1 0 span($mobilecol));
+        .layoutflex_4col_all43{}
+        .layoutflex_4col_all43last{}
+
+
+            @include breakpoint ($desktop){
+                @include flex-flow(row nowrap);
+                .titre-flex{
+                    @include flex(2 0 span(12 of $desktopcol));//marche pas
+                               }
+                .layoutflex_4col_all3{
+                    @include flex(1 0 span(3 of $desktopcol));
+                }
+                  .layoutflex_4col_all3last{
+                @include flex(1 0 span(last 3 of $desktopcol));//sinon colonne trop large, 
                 //possible aussi avec no-gutters
             }
             }

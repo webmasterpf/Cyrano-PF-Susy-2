@@ -14,7 +14,7 @@
 
 /*######-------- ||| ORDRE FLEXBOX ||| --------######*/
 body .conteneur .conteneur-flex{
-    #colonne-1.CLASS_NAME{order:1;}
+    #bloc2-flex.espace-entreprise{order:1;}
     #colonne-2.CLASS_NAME{order:2;}
     #colonne-3.CLASS_NAME{order:3;}
     @include breakpoint ($desktop){}
@@ -27,11 +27,22 @@ body .conteneur .conteneur-flex{
     
 }
 /*######-------- ||| STYLE ||| --------######*/
+h1.title-page-bloc{
+    font-size: xx-large;
+    font-family: arista,Trebuchet MS, sans-serif;
+    text-align: center;
+    color: $violet;
+    text-transform: uppercase;
+    margin: 1em 0 0 0;    
+}
 /*$$$$$$---- ENTREPRISES ----$$$$$*/
 .espace-entreprise{
     .nav-espace-entreprise{
         ul{
+            @include horizontal-list-container;//Compass Mixin
+            @include break;
             li{
+                 @include horizontal-list-item;//Compass Mixin
                 a{}
             }
         }
