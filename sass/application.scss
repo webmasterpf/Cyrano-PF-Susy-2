@@ -40,12 +40,13 @@ breakpoint-2.5.0
 @import "global/typos";
 @import "global/style";
 @import "global/sub-nav";
-
+@import "global/flex";
 
 // Import des partiels du layout du thème Drupal
 
 @import "layout/layout";
 @import "layout/layout-nodes";
+@import "layout/layout-nodes-flexbox";
 @import "layout/layout-header";
 @import "layout/layout-footer";
 @import "layout/layout-defilant";
