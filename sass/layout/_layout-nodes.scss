@@ -10,13 +10,20 @@ Ne s'applique que si présence d'un node-TYPE.tpl.php
 /*//////////////// 1 COLONNE PLEINE LARGEUR \\\\\\\\\\\\\\\\*/
 body .conteneur{
     .col1_layout_max{
-        //max-width: container();
-        @include span($mobilecol);
+        @include breakpoint ($mobile){
+            max-width: container();
+            //@include span($mobilecol);
+        }
         @include breakpoint ($desktop){
-           @include span($desktopcol);
-          }
+            @include span(12 of $desktopcol);
+            &:after{
+                content: " ";
+                display: block;
+                clear: both;
+            } 
+        }
     }
-      
+
 }
 
 /*//////////////// 3 COLONNES \\\\\\\\\\\\\\\\*/
@@ -206,8 +213,8 @@ body .conteneur{
         
         }
         @include breakpoint ($desktop){
-           @include span(4 of $desktopcol (gutter-override:.5em));
-        
+           @include span(4 of $desktopcol );
+        @include gutters(.5em);
         }
     }
     .layout_3col_all4last{
@@ -217,12 +224,14 @@ body .conteneur{
         }
         @include breakpoint ($desktop){
             
-           @include span(4 of $desktopcol (gutter-override:.5em));//sinon colonne trop large, 
+           @include span(4 of $desktopcol);//sinon colonne trop large, 
            //possible aussi avec no-gutters
+           @include gutters(.5em);
         
         }
     }
 }
+
 /*//////////////// 2 COLONNES ASYMETRIQUES \\\\\\\\\\\\\\\\*/
 body .conteneur{
     .col1_layout_4_8{
@@ -323,31 +332,35 @@ body .conteneur{
 }
 
 /*//////////////// 4 COLONNES \\\\\\\\\\\\\\\\*/
+//Pour un 4 colonnes egales
 body .conteneur{
     .layout_4col_all3{
-       @include span($mobilecol);
         
-
         @include breakpoint ($tablet){
             @include span(2 of $tabletcol);
-
+        
         }
         @include breakpoint ($desktop){
            @include span(3 of $desktopcol);
-
+           @include gutters(.3em);/*Toujours en dernier pour override de la taille des gouttieres*/
+           
+            
+           
+        
         }
     }
     .layout_4col_all3last{
-       @include span($mobilecol);
-        
-
-        @include breakpoint ($tablet){
+       @include breakpoint ($tablet){
             @include span(last 2 of $tabletcol);
-
+        
         }
         @include breakpoint ($desktop){
-           @include span(last 3 of $desktopcol);
-
+            
+           @include span(2 of $desktopcol);//sinon colonne trop large, 
+           //possible aussi avec no-gutters
+           @include isolate(.3%);//permet d'isoler la colonne du flux sans qu'elle en sorte
+           //, fixe le margin-left, possible aussi avec option no-gutters
+        
         }
     }
 }

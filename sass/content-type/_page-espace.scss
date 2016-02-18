@@ -31,7 +31,7 @@ h1.title-page-bloc{
     font-size: xx-large;
     font-family: arista,Trebuchet MS, sans-serif;
     text-align: center;
-    color: $violet;
+    color: $orange-fonce;
     text-transform: uppercase;
     margin: 1em 0 0 0;    
 }
@@ -41,6 +41,7 @@ h1.title-page-bloc{
         ul{
             @include horizontal-list-container;//Compass Mixin
             @include break;
+            padding:0 0 0 0.6em;
             li{
                  @include horizontal-list-item;//Compass Mixin
                 a{}
@@ -48,7 +49,77 @@ h1.title-page-bloc{
         }
     }
 }
+#bloc2-flex,#bloc3-flex,#bloc4-flex,#bloc5-flex{
+    padding : 0 0 0 0.3em;//centrer le contenu dans la colonne
+        ul{
+           
+            li{
+                 list-style: none;
+                 margin:0 0 0.2em 1em;
+                a{
+                    text-decoration: none;
+                    color:$gris-anthracite;
+                    font-size: large;
+                    display:block;
+                    padding: 0.3em;
+                   // &:hover{color: inherit;}
+                }
+            }
+        }
+    }
+    /*design differencié pour les boutons de chaque listes*/
+    #bloc2-flex,#bloc3-flex,#bloc4-flex,#bloc5-flex{
+    .espace-devenir-partenaire{
+        ul{
 
+            li{
+
+                a{
+                    background:$gris-clair;
+                        &:hover{color: $orange-fonce;}
+                }
+            }
+        }
+    }
+    .espace-accueillir-jeune{
+        ul{
+
+            li{
+
+                a{
+                     color:$gris-clair;
+                     background:$gris-clair-moyen;
+                    &:hover{color: $orange-fonce;}
+                }
+            }
+        }
+    }
+    .espace-taxe-apprentissage{
+        ul{
+
+            li{
+
+                a{
+                        background:$gris-clair;
+                        &:hover{color: $orange-fonce;}
+                }
+            }
+        }
+    }
+    .espace-vie-lycees{
+        ul{
+
+            li{
+
+                a{
+                     color:$gris-clair;
+                     background:$gris-clair-moyen;
+                    &:hover{color: $orange-fonce;}
+                }
+            }
+        }
+    }
+}
 /*$$$$$$---- PARTENAIRES ----$$$$$*/
 .espace-partenaire{
      .nav-espace-partenaire{

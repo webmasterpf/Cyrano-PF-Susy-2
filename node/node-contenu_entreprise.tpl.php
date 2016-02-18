@@ -48,11 +48,13 @@
                         <?php print $centre_partenaire; ?>
                     </div>
                 <?php endif; ?>
-            </div>
-     <?php
+                    
+                         <?php
               global $theme_path;
               include ($theme_path.'/includes/inc_region_col_2.php');
               ?>
+            </div>
+
             
         <?php if ($terms): ?>
         <div class="taxonomy"><?php //print $terms; ?></div>

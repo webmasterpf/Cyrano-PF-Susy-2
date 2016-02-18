@@ -36,7 +36,13 @@ body .conteneur{
 
         }
         .node-inner{  
-
+            .links{
+                 &:before{
+                content: " ";
+                display: block;
+                clear: both;
+            }
+            }
         }                       
         .content-bottom{}
         .content-bottom-home{

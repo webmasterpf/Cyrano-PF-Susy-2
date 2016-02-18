@@ -9,7 +9,7 @@
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
     
        <?php if ($title): ?>
-<div class="titre-flex"><h1 class="title-page-bloc"><?php print $title; ?></h1></div>
+    <!--<div class="titre-flex"><h1 class="title-page-bloc"><?php //print $title; ?></h1></div>-->
               <?php endif; ?>
     
   <div class="node-inner">
@@ -20,38 +20,45 @@
       <span class="submitted"><?php print $submitted; ?></span>
     <?php endif; ?>
 <!-- ______________________ PARTIE CUSTOMISEE _______________________ -->
-               
+
+
 <!-- ______________________ BLOC 1 _______________________ -->
-<div id="bloc1-flex" class="col1_layout_max espace-entreprise">
+<div id="bloc1-flex " class="col1_layout_max espace-entreprise">
                    <?php
               global $theme_path;
               include ($theme_path.'/includes/inc_region_col_1.php');
               ?>
               </div>
-<div class="conteneur-flexchild">
+
+<?php /* Il faut séparer le contenu géré par flexbox et le mettre dans une boite avec display:flex*/?>
+<div class="//conteneur-flexchild">
 <!-- ______________________ BLOC 2 _______________________ -->
-              <div id="bloc2-flex" class="layoutflex_4col_all3 espace-entreprise">
+              <div id="bloc2-flex"  class="layout_4col_all3 espace-entreprise">
+                  <a name="devenir-partenaire"></a>
                    <?php
               global $theme_path;
               include ($theme_path.'/includes/inc_region_col_2.php');
               ?>
               </div>
 <!-- ______________________ BLOC 3 _______________________ -->
-              <div id="bloc3-flex" class="layoutflex_4col_all3 espace-entreprise">
+              <div id="bloc3-flex"  class="layout_4col_all3 espace-entreprise">
+                  <a name="accueillir"></a>
                    <?php
               global $theme_path;
               include ($theme_path.'/includes/inc_region_col_3.php');
               ?>
               </div>
 <!-- ______________________ BLOC 4 _______________________ -->
-              <div id="bloc4-flex" class="layoutflex_4col_all3 espace-entreprise">
+              <div id="bloc4-flex"  class="layout_4col_all3 espace-entreprise">
+                  <a name="taxe"></a>
                    <?php
               global $theme_path;
               include ($theme_path.'/includes/inc_region_col_4.php');
               ?>
               </div>
 <!-- ______________________ BLOC 5 _______________________ -->
-              <div id="bloc5-flex" class="layoutflex_4col_all3last espace-entreprise">
+              <div id="bloc5-flex"  class="layout_4col_all3 espace-entreprise">
+                  <a name="vie-lycees"></a>
                   <?php
               global $theme_path;
               include ($theme_path.'/includes/inc_region_col_5.php');

@@ -16,8 +16,13 @@ body .conteneur .conteneur-flex{
 //Pour déplacer les éléments des blocs avec flexbox
 body .conteneur .conteneur-flexchild{
       //Flexbox initialisation du conteneur
-        @include flexbox;
+        @include flexbox; /* crée un contexte flex pour ses enfants */
        @include flex-flow(column wrap);//besoin d'envelopper le contenu + colonne
+        &:before{
+        content: " ";
+        display: block;
+        clear: both;
+    } 
         
 }
 /*Wrapper horizontal Flexbox - Enveloppe horizontale Flexbox*/
@@ -238,33 +243,7 @@ body .conteneur {
             }
     }
 }
-//Pour un 4 colonnes egales : page pole
-body .conteneur {
-    .conteneur-flex {
-        @include flexbox;
-        @include flex-flow(column wrap);//besoin d'envelopper le contenu dans une colonne
-        //Values: none | <flex-grow> <flex-shrink> || <flex-basis>
-        // Default: See individual properties (1 1 0).
-        @include flex(1 0 span($mobilecol));
-        .layoutflex_4col_all43{}
-        .layoutflex_4col_all43last{}
 
-
-            @include breakpoint ($desktop){
-                @include flex-flow(row nowrap);
-                .titre-flex{
-                    @include flex(2 0 span(12 of $desktopcol));//marche pas
-                               }
-                .layoutflex_4col_all3{
-                    @include flex(1 0 span(3 of $desktopcol));
-                }
-                  .layoutflex_4col_all3last{
-                @include flex(1 0 span(last 3 of $desktopcol));//sinon colonne trop large, 
-                //possible aussi avec no-gutters
-            }
-            }
-    }
-}
 /*//////////////// 2 COLONNES ASYMETRIQUES \\\\\\\\\\\\\\\\*/
 body .conteneur {
     .col1_layoutflex_4_8{
@@ -365,32 +344,27 @@ body .conteneur {
 }
 
 /*//////////////// 4 COLONNES \\\\\\\\\\\\\\\\*/
+//Pour un 4 colonnes egales : page pole
 body .conteneur {
-    .layoutflex_4col_all3{
-       @include flex($mobilecol);
-        
+    .conteneur-flexchild {
+     
+        .layoutflex_4col_all43{}
+        .layoutflex_4col_all43last{}
 
-        @include breakpoint ($tablet){
-            @include flex(2 of $tabletcol);
 
-        }
-        @include breakpoint ($desktop){
-           @include flex(3 of $desktopcol);
-
-        }
-    }
-    .layoutflex_4col_all3last{
-       @include flex($mobilecol);
-        
-
-        @include breakpoint ($tablet){
-            @include flex(last 2 of $tabletcol);
-
-        }
-        @include breakpoint ($desktop){
-           @include flex(last 3 of $desktopcol);
-
-        }
+            @include breakpoint ($desktop){
+                @include flex-flow(row nowrap);
+                .titre-flex{
+                    @include flex(2 0 span(12 of $desktopcol));//marche pas
+                               }
+                .layoutflex_4col_all3{
+                    @include flex(1 0 span(3 of $desktopcol));
+                }
+                  .layoutflex_4col_all3last{
+                @include flex(1 0 span(last 3 of $desktopcol));//sinon colonne trop large, 
+                //possible aussi avec no-gutters
+            }
+            }
     }
 }
 /*\\\\\\\\\\\ LAYOUT IMBRIQUE (NESTED) - SPECIAUX ///////////*/
