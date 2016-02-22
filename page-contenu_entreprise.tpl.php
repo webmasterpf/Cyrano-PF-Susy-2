@@ -1,5 +1,5 @@
 <?php $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); include ($theme_path.'/includes/inc_header.php'); ?>  
- <!-- ______________________ LAYOUT PAGE PARTENAIRE _______________________ -->
+ <!-- ______________________ LAYOUT CONTENU ENTREPRISE  _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
  <div class="content-global">
 

@@ -5294,6 +5294,7 @@ h1.title-page-bloc {
   overflow: hidden;
   *zoom: 1;
   clear: both;
+  padding: 0 0 0 0.6em;
 }
 .espace-entreprise .nav-espace-entreprise ul li {
   list-style-image: none;
@@ -5314,14 +5315,47 @@ h1.title-page-bloc {
   padding-right: 0;
 }
 
+#bloc2-flex, #bloc3-flex, #bloc4-flex, #bloc5-flex {
+  padding: 0 0 0 0.3em;
+}
 #bloc2-flex ul li, #bloc3-flex ul li, #bloc4-flex ul li, #bloc5-flex ul li {
   list-style: none;
   margin: 0 0 0.2em 1em;
 }
 #bloc2-flex ul li a, #bloc3-flex ul li a, #bloc4-flex ul li a, #bloc5-flex ul li a {
   text-decoration: none;
-  color: #01ABCF;
+  color: #606070;
   font-size: large;
+  display: block;
+  padding: 0.3em;
+}
+
+/*design differencié pour les boutons de chaque listes*/
+#bloc2-flex .espace-devenir-partenaire ul li a, #bloc3-flex .espace-devenir-partenaire ul li a, #bloc4-flex .espace-devenir-partenaire ul li a, #bloc5-flex .espace-devenir-partenaire ul li a {
+  background: #ECECED;
+}
+#bloc2-flex .espace-devenir-partenaire ul li a:hover, #bloc3-flex .espace-devenir-partenaire ul li a:hover, #bloc4-flex .espace-devenir-partenaire ul li a:hover, #bloc5-flex .espace-devenir-partenaire ul li a:hover {
+  color: #DE603A;
+}
+#bloc2-flex .espace-accueillir-jeune ul li a, #bloc3-flex .espace-accueillir-jeune ul li a, #bloc4-flex .espace-accueillir-jeune ul li a, #bloc5-flex .espace-accueillir-jeune ul li a {
+  color: #ECECED;
+  background: #9898a6;
+}
+#bloc2-flex .espace-accueillir-jeune ul li a:hover, #bloc3-flex .espace-accueillir-jeune ul li a:hover, #bloc4-flex .espace-accueillir-jeune ul li a:hover, #bloc5-flex .espace-accueillir-jeune ul li a:hover {
+  color: #DE603A;
+}
+#bloc2-flex .espace-taxe-apprentissage ul li a, #bloc3-flex .espace-taxe-apprentissage ul li a, #bloc4-flex .espace-taxe-apprentissage ul li a, #bloc5-flex .espace-taxe-apprentissage ul li a {
+  background: #ECECED;
+}
+#bloc2-flex .espace-taxe-apprentissage ul li a:hover, #bloc3-flex .espace-taxe-apprentissage ul li a:hover, #bloc4-flex .espace-taxe-apprentissage ul li a:hover, #bloc5-flex .espace-taxe-apprentissage ul li a:hover {
+  color: #DE603A;
+}
+#bloc2-flex .espace-vie-lycees ul li a, #bloc3-flex .espace-vie-lycees ul li a, #bloc4-flex .espace-vie-lycees ul li a, #bloc5-flex .espace-vie-lycees ul li a {
+  color: #ECECED;
+  background: #9898a6;
+}
+#bloc2-flex .espace-vie-lycees ul li a:hover, #bloc3-flex .espace-vie-lycees ul li a:hover, #bloc4-flex .espace-vie-lycees ul li a:hover, #bloc5-flex .espace-vie-lycees ul li a:hover {
+  color: #DE603A;
 }
 
 /*$$$$$$---- PARTENAIRES ----$$$$$*/
