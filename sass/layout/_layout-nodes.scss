@@ -133,7 +133,7 @@ body .conteneur{
         }
         @include breakpoint ($desktop){
             @include span(last 3 of $desktopcol);
-          // @include isolate(.3%);//permet d'isoler la colonne du flux sans qu'elle en sorte
+          @include isolate(.3%);//permet d'isoler la colonne du flux sans qu'elle en sorte
            //, fixe le margin-left, possible aussi avec option no-gutters
            
         }

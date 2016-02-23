@@ -124,7 +124,34 @@ h1.title-page-bloc{
 .espace-partenaire{
      .nav-espace-partenaire{
         ul{
+               @include horizontal-list-container;//Compass Mixin
+            @include break;
+            padding:0 0 0 0.6em;
             li{
+                @include horizontal-list-item;//Compass Mixin
+                a{}
+            }
+        }
+    }
+}
+#bloc-2,#bloc-3,#bloc-4,#bloc-5{
+    h3{
+        color: $rose-fushia;
+    }
+}
+.espace-partenaire{
+    .part-institutionnels,.part-associatifs,.part-branches,.part-particuliers{
+         ul{
+            @include horizontal-list-container;//Compass Mixin
+            @include break;
+            padding:0 0 0 0.6em;
+            li{
+                @include horizontal-list-item;//Compass Mixin
+                @include cesure-txt;
+                img{
+                    //@include gallery(2 of 12);
+                }
+                span{display: block;}
                 a{}
             }
         }

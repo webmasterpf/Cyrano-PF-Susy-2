@@ -1044,6 +1044,8 @@ body .conteneur .col2_layout_2_7_3 {
     width: 57.64803%;
     float: left;
     margin-right: 1.64474%;
+    margin-right: 0.3em;
+    /*Toujours en dernier pour override de la taille des gouttieres*/
   }
 }
 @media (min-height: 767px) and (max-width: 1024px) and (orientation: landscape) {
@@ -1070,6 +1072,10 @@ body .conteneur .col3_layout_2_7_3 {
 }
 @media (min-width: 990px) {
   body .conteneur .col3_layout_2_7_3 {
+    width: 23.76645%;
+    float: left;
+    margin-left: 76.23355%;
+    margin-right: -100%;
     float: left;
     margin-left: 0.3%;
     margin-right: -100%;
@@ -5359,6 +5365,76 @@ h1.title-page-bloc {
 }
 
 /*$$$$$$---- PARTENAIRES ----$$$$$*/
+.espace-partenaire .nav-espace-partenaire ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  clear: both;
+  padding: 0 0 0 0.6em;
+}
+.espace-partenaire .nav-espace-partenaire ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.espace-partenaire .nav-espace-partenaire ul li:first-child {
+  padding-left: 0;
+}
+.espace-partenaire .nav-espace-partenaire ul li:last-child {
+  padding-right: 0;
+}
+.espace-partenaire .nav-espace-partenaire ul li.last {
+  padding-right: 0;
+}
+
+#bloc-2 h3, #bloc-3 h3, #bloc-4 h3, #bloc-5 h3 {
+  color: #E30078;
+}
+
+.espace-partenaire .part-institutionnels ul, .espace-partenaire .part-associatifs ul, .espace-partenaire .part-branches ul, .espace-partenaire .part-particuliers ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  clear: both;
+  padding: 0 0 0 0.6em;
+}
+.espace-partenaire .part-institutionnels ul li, .espace-partenaire .part-associatifs ul li, .espace-partenaire .part-branches ul li, .espace-partenaire .part-particuliers ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  -ms-word-break: break-word;
+  word-break: break-word;
+}
+.espace-partenaire .part-institutionnels ul li:first-child, .espace-partenaire .part-associatifs ul li:first-child, .espace-partenaire .part-branches ul li:first-child, .espace-partenaire .part-particuliers ul li:first-child {
+  padding-left: 0;
+}
+.espace-partenaire .part-institutionnels ul li:last-child, .espace-partenaire .part-associatifs ul li:last-child, .espace-partenaire .part-branches ul li:last-child, .espace-partenaire .part-particuliers ul li:last-child {
+  padding-right: 0;
+}
+.espace-partenaire .part-institutionnels ul li.last, .espace-partenaire .part-associatifs ul li.last, .espace-partenaire .part-branches ul li.last, .espace-partenaire .part-particuliers ul li.last {
+  padding-right: 0;
+}
+.espace-partenaire .part-institutionnels ul li span, .espace-partenaire .part-associatifs ul li span, .espace-partenaire .part-branches ul li span, .espace-partenaire .part-particuliers ul li span {
+  display: block;
+}
+
 /*-------------------------------------|
 |       CONTENU CUSTOM PAGE.TPL    |
 |             NEWSLETTER LISTE            |

@@ -43,16 +43,16 @@
               include ($theme_path.'/includes/inc_region_col_2.php');
               ?>
           </div>
-        </div>
-
-
-        <?php if ($terms): ?>
+            
+                   <?php if ($terms): ?>
         <div class="taxonomy"><?php //print $terms; ?></div>
         <?php endif;?>
 
         <?php if ($links): ?>
         <div class="links"> <?php //print $links; ?></div>
         <?php endif; ?>
+        
+        </div>
         
         <!-- ______________________ COLONNE DROITE _______________________ -->
                    
