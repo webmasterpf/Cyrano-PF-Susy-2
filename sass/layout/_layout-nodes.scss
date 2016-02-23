@@ -114,6 +114,7 @@ body .conteneur{
         }
         @include breakpoint ($desktop){
           @include span(7 of $desktopcol);
+          @include gutters(.3em);/*Toujours en dernier pour override de la taille des gouttieres*/
           
         }
         //Pour orientation paysage
@@ -131,7 +132,8 @@ body .conteneur{
            
         }
         @include breakpoint ($desktop){
-           @include isolate(.3%);//permet d'isoler la colonne du flux sans qu'elle en sorte
+            @include span(last 3 of $desktopcol);
+          // @include isolate(.3%);//permet d'isoler la colonne du flux sans qu'elle en sorte
            //, fixe le margin-left, possible aussi avec option no-gutters
            
         }
