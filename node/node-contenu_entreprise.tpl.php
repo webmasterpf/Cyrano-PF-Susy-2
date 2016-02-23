@@ -12,7 +12,14 @@
             <?php if ($title): /*copier le titre dans la colonne desirée*/?>
             <h1 class="titre_partenaires"><?php print $title; ?></h1>
             <?php endif; ?>
-        
+            <?php
+            if ($node->field_fichier_joint_partenaires[0]['view']):
+
+              global $theme_path;
+                include($theme_path . '/includes/inc_docs_entreprise.php');
+            endif;
+            //il ne s'agit pas d'une vue mais de code PHP !!
+            ?>
             <?php
             $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano'); 
             include ($theme_path . '/includes/inc_region_col_1.php');
@@ -48,6 +55,12 @@
                         <?php print $centre_partenaire; ?>
                     </div>
                 <?php endif; ?>
+                    
+                     <?php if ($node->field_video_externe[0]['view']): ?>
+            <div class="video-rubentreprise">
+                    <?php  print $node->field_video_externe[0]['view']  ?>
+            </div>
+            <?php endif;?>
                     
                           <?php
               global $theme_path;

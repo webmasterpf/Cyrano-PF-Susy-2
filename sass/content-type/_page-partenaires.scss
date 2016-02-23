@@ -109,37 +109,45 @@ aside#block-superfish-2{
 
 
 /*Contenu du QT pour afficher temoignage partenaires*/
-#centre-partenaire{}
-#centre-partenaire h3{
-    color: #E2017B;
-    margin: 5px;
-}
-#centre-partenaire img.portrait,#middle-content-partenaire img.portrait{
-    border: 2px solid #AEC81F;
-    padding: 5px;
-}
-.cartouche{
-    padding: 3px;
-    background: #EFEFEF;
-    margin: 3px 0;
-    font-size: 10px;
-    color: #606171;
-}
 #centre-partenaire{
-    
+    h3{
+        color: $rose-fushia;
+        margin: em(5px);
+    }
+    .cartouche{
+        padding: em(3px);
+        background: $gris-clair;
+        margin: 3px 0;
+        font-size: x-small;
+        color: $gris-anthracite;
+    }
+    p{
+        margin: 0;
+    }
 }
+
+#centre-partenaire img.portrait,#middle-content-partenaire img.portrait{
+    border: em(2px) solid $vert;
+    padding: em(5px);
+}
+
 /*Contenu du QT pour afficher temoignage anciens élèves sur page association*/
-#centre-asso h2{
-    text-align: left;
+#centre-asso {
+    h2{
+        text-align: left;
+    }
+    h3{
+        color: #E2017B;
+    }
+    li.active a {
+        color: white;
+    }
+    a{
+        &:hover{}
+    }
+    img{}
 }
-#centre-asso h3{
-    color: #E2017B;
-}
-#centre-asso li.active a {
-    color: white;
-}
-#centre-asso a:hover{}
-#centre-asso img{}
+
 /*----- Liste partenaires associatifs vue ------*/
 #liste_part_asso{
     ul{

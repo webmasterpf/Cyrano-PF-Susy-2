@@ -7,7 +7,7 @@
 ?>
 <?php
 
-foreach($node->field_fichier_joint as $file) {
+foreach($node->field_fichier_joint_partenaires as $file) {
   if ($file['view']) {
       $header = array('data' => 'Aller plus loin');
       $rows[] = array($file['view']);
