@@ -1,0 +1,86 @@
+/*-------------------------------------|
+|       CONTENU CUSTOM               |
+|              MUR IMAGE                    |
+|--------------------------------------*/
+
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+
+/*== PAGE GLOBALE POUR VDL ou ACTU ===*/
+
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+
+/*######-------- ||| LAYOUT SUSY GALLERY ||| --------######*/
+
+//avec views style liste - ajouter la classe dans le display style
+.espace-partenaire{
+    .part-institutionnels,.part-associatifs,.part-branches,.part-particuliers{
+        ul{
+            li{
+                @include gallery(2 of $mobilecol);
+                @include breakpoint ($desktop){
+                    @include gallery(2 of $desktopcol);//nombre de colonnes susy par item
+                }
+            }
+        }
+    }
+}
+//avec views style non mis en forme (div)
+.table-vdl-global .liste-image-item{
+    @include gallery(2 of $mobilecol);
+    padding: 0.3em;
+    @include breakpoint ($desktop){
+        @include gallery(2 of $desktopcol);//nombre de colonnes susy par item
+    }
+    
+}
+
+/*######-------- ||| AFFICHAGE ||| --------######*/
+.table-vdl-global .tooltip-vdl{
+    display: block;
+     @include breakpoint ($desktop){
+    display: block;
+     }
+}
+
+.table-vdl-global .img-vdl,.table-vdl-global .titre-vdl{
+    display: inherit;
+}
+/*######-------- ||| LAYOUT SUSY MASONRY ||| --------######*/
+//ATTENTION: voir masonry_settings.scss
+
+
+/*######-------- ||| STYLE ||| --------######*/
+
+/*Espace Partenaires*/
+.espace-partenaire
+{
+    .part-institutionnels,.part-associatifs,.part-branches,.part-particuliers
+    {
+         ul{
+               padding:0 0 0 0.6em;
+            li{
+               list-style: none;
+                background: $gris-clair;
+                min-height:em(200px);
+                min-width:em(125px);
+                padding: 0.3em;
+                img{
+                    padding: 0.3em;
+                }
+                span{display: block;}
+                div.views-field-title span 
+                {
+                    @include cesure-txt;
+                }
+                a{
+                    color: $orange-fonce;
+                    &:hover{
+                        color: $bleu-turquoise;
+                    }
+                }
+            }
+        }
+    }
+}

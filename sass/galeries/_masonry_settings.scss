@@ -1,0 +1,60 @@
+/*
+*######-------- ||| LAYOUT SUSY MASONRY ||| --------######*
+//ATTENTION: le display style n'accepte que les - , pas les _ !!!
+ http://codepen.io/ganlub/pen/pJEWVR
+*
+*/
+
+.wrap {
+  @include container(70em);
+  padding: gutter(susy-get(columns));
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  font-style: italic; // alt text
+  vertical-align: middle; // removes the whitespace under `img` elements
+}
+
+.articles {
+  @include susy-clearfix();
+}
+
+.articles__gutter {
+  width: gutter();
+}
+
+.articles__column {
+  width: span(4);
+}
+
+.articles__item {
+  width: span(4);
+  
+  margin-top: gutter();
+  background: #4fa4dd;
+  
+  &__text {
+    padding: gutter(susy-get(columns)/4);
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+/*######-------- ||| LAYOUT SUSY MASONRY ||| --------######*/
+//ATTENTION: le display style n'accepte que les - , pas les _ !!!
+.table-vdl-global {
+    .masonry__gutter {
+        width: gutter();
+    }
+    .masonry__column {
+        width: span(3); 
+    }
+    .masonry__item,.masonry--item {
+        width: span(3);
+        margin-top: gutter();
+    }
+}

@@ -139,27 +139,4 @@ h1.title-page-bloc{
         color: $rose-fushia;
     }
 }
-.espace-partenaire{
-    .part-institutionnels,.part-associatifs,.part-branches,.part-particuliers{
-         ul{
-            @include horizontal-list-container;//Compass Mixin
-            @include break;
-            padding:0 0 0 0.6em;
-            li{
-                @include horizontal-list-item;//Compass Mixin
-                
-                background: $gris-clair;
-                min-height:em(170px);
-                min-width:em(125px);
-                img{
-                    //@include gallery(2 of 12);
-                }
-                span{display: block;}
-                div.views-field-title span {
-                    @include cesure-txt;
-                }
-                a{}
-            }
-        }
-    }
-}
+//Pour le mure d'image voir 'mur_image.scss'

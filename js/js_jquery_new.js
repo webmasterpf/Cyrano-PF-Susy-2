@@ -36,18 +36,23 @@
 
 
 //// Script pour Masonry
-// jQuery(document).ready(function (){
-// console.log('Chargement de Masonry');
-//        var $masonryContainer = $('.content-page-globale');
-//        $masonryContainer.masonry({
-//            columnWidth: '.masonry__column',
-//            gutter: '.masonry__gutter',
-//            itemSelector: '.masonry__item,.masonry--item'
+    jQuery(document).ready(function () {
+        console.log('Chargement de Masonry');
+        var container = document.querySelector('.articles');
+        var msnry = new Masonry(container, {
+            gutter: '.articles__gutter',
+            columnWidth: '.articles__column',
+            itemSelector: '.articles__item',
+            percentPosition: true,
+            transitionDuration: 0,
+        });
+//        imagesLoaded(container, function () {
+//            msnry.layout();
 //        });
-//    });
+    });
 
     jQuery(window).load(function () {
-        //Pour une galerie standard
+        //Pour une galerie standard Flexslider
         console.log('Chargement de Flexslider');
         $('.flexslider').flexslider({
             start: function(slider){
