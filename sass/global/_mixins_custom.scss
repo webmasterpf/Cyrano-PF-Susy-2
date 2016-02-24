@@ -66,15 +66,15 @@
     }
     
 @mixin ombrage-bloc {
-    -moz-box-shadow: 2px 2px 5px #aaa;
-    -webkit-box-shadow: 2px 2px 5px #aaa;
-    box-shadow: 2px 2px 5px #555;
+    -moz-box-shadow: em(2px) em(2px) em(5px) #aaa;
+    -webkit-box-shadow: em(2px) em(2px) em(5px) #aaa;
+    box-shadow: em(2px) em(2px) em(5px) #555;
     }
     
 @mixin ombrage-bas-table-actu{
-    -moz-box-shadow: 2px 2px 5px #aaa;
-    -webkit-box-shadow: 2px 2px 5px #aaa;
-    box-shadow: 2px 2px 5px #555;
+     -moz-box-shadow: em(2px) em(2px) em(5px) #aaa;
+    -webkit-box-shadow: em(2px) em(2px) em(5px) #aaa;
+    box-shadow: em(2px) em(2px) em(5px) #555;
 }
 @mixin opacity ($opacite:1){
  opacity:$opacite;/*0.6*/

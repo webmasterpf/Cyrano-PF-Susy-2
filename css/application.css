@@ -3966,6 +3966,8 @@ span.pf {
   hyphens: auto;
   -ms-word-break: break-word;
   word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .page-association aside.bloc-dossier-prepas .form-item {
   margin-bottom: 0.5em;
@@ -4337,6 +4339,8 @@ span#DossierBTS a {
   hyphens: auto;
   -ms-word-break: break-word;
   word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .page-bts aside.bloc-dossier-bts .form-item {
   margin-bottom: 0.5em;
@@ -4493,6 +4497,8 @@ h1.titre-fiche-bts {
   hyphens: auto;
   -ms-word-break: break-word;
   word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   -webkit-animation-name: blinker;
   -webkit-animation-duration: 1s;
   -webkit-animation-timing-function: linear;
@@ -5397,42 +5403,19 @@ h1.title-page-bloc {
   color: #E30078;
 }
 
-.espace-partenaire .part-institutionnels ul, .espace-partenaire .part-associatifs ul, .espace-partenaire .part-branches ul, .espace-partenaire .part-particuliers ul {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  *zoom: 1;
+.espace-partenaire {
+  border-bottom: 0.12em #DE603A dotted;
+}
+
+#bloc-5.espace-partenaire :before {
   clear: both;
-  padding: 0 0 0 0.6em;
 }
-.espace-partenaire .part-institutionnels ul li, .espace-partenaire .part-associatifs ul li, .espace-partenaire .part-branches ul li, .espace-partenaire .part-particuliers ul li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-  white-space: nowrap;
-  float: left;
-  padding-left: 4px;
-  padding-right: 4px;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
-  -ms-word-break: break-word;
-  word-break: break-word;
-}
-.espace-partenaire .part-institutionnels ul li:first-child, .espace-partenaire .part-associatifs ul li:first-child, .espace-partenaire .part-branches ul li:first-child, .espace-partenaire .part-particuliers ul li:first-child {
-  padding-left: 0;
-}
-.espace-partenaire .part-institutionnels ul li:last-child, .espace-partenaire .part-associatifs ul li:last-child, .espace-partenaire .part-branches ul li:last-child, .espace-partenaire .part-particuliers ul li:last-child {
-  padding-right: 0;
-}
-.espace-partenaire .part-institutionnels ul li.last, .espace-partenaire .part-associatifs ul li.last, .espace-partenaire .part-branches ul li.last, .espace-partenaire .part-particuliers ul li.last {
-  padding-right: 0;
-}
-.espace-partenaire .part-institutionnels ul li span, .espace-partenaire .part-associatifs ul li span, .espace-partenaire .part-branches ul li span, .espace-partenaire .part-particuliers ul li span {
-  display: block;
+#bloc-5.espace-partenaire img {
+  margin: 0.3em;
+  border: 0.5em solid white;
+  -moz-box-shadow: #AAAAAA 0px 0px 5px;
+  -webkit-box-shadow: #AAAAAA 0px 0px 5px;
+  box-shadow: #AAAAAA 0px 0px 5px;
 }
 
 /*-------------------------------------|
@@ -5804,6 +5787,176 @@ Override du style de galerie flexslider
 }
 .flexslider .flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;
+}
+
+/*-------------------------------------|
+|       CONTENU CUSTOM               |
+|              MUR IMAGE                    |
+|--------------------------------------*/
+/*== PAGE GLOBALE POUR VDL ou ACTU ===*/
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+/*######-------- ||| LAYOUT SUSY GALLERY ||| --------######*/
+.espace-partenaire .part-institutionnels ul li, .espace-partenaire .part-associatifs ul li, .espace-partenaire .part-branches ul li, .espace-partenaire .part-particuliers ul li {
+  width: 47.44898%;
+  float: left;
+}
+.espace-partenaire .part-institutionnels ul li:nth-child(2n + 1), .espace-partenaire .part-associatifs ul li:nth-child(2n + 1), .espace-partenaire .part-branches ul li:nth-child(2n + 1), .espace-partenaire .part-particuliers ul li:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+.espace-partenaire .part-institutionnels ul li:nth-child(2n + 2), .espace-partenaire .part-associatifs ul li:nth-child(2n + 2), .espace-partenaire .part-branches ul li:nth-child(2n + 2), .espace-partenaire .part-particuliers ul li:nth-child(2n + 2) {
+  margin-left: 52.55102%;
+  margin-right: -100%;
+  clear: none;
+}
+@media (min-width: 990px) {
+  .espace-partenaire .part-institutionnels ul li, .espace-partenaire .part-associatifs ul li, .espace-partenaire .part-branches ul li, .espace-partenaire .part-particuliers ul li {
+    width: 15.29605%;
+    float: left;
+  }
+  .espace-partenaire .part-institutionnels ul li:nth-child(6n + 1), .espace-partenaire .part-associatifs ul li:nth-child(6n + 1), .espace-partenaire .part-branches ul li:nth-child(6n + 1), .espace-partenaire .part-particuliers ul li:nth-child(6n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .espace-partenaire .part-institutionnels ul li:nth-child(6n + 2), .espace-partenaire .part-associatifs ul li:nth-child(6n + 2), .espace-partenaire .part-branches ul li:nth-child(6n + 2), .espace-partenaire .part-particuliers ul li:nth-child(6n + 2) {
+    margin-left: 16.94079%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .espace-partenaire .part-institutionnels ul li:nth-child(6n + 3), .espace-partenaire .part-associatifs ul li:nth-child(6n + 3), .espace-partenaire .part-branches ul li:nth-child(6n + 3), .espace-partenaire .part-particuliers ul li:nth-child(6n + 3) {
+    margin-left: 33.88158%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .espace-partenaire .part-institutionnels ul li:nth-child(6n + 4), .espace-partenaire .part-associatifs ul li:nth-child(6n + 4), .espace-partenaire .part-branches ul li:nth-child(6n + 4), .espace-partenaire .part-particuliers ul li:nth-child(6n + 4) {
+    margin-left: 50.82237%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .espace-partenaire .part-institutionnels ul li:nth-child(6n + 5), .espace-partenaire .part-associatifs ul li:nth-child(6n + 5), .espace-partenaire .part-branches ul li:nth-child(6n + 5), .espace-partenaire .part-particuliers ul li:nth-child(6n + 5) {
+    margin-left: 67.76316%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .espace-partenaire .part-institutionnels ul li:nth-child(6n + 6), .espace-partenaire .part-associatifs ul li:nth-child(6n + 6), .espace-partenaire .part-branches ul li:nth-child(6n + 6), .espace-partenaire .part-particuliers ul li:nth-child(6n + 6) {
+    margin-left: 84.70395%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+.table-vdl-global .liste-image-item {
+  width: 47.44898%;
+  float: left;
+  padding: 0.3em;
+}
+.table-vdl-global .liste-image-item:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+.table-vdl-global .liste-image-item:nth-child(2n + 2) {
+  margin-left: 52.55102%;
+  margin-right: -100%;
+  clear: none;
+}
+@media (min-width: 990px) {
+  .table-vdl-global .liste-image-item {
+    width: 15.29605%;
+    float: left;
+  }
+  .table-vdl-global .liste-image-item:nth-child(6n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .table-vdl-global .liste-image-item:nth-child(6n + 2) {
+    margin-left: 16.94079%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .table-vdl-global .liste-image-item:nth-child(6n + 3) {
+    margin-left: 33.88158%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .table-vdl-global .liste-image-item:nth-child(6n + 4) {
+    margin-left: 50.82237%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .table-vdl-global .liste-image-item:nth-child(6n + 5) {
+    margin-left: 67.76316%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .table-vdl-global .liste-image-item:nth-child(6n + 6) {
+    margin-left: 84.70395%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+/*######-------- ||| AFFICHAGE ||| --------######*/
+.table-vdl-global .tooltip-vdl {
+  display: block;
+}
+@media (min-width: 990px) {
+  .table-vdl-global .tooltip-vdl {
+    display: block;
+  }
+}
+
+.table-vdl-global .img-vdl, .table-vdl-global .titre-vdl {
+  display: inherit;
+}
+
+/*######-------- ||| LAYOUT SUSY MASONRY ||| --------######*/
+/*######-------- ||| STYLE ||| --------######*/
+/*Espace Partenaires*/
+.espace-partenaire .part-institutionnels ul, .espace-partenaire .part-associatifs ul, .espace-partenaire .part-branches ul, .espace-partenaire .part-particuliers ul {
+  padding: 0 0 0 0.6em;
+}
+.espace-partenaire .part-institutionnels ul li, .espace-partenaire .part-associatifs ul li, .espace-partenaire .part-branches ul li, .espace-partenaire .part-particuliers ul li {
+  list-style: none;
+  background: #ECECED;
+  min-height: 12.5em;
+  min-width: 7.8125em;
+  padding: 0.3em;
+}
+.espace-partenaire .part-institutionnels ul li:hover, .espace-partenaire .part-associatifs ul li:hover, .espace-partenaire .part-branches ul li:hover, .espace-partenaire .part-particuliers ul li:hover {
+  -moz-box-shadow: 0.125em 0.125em 0.3125em #aaa;
+  -webkit-box-shadow: 0.125em 0.125em 0.3125em #aaa;
+  box-shadow: 0.125em 0.125em 0.3125em #555;
+}
+.espace-partenaire .part-institutionnels ul li img, .espace-partenaire .part-associatifs ul li img, .espace-partenaire .part-branches ul li img, .espace-partenaire .part-particuliers ul li img {
+  padding: 0.3em;
+}
+.espace-partenaire .part-institutionnels ul li span, .espace-partenaire .part-associatifs ul li span, .espace-partenaire .part-branches ul li span, .espace-partenaire .part-particuliers ul li span {
+  display: block;
+}
+.espace-partenaire .part-institutionnels ul li div.views-field-title span, .espace-partenaire .part-associatifs ul li div.views-field-title span, .espace-partenaire .part-branches ul li div.views-field-title span, .espace-partenaire .part-particuliers ul li div.views-field-title span {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  -ms-word-break: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.espace-partenaire .part-institutionnels ul li a, .espace-partenaire .part-associatifs ul li a, .espace-partenaire .part-branches ul li a, .espace-partenaire .part-particuliers ul li a {
+  color: #DE603A;
+}
+.espace-partenaire .part-institutionnels ul li a:hover, .espace-partenaire .part-associatifs ul li a:hover, .espace-partenaire .part-branches ul li a:hover, .espace-partenaire .part-particuliers ul li a:hover {
+  color: #01ABCF;
 }
 
 /*# sourceMappingURL=application.css.map */

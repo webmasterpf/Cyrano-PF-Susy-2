@@ -139,4 +139,15 @@ h1.title-page-bloc{
         color: $rose-fushia;
     }
 }
+.espace-partenaire{
+    border-bottom: 0.12em $orange-fonce dotted;
+}
+#bloc-5.espace-partenaire {
+    :before{
+        clear: both;
+}
+img{
+    @include img-border-shadow;
+}
+}
 //Pour le mure d'image voir 'mur_image.scss'

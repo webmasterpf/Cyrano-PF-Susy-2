@@ -60,6 +60,7 @@
 <!-- ______________________ BLOC 5 _______________________ -->
 <div id="bloc-5" class="col1_layout_max espace-partenaire">
     <a name="particuliers"></a>
+    <div class="content">
               <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
   <?php if ($terms): ?>
       <div class="taxonomy"><?php //print $terms; ?></div>
@@ -69,7 +70,7 @@
       <div class="links"> <?php print $links; ?></div>
     <?php endif; ?>  
 </div>
-  
+  </div>
 
   </div> <!-- /node-inner -->
 </div> <!-- /node-->

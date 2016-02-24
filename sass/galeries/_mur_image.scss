@@ -66,6 +66,9 @@
                 min-height:em(200px);
                 min-width:em(125px);
                 padding: 0.3em;
+                &:hover{
+                    @include ombrage-bloc;
+                }
                 img{
                     padding: 0.3em;
                 }

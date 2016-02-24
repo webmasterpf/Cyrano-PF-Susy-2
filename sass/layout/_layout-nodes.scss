@@ -12,6 +12,8 @@ body .conteneur{
     .col1_layout_max{
         @include breakpoint ($mobile){
             max-width: container();
+            @include break;
+            clear: both;
             //@include span($mobilecol);
         }
         @include breakpoint ($desktop){
@@ -343,12 +345,9 @@ body .conteneur{
         
         }
         @include breakpoint ($desktop){
-           @include span(3 of $desktopcol);
-           @include gutters(.3em);/*Toujours en dernier pour override de la taille des gouttieres*/
-           
-            
-           
-        
+            @include span(3 of $desktopcol);
+            @include gutters(.3em);/*Toujours en dernier pour override de la taille des gouttieres*/
+                
         }
     }
     .layout_4col_all3last{
