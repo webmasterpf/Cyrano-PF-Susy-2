@@ -21,6 +21,7 @@
     <?php print $styles; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
     <?php // IMPORTANT : charger les librairies externes avant les scripts !! ?>
    <?php print $scripts; ?>
  

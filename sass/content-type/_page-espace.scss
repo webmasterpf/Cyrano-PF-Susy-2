@@ -147,11 +147,17 @@ h1.title-page-bloc{
             padding:0 0 0 0.6em;
             li{
                 @include horizontal-list-item;//Compass Mixin
-                @include cesure-txt;
+                
+                background: $gris-clair;
+                min-height:em(170px);
+                min-width:em(125px);
                 img{
                     //@include gallery(2 of 12);
                 }
                 span{display: block;}
+                div.views-field-title span {
+                    @include cesure-txt;
+                }
                 a{}
             }
         }

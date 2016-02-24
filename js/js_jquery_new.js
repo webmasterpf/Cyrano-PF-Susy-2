@@ -37,6 +37,7 @@
 
 //// Script pour Masonry
 // jQuery(document).ready(function (){
+// console.log('Chargement de Masonry');
 //        var $masonryContainer = $('.content-page-globale');
 //        $masonryContainer.masonry({
 //            columnWidth: '.masonry__column',
