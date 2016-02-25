@@ -886,9 +886,17 @@ Ne s'applique que si présence d'un node-TYPE.tpl.php
 ********** LAYOUT NODE.TPL OVERRIDE **********
 \\\\\\\\\\\\//////////////////////*/
 /*//////////////// 1 COLONNE PLEINE LARGEUR \\\\\\\\*/
+body .conteneur .col1_layout_max {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
 @media (max-width: 799px) {
   body .conteneur .col1_layout_max {
-    max-width: 19.6em;
+    clear: both;
   }
 }
 @media (min-width: 990px) {
@@ -897,11 +905,11 @@ Ne s'applique que si présence d'un node-TYPE.tpl.php
     float: left;
     margin-left: 0;
     margin-right: 0;
-  }
-  body .conteneur .col1_layout_max:after {
-    content: " ";
-    display: block;
-    clear: both;
+    /*            &:after{
+                    content: " ";
+                    display: block;
+                    clear: both;
+                } */
   }
 }
 
@@ -5931,9 +5939,9 @@ Override du style de galerie flexslider
   padding: 0.3em;
 }
 .espace-partenaire .part-institutionnels ul li:hover, .espace-partenaire .part-associatifs ul li:hover, .espace-partenaire .part-branches ul li:hover, .espace-partenaire .part-particuliers ul li:hover {
-  -moz-box-shadow: 0.125em 0.125em 0.3125em #aaa;
-  -webkit-box-shadow: 0.125em 0.125em 0.3125em #aaa;
-  box-shadow: 0.125em 0.125em 0.3125em #555;
+  -moz-box-shadow: 0 0 0.3125em #aaa;
+  -webkit-box-shadow: 0 0 0.3125em #aaa;
+  box-shadow: 0 0 0.3125em #aaa;
 }
 .espace-partenaire .part-institutionnels ul li img, .espace-partenaire .part-associatifs ul li img, .espace-partenaire .part-branches ul li img, .espace-partenaire .part-particuliers ul li img {
   padding: 0.3em;
@@ -5942,6 +5950,7 @@ Override du style de galerie flexslider
   display: block;
 }
 .espace-partenaire .part-institutionnels ul li div.views-field-title span, .espace-partenaire .part-associatifs ul li div.views-field-title span, .espace-partenaire .part-branches ul li div.views-field-title span, .espace-partenaire .part-particuliers ul li div.views-field-title span {
+  color: #606070;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;

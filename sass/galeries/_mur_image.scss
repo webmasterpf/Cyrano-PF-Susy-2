@@ -67,7 +67,7 @@
                 min-width:em(125px);
                 padding: 0.3em;
                 &:hover{
-                    @include ombrage-bloc;
+                    @include ombrage-bloc(0,0);
                 }
                 img{
                     padding: 0.3em;
@@ -75,6 +75,7 @@
                 span{display: block;}
                 div.views-field-title span 
                 {
+                    color: $gris-anthracite;
                     @include cesure-txt;
                 }
                 a{

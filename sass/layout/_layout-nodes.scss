@@ -10,19 +10,18 @@ Ne s'applique que si présence d'un node-TYPE.tpl.php
 /*//////////////// 1 COLONNE PLEINE LARGEUR \\\\\\\\\\\\\\\\*/
 body .conteneur{
     .col1_layout_max{
+        @include span($mobilecol);
         @include clearfix;
         @include breakpoint ($mobile){
-            max-width: container();
             @include break;
-           
         }
         @include breakpoint ($desktop){
             @include span(12 of $desktopcol);
-/*            &:after{
-                content: " ";
-                display: block;
-                clear: both;
-            } */
+            /*            &:after{
+                            content: " ";
+                            display: block;
+                            clear: both;
+                        } */
         }
     }
 

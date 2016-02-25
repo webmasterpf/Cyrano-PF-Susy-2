@@ -65,10 +65,10 @@
         box-shadow: 1px 2px 2px #555;
     }
     
-@mixin ombrage-bloc {
-    -moz-box-shadow: em(2px) em(2px) em(5px) #aaa;
-    -webkit-box-shadow: em(2px) em(2px) em(5px) #aaa;
-    box-shadow: em(2px) em(2px) em(5px) #555;
+@mixin ombrage-bloc ($diffusionHoriz: em(2px),$diffusionVertical: em(2px),$couleur:#aaa) {
+    -moz-box-shadow: $diffusionHoriz $diffusionVertical em(5px) $couleur;
+    -webkit-box-shadow: $diffusionHoriz $diffusionVertical em(5px) $couleur;
+    box-shadow: $diffusionHoriz $diffusionVertical em(5px) $couleur;
     }
     
 @mixin ombrage-bas-table-actu{
