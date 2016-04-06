@@ -49,7 +49,7 @@ tr.table-tr-content{border-bottom-color: #d6d6d6; border-bottom-width: 1px; bord
 #txt-footer a{color: #E7512F;}
 #txt-footer a:hover{}
 td.colonne-2-nl ul li {list-style: none inside;border-bottom: 0.1em #00b5e5 dotted;padding: 0 0 1.3em 0;clear:both;}
-td.colonne-2-nl  .view-Liste-contenu-newsletter img{border: 1px solid #E25132 ;padding: 0.2em;margin-right: 0.3em; float: left;}
+td.colonne-2-nl  .view-Liste-contenu-newsletter img,td.colonne-2-nl  img{border: 1px solid #E25132 ;padding: 0.2em;margin-right: 0.3em; float: left;}
  #table-nl .colonne-2-nl table{border: 0;background: none;}
  #table-nl .colonne-2-nl tbody {border: 0;background: none;}
  #table-nl .colonne-2-nl thead {border: 0;background: none;}
