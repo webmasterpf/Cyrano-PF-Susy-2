@@ -55,7 +55,7 @@
            </tr>
             <tr class="line2">
                <td> Postuler à l'offre</td>
-               <td> <?php print '<a href=/node/184?destinataire='.$node->field_centre_bts[0]['value'].'&ref_offre='.$node->field_reference_pbts[0]['value'].'>ICI</a>';?></td>
+               <td> <?php print '<a href=/node/555?destinataire='.$node->field_lieux[0]['value'].'&ref_offre='.$node->field_reference_pbts[0]['value'].'>ICI</a>';?></td>
 
            </tr>
           
@@ -68,8 +68,7 @@
       //print $content;
       print $node->content['body']['#value']
               ?>
-        <!--Lien vers formulaire -->
-        <!--<div id="postule"><a href="/site/node/110" title="Pour postuler cliquez ici"> Postuler</a></div>-->
+
     
       <?php if ($centralBloc): ?>
                 <div id="middleGalerie"><?php print $centralBloc; ?></div>
