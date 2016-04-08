@@ -33,8 +33,13 @@
            </tr>
               <tr class="line2">
                <td>  <?php  print $node->content['field_lieux']['field']['#title'] ?></td>
-               <td><?php foreach ($node->field_lieux as $key => $lien) {
-                    print $node->field_lieux[$key]['view'].'<br>';
+               <td><?php foreach ($node->field_lieux as $key => $lycee) {
+                               print $lycee['view'].'<br>';
+                               foreach ($lycee as $key => $term_tid) {
+//                                   $liste_lieux .=$term_tid['tid']['view'].'|';
+                                   $liste_lieux .=$term_tid.'|';
+                               }
+                  
                }  ?></td>
 
            </tr>
@@ -55,7 +60,9 @@
            </tr>
             <tr class="line2">
                <td> Postuler à l'offre</td>
-               <td> <?php print '<a href=/node/555?destinataire='.$node->field_lieux[0]['value'].'&ref_offre='.$node->field_reference_pbts[0]['value'].'>ICI</a>';?></td>
+               <td> <?php 
+          
+               print '<a href=/node/555?destinataire='.$liste_lieux.'&ref_offre='.$node->field_reference_pbts[0]['value'].'>ICI</a>';?></td>
 
            </tr>
           
