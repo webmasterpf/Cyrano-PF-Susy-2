@@ -18,7 +18,11 @@
      
 }
 #colonne-2.offre-ct-pro{
+        @include breakpoint(($desktop,$tablet))
+    {
     @include border-L-orangePF;
+    }
+    
 }
 
 /*######-------- ||| STYLE ||| --------######*/

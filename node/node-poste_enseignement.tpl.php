@@ -11,7 +11,7 @@
         <!-- ______________________ COLONNE GAUCHE _______________________ -->
 		
 			
-         <div id="colonne-1" class="col1_layout_2_6_4 detail-offre-ctpro">
+         <div id="colonne-1" class="col1_layout_2_6_4 detail-offre">
               <?php if ($title): ?>
                 <h1 class="titre-offre-ctpro"><?php print $title; ?></h1>
               <?php endif; ?>
@@ -22,7 +22,7 @@
 		<!--fin du contenu gauche -->
       
    
-      <div id="colonne-2" class="col2_layout_2_6_4 detail-offre-ctpro">
+      <div id="colonne-2" class="col2_layout_2_6_4 detail-offre">
   <!--Partie centrale -->
 
        <table class="table-poste-bts">
@@ -71,7 +71,8 @@
                <td> Postuler à l'offre</td>
                <td> <?php 
           
-               print '<a href=/node/555?destinataire='.$liste_lieux.'&ref_offre='.$node->field_reference_pbts[0]['value'].'>ICI</a>';?></td>
+               print '<a href=/node/555?destinataire='.$liste_lieux.'&ref_offre='.$node->field_reference_pbts[0]['value'].'&disc_offre=tid_'
+                       .$node->field_discipline[0]['value'].'>ICI</a>';?></td>
 
            </tr>
           
