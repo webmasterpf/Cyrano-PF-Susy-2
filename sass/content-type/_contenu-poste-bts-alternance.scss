@@ -7,6 +7,7 @@
 //@include breakpoint ($desktop){}
 //@include breakpoint ($tablet){}
 
+/*######-------- ||| BORDURES ||| --------######*/
 #colonne-1.detail-offre-ctpro{
      
 }
@@ -16,7 +17,11 @@
 #colonne-3.detail-offre-ctpro{
      
 }
+#colonne-2.offre-ct-pro{
+    @include border-L-orangePF;
+}
 
+/*######-------- ||| STYLE ||| --------######*/
 .titre-offre-ctpro{
     @include titre-page;
     color: $orange-fonce;
@@ -32,17 +37,17 @@
     tbody{border: 0;}
 }
 .table-poste-bts tr.line1{
-    color: #950F7E;
+    color: $violet;
     background: white;
 }
 .table-poste-bts tr.line2{
-    background: #EFEFEF;
-    color: #E1017B;
+    background: $gris-clair;
+    color: $rose-fushia;
 }
 .table-poste-bts td.etat{
     font-weight: bold;
 }
-.table-poste-bts a{color: #E7512F;text-decoration: none;font-weight: bold;}
+.table-poste-bts a{color: $orange-fonce;text-decoration: none;font-weight: bold;}
 .table-poste-bts a:hover{text-decoration: underline;}
 /*Vue liste des offres - style par taxonomie*/
 .offre-ct-pro h1{
@@ -63,7 +68,7 @@
 }
 h2.offre-bts-titre{/*titre dans la liste*/
     display:block;
-    float:left;
+   // float:left;
     font-size:large;
     margin:0 em(10px) 0 0;
     text-transform:uppercase;
@@ -83,6 +88,10 @@ h2.offre-bts-titre{/*titre dans la liste*/
         padding: em(3px) em(55px) 0 0;
         margin: 0;
     }
+      .offre-lieu{
+             padding: em(3px) em(55px) 0 0;
+        margin: 0;
+        }
     .offres .views-exposed-form{
         width: 98%;
         margin: 0 auto;
@@ -90,23 +99,25 @@ h2.offre-bts-titre{/*titre dans la liste*/
     }
     @include breakpoint ($desktop){
         .ref-offre{
-            float: left;
-
+          float: left;
+        }
+        .offre-lieu{
+            
         }
     }
 }
 
-.etat-76{/*a pourvoir*/
+.etat-76,.etat-A pourvoir{/*a pourvoir*/
          padding: em(5px);
          margin:0 0 em(5px);
     border-left:0.3em solid $vert;
 }
-.etat-77{/*en cours*/
+.etat-77,.etat-En cours{/*en cours*/
          padding: em(5px);
          margin:0 0 em(5px);
    border-left:0.3em solid $orange;
 }
-.etat-78{/*pourvu*/
+.etat-78,.etat-Pourvu{/*pourvu*/
          padding: em(5px);
          margin:0 0 em(5px);
    border-left:0.3em solid $rouge;

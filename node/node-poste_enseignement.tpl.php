@@ -35,9 +35,18 @@
                <td>  <?php  print $node->content['field_lieux']['field']['#title'] ?></td>
                <td><?php foreach ($node->field_lieux as $key => $lycee) {
                                print $lycee['view'].'<br>';
+//           drupal_set_message(t("Clé : $key; Valeur lycee: $lycee<br />\n"));      
+//Récupération du tid dans une variable, suppression des doublon                               
                                foreach ($lycee as $key => $term_tid) {
-//                                   $liste_lieux .=$term_tid['tid']['view'].'|';
-                                   $liste_lieux .=$term_tid.'|';
+                   //drupal_set_message(t("Clé : $key; Valeur term id: $term_tid<br />\n"));      
+//drupal_set_message(t("Clé : $key; Valeur lycee: $lycee<br />\n"));     
+                                     $liste_lieux .= $lycee['value'].',';
+                                   if (!in_array($lycee,$liste_lieux))
+   {
+                                       $tab_liste_lieux[] .= $lycee['value'].'|';
+//         drupal_set_message(t("Clé : $key; Valeur liste lieux: $liste_lieux<br />\n"));                                         
+   }                                    
+     
                                }
                   
                }  ?></td>
@@ -100,9 +109,10 @@
           
            <div id="colonne-3" class="col3_layout_2_6_4 detail-offre-ctpro">
                                    <?php 
-  //$theme_path = drupal_get_path('theme', 'NOM_THEME');
+  
   global $theme_path;
 include($theme_path .'/includes/inc_region_col_3.php');
+//include($theme_path .'/includes/drupal_debug/inc_drupal_debug.php');
 ?>
             </div>
         

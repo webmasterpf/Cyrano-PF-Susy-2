@@ -3618,11 +3618,17 @@ table#actu-hasard td {
 |       CONTENU CUSTOM NODE.TPL        |
 |       Poste bts alternance           |
 |--------------------------------------*/
+/*######-------- ||| BORDURES ||| --------######*/
 #colonne-2.detail-offre-ctpro {
   border-left: 0.0625em solid #00AAD2;
   border-right: 0.0625em solid #93117E;
 }
 
+#colonne-2.offre-ct-pro {
+  border-left: 0.0625em solid #DE603A;
+}
+
+/*######-------- ||| STYLE ||| --------######*/
 .titre-offre-ctpro {
   font-size: x-large;
   margin: 0.1em;
@@ -3644,13 +3650,13 @@ table#actu-hasard td {
 }
 
 .table-poste-bts tr.line1 {
-  color: #950F7E;
+  color: #911381;
   background: white;
 }
 
 .table-poste-bts tr.line2 {
-  background: #EFEFEF;
-  color: #E1017B;
+  background: #ECECED;
+  color: #E30078;
 }
 
 .table-poste-bts td.etat {
@@ -3658,7 +3664,7 @@ table#actu-hasard td {
 }
 
 .table-poste-bts a {
-  color: #E7512F;
+  color: #DE603A;
   text-decoration: none;
   font-weight: bold;
 }
@@ -3689,7 +3695,6 @@ table#actu-hasard td {
 h2.offre-bts-titre {
   /*titre dans la liste*/
   display: block;
-  float: left;
   font-size: large;
   margin: 0 0.625em 0 0;
   text-transform: uppercase;
@@ -3708,6 +3713,10 @@ h2.offre-bts-titre {
   padding: 0.1875em 3.4375em 0 0;
   margin: 0;
 }
+#colonne-2 .offre-lieu {
+  padding: 0.1875em 3.4375em 0 0;
+  margin: 0;
+}
 #colonne-2 .offres .views-exposed-form {
   width: 98%;
   margin: 0 auto;
@@ -3721,21 +3730,21 @@ h2.offre-bts-titre {
   }
 }
 
-.etat-76 {
+.etat-76, .etat-A pourvoir {
   /*a pourvoir*/
   padding: 0.3125em;
   margin: 0 0 0.3125em;
   border-left: 0.3em solid #ADC91F;
 }
 
-.etat-77 {
+.etat-77, .etat-En cours {
   /*en cours*/
   padding: 0.3125em;
   margin: 0 0 0.3125em;
   border-left: 0.3em solid #F29400;
 }
 
-.etat-78 {
+.etat-78, .etat-Pourvu {
   /*pourvu*/
   padding: 0.3125em;
   margin: 0 0 0.3125em;
