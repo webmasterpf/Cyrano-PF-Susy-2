@@ -3615,8 +3615,9 @@ table#actu-hasard td {
 }
 
 /*-------------------------------------|
-|       CONTENU CUSTOM NODE.TPL        |
-|       Poste bts alternance           |
+|               CONTENU                     |
+|           CUSTOM NODE.TPL          |
+|       Offre de Poste nance           |
 |--------------------------------------*/
 /*######-------- ||| BORDURES ||| --------######*/
 #colonne-2.detail-offre-ctpro {
@@ -3624,8 +3625,17 @@ table#actu-hasard td {
   border-right: 0.0625em solid #93117E;
 }
 
-#colonne-2.offre-ct-pro {
-  border-left: 0.0625em solid #DE603A;
+@media (min-width: 990px), (min-width: 800px) and (max-width: 989px) {
+  #colonne-2.offre-ct-pro {
+    border-left: 0.0625em solid #DE603A;
+  }
+}
+
+@media (min-width: 990px), (min-width: 800px) and (max-width: 989px) {
+  #colonne-2.detail-offre {
+    border-left: 0.0625em solid #00AAD2;
+    border-right: 0.0625em solid #93117E;
+  }
 }
 
 /*######-------- ||| STYLE ||| --------######*/
@@ -3827,6 +3837,33 @@ li.node_read_more a {
 
 li.node_read_more a:hover {
   text-decoration: underline;
+}
+
+/*STYLE OFFRE POSTE ENSEIGNEMENT*/
+aside.offre-poste-enseignement ul li {
+  list-style-type: none;
+  border-bottom: 0.09em solid #E30078;
+}
+aside.offre-poste-enseignement ul li:before {
+  color: #DE603A;
+  /* couleur de la puce */
+}
+aside.offre-poste-enseignement ul h2.offre-titre {
+  /*titre dans la liste*/
+  display: block;
+  font-size: medium;
+  text-transform: uppercase;
+}
+aside.offre-poste-enseignement ul h2.offre-titre a {
+  color: #DE603A;
+  text-decoration: none;
+}
+aside.offre-poste-enseignement ul .offre-poste-discipline {
+  padding: 0 0.3em;
+  font-weight: bold;
+}
+aside.offre-poste-enseignement label[for="edit-field-etat-poste-value"] {
+  font-size: small;
 }
 
 /*-------------------------------------|

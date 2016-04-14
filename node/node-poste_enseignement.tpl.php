@@ -33,8 +33,11 @@
            </tr>
               <tr class="line2">
                <td>  <?php  print $node->content['field_lieux']['field']['#title'] ?></td>
-               <td><?php foreach ($node->field_lieux as $key => $lycee) {
-                               print $lycee['view'].'<br>';
+               <td><?php 
+              
+               foreach ($node->field_lieux as $key => $lycee) {
+                   $liste_lycees = array_filter($lycee);//supprime les éléments vides
+                               print $liste_lycees['view'].'<br>';
 //           drupal_set_message(t("Clé : $key; Valeur lycee: $lycee<br />\n"));      
 //Récupération du tid dans une variable, suppression des doublon                               
                                foreach ($lycee as $key => $term_tid) {
@@ -49,7 +52,8 @@
      
                                }
                   
-               }  ?></td>
+               }
+           ?></td>
 
            </tr>
               <tr class="line1">
@@ -59,7 +63,7 @@
            </tr>
               <tr class="line2">
                <td>  <?php  print $node->content['field_vol_heures']['field']['#title'] ?></td>
-               <td>  <?php  print $node->field_vol_heures[0]['view'] ?></td>
+               <td>  <?php  print $node->field_vol_heures[0]['view'] ?>H</td>
 
            </tr>
              <tr class="line1">
@@ -71,7 +75,7 @@
                <td> Postuler à l'offre</td>
                <td> <?php 
           
-               print '<a href=/node/555?destinataire='.$liste_lieux.'&ref_offre='.$node->field_reference_pbts[0]['value'].'&disc_offre=tid_'
+               print '<a href=/node/573?destinataire='.$liste_lieux.'&ref_offre='.$node->field_reference_pbts[0]['value'].'&disc_offre=tid_'
                        .$node->field_discipline[0]['value'].'>ICI</a>';?></td>
 
            </tr>

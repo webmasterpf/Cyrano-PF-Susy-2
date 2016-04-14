@@ -1,6 +1,7 @@
 /*-------------------------------------|
-|       CONTENU CUSTOM NODE.TPL        |
-|       Poste bts alternance           |
+|               CONTENU                     |
+|           CUSTOM NODE.TPL          |
+|       Offre de Poste nance           |
 |--------------------------------------*/
 
 //@include breakpoint ($mobile){}
@@ -23,6 +24,12 @@
     @include border-L-orangePF;
     }
     
+}
+#colonne-2.detail-offre{
+    @include breakpoint(($desktop,$tablet))
+    {
+    @include border-bleu-violet;
+    }
 }
 
 /*######-------- ||| STYLE ||| --------######*/
@@ -173,3 +180,38 @@ text-align:left;
 li.node_read_more a:hover{
 text-decoration: underline;
 }    
+/*STYLE OFFRE POSTE ENSEIGNEMENT*/
+
+aside.offre-poste-enseignement{
+    ul{
+        
+        li{
+            list-style-type: none;
+            border-bottom: 0.09em solid $rose-fushia;
+            &:before {
+                //content: "■";
+                color: $orange-fonce; /* couleur de la puce */
+            }
+        }
+        h2.offre-titre{/*titre dans la liste*/
+            display:block;
+            font-size:medium;
+            text-transform:uppercase;
+            a{
+                 color: $orange-fonce;
+                 text-decoration: none;
+            }
+        }
+        .offre-date{
+            
+        }
+        .offre-poste-discipline{
+            padding: 0 0.3em;
+            font-weight: bold;
+        }
+      
+    }
+      label[for="edit-field-etat-poste-value"]   {
+            font-size: small;
+        }
+}
