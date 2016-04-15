@@ -36,7 +36,7 @@
                <td><?php 
               
                foreach ($node->field_lieux as $key => $lycee) {
-                   $liste_lycees = array_filter($lycee);//supprime les éléments vides
+                   $liste_lycees = array_unique($lycee);//supprime les éléments vides
                                print $liste_lycees['view'].'<br>';//Affiche les termes sans doublons
                
              
@@ -60,7 +60,7 @@
 //                 drupal_set_message(print_r($tab_liste_lieux, TRUE));           
                     $liste_lieux .= $tab_liste_lieux['value'].','; 
                 }
-//               drupal_set_message(print_r($liste_lycees, TRUE)); 
+               drupal_set_message(print_r($liste_lycees, TRUE)); 
                 drupal_set_message(t("Clé tableau lycée : $key; Valeur tableau lycee: $lycee<br />\n")); 
                 drupal_set_message(t("Valeur var liste_lieux: $liste_lieux<br />\n")); 
                 drupal_set_message(print_r($tab_liste_lieux, TRUE)); 
