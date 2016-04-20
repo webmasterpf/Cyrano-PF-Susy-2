@@ -36,33 +36,27 @@
                <td><?php 
               
                foreach ($node->field_lieux as $key => $lycee) {
-                   $liste_lycees = array_unique($lycee);//supprime les éléments vides
-                               print $liste_lycees['view'].'<br>';//Affiche les termes sans doublons
+                   $liste_lycees = array_filter($lycee);//supprime les éléments vides
+                               print $liste_lycees['view'].'<br>';
                
-             
+           drupal_set_message(print_r($liste_lycees, TRUE));   
 //Récupération du tid dans une variable, suppression des doublon                               
-                               foreach ($lycee as $keytid => $term_tid) {
-                                                 $tab_liste_lieux[] .= $lycee['value'];
-                  $tab_liste_lieux = array_unique($tab_liste_lieux); //suppression des doublons       
-                  
-                 
-                 
-              
+                               foreach ($lycee as $key => $term_tid) {
+                   $lycee_unique = array_unique($lycee);//supprime doublons
+                                   $liste_lieux .= $lycee_unique['value'].',';
+                                  
+                                   if (!in_array($lycee,$liste_lieux))
    {
-                                                  
-                      
+                                       $tab_liste_lieux[] .= $lycee['value'];
+                                                
    }                                    
      
                                }
-               
+                  
                }
-                 foreach ($tab_liste_lieux as $keylieux => $liste_lieux) {
-//                 drupal_set_message(print_r($tab_liste_lieux, TRUE));           
-                    $liste_lieux .= $tab_liste_lieux['value'].','; 
-                }
-               drupal_set_message(print_r($liste_lycees, TRUE)); 
                 drupal_set_message(t("Clé tableau lycée : $key; Valeur tableau lycee: $lycee<br />\n")); 
                 drupal_set_message(t("Valeur var liste_lieux: $liste_lieux<br />\n")); 
+                drupal_set_message(t("Valeur tab liste_lieux: $tab_liste_lieux<br />\n")); 
                 drupal_set_message(print_r($tab_liste_lieux, TRUE)); 
            ?></td>
 
