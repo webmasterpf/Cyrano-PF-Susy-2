@@ -25,7 +25,7 @@
       <div id="colonne-2" class="col2_layout_2_6_4 detail-offre">
   <!--Partie centrale -->
 
-       <table class="table-poste-bts">
+       <table class="table-poste-bts offre-poste-enseignement">
            <tr class="line1">
                <td>  <?php  print $node->content['field_reference_pbts']['field']['#title']  ?></td>
                <td>  <?php  print $node->field_reference_pbts[0]['view'] ?></td>

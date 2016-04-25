@@ -3840,6 +3840,10 @@ li.node_read_more a:hover {
 }
 
 /*STYLE OFFRE POSTE ENSEIGNEMENT*/
+table.offre-poste-enseignement {
+  width: 90%;
+}
+
 aside.offre-poste-enseignement ul li {
   list-style-type: none;
   border-bottom: 0.09em solid #E30078;
