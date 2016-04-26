@@ -34,16 +34,7 @@
            
             <?php endif;?>
       
-    <?php if ($terms): ?>
-
-      <div id="taxonomy">
-<?php print Cyrano_PF_print_terms($node);?>
-      </div>
-    <?php endif;?>
-
-    <?php if ($links): ?> 
-      <div class="links"> <?php print $links; ?></div>
-    <?php endif; ?>
+  
   <?php
  $theme_path = drupal_get_path('theme', 'susy2_pf_cyrano');
  include ($theme_path.'/includes/inc_region_col_1.php');
