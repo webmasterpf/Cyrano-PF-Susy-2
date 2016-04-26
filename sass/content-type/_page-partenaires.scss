@@ -18,12 +18,15 @@
       color: $orange-fonce;
   }  
 .page-partenaires{
+    p{
+        line-height: 1em;
+    }
     img{
-        padding: 10px;
+        padding: em(10px);
     }
     a{
         text-decoration: none;
-        color: #02A7D5;
+        color: $bleu-turquoise;
     }
     &a:hover{
         text-decoration: underline;

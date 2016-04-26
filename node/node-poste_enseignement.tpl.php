@@ -39,7 +39,7 @@
                    $liste_lycees = array_filter($lycee);//supprime les éléments vides
                                print $liste_lycees['view'].'<br>';
                
-           drupal_set_message(print_r($liste_lycees, TRUE));   
+//           drupal_set_message(print_r($liste_lycees, TRUE));   
 //Récupération du tid dans une variable, suppression des doublon                               
                                foreach ($lycee as $key => $term_tid) {
                    $lycee_unique = array_unique($lycee);//supprime doublons
@@ -54,10 +54,10 @@
                                }
                   
                }
-                drupal_set_message(t("Clé tableau lycée : $key; Valeur tableau lycee: $lycee<br />\n")); 
-                drupal_set_message(t("Valeur var liste_lieux: $liste_lieux<br />\n")); 
-                drupal_set_message(t("Valeur tab liste_lieux: $tab_liste_lieux<br />\n")); 
-                drupal_set_message(print_r($tab_liste_lieux, TRUE)); 
+//                drupal_set_message(t("Clé tableau lycée : $key; Valeur tableau lycee: $lycee<br />\n")); 
+//                drupal_set_message(t("Valeur var liste_lieux: $liste_lieux<br />\n")); 
+//                drupal_set_message(t("Valeur tab liste_lieux: $tab_liste_lieux<br />\n")); 
+//                drupal_set_message(print_r($tab_liste_lieux, TRUE)); 
            ?></td>
 
            </tr>

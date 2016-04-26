@@ -10,6 +10,18 @@
   //@include breakpoint ($desktop){}
   //@include breakpoint ($tablet){}
   
+  #colonne-1.page-recrutement{
+      p{
+          line-height: inherit;
+      }
+      a{
+          color: $orange-fonce;
+          text-decoration:none;
+          &:hover{
+              text-decoration: underline;
+          }
+      }
+  }
   #colonne-2.page-recrutement{
       table,tbody,tr,td,form,input[type="text"],input[type="email"]{
           width: 98%;display: block;
