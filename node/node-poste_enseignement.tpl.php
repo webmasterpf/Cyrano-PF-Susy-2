@@ -34,10 +34,18 @@
               <tr class="line2">
                <td>  <?php  print $node->content['field_lieux']['field']['#title'] ?></td>
                <td><?php 
-              
-               foreach ($node->field_lieux as $key => $lycee) {
-                   $liste_lycees = array_filter($lycee);//supprime les éléments vides
-                   
+              // our massive array with set values and empty values
+$tab_lieux = $node->field_lieux;
+
+        
+               foreach ($tab_lieux as $key => $lycee) {
+                   // get the empty array keys using array_keys
+$lycee_clean = array_keys($lycee,"");
+
+// foreach empty key, we unset that entry
+foreach ($lycee_clean as $k){unset($lycee[$k]);}
+//                   $liste_lycees = array_filter($lycee, 'strlen');//supprime les éléments vides
+                   print $lycee_clean['view'].'</br>';
                    if($lycee['view'] !== null OR !empty($lycee['view'])){
                        print $liste_lycees['view'].'</br>';
                    }
