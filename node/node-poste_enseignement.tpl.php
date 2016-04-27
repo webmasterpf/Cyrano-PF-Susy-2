@@ -37,15 +37,23 @@
               
                foreach ($node->field_lieux as $key => $lycee) {
                    $liste_lycees = array_filter($lycee);//supprime les éléments vides
-                               print $liste_lycees['view'].'<br>';
+                   
+                   if($lycee['view'] !== null OR !empty($lycee['view'])){
+                       print $liste_lycees['view'].'</br>';
+                   }
+                               
                
 //           drupal_set_message(print_r($liste_lycees, TRUE));   
 //Récupération du tid dans une variable, suppression des doublon                               
-                               foreach ($lycee as $key => $term_tid) {
-                   $lycee_unique = array_unique($lycee);//supprime doublons
-                                   $liste_lieux .= $lycee_unique['value'].',';
-                                  
-                                   if (!in_array($lycee,$liste_lieux))
+                               foreach ($lycee as $clef => $valeur) {
+//                     $term_tid[] .= $lycee['value'];       
+        $term_tid = $clef;
+        $term_tid = array_filter($term_tid, 'strlen'); //supprime éléments vides
+        //$term_tid = array_unique($term_tid);//supprime doublons
+//                                   $liste_lieux .= $lycee_unique['value'].',';
+        $liste_lieux .= $term_tid . ',';
+
+        if (!in_array($lycee,$liste_lieux))
    {
                                        $tab_liste_lieux[] .= $lycee['value'];
                                                 
