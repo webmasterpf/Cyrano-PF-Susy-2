@@ -93,3 +93,28 @@ if (!empty($node->field_NAME[0]['view'])): ?>
                }
                ?>  
                   </ul>
+
+Tableau Multidimensionnel !!!!
+<?php 
+               foreach ($node->field_lieux as $key => $lycee) {
+                   //tableau multidimensionnel
+               //    drupal_set_message(print_r($tab_lieux, TRUE));
+                         
+
+//Récupération du tid dans une variable, suppression des doublon,issu du tableau multidimensionnel                               
+                               foreach ($lycee as $key2 => $term_tid) {
+                                                
+        $lycee = array_filter($lycee); //supprime les éléments vides
+       // $lycee_unique = array_unique($lycee); //supprime doublons
+        $liste_lieux .= $lycee['value']. ','; //stocké pour le $GET
+        print $liste_lieux_node .= $lycee_unique['view'] . '</br>';
+//         drupal_set_message(print_r($lycee, TRUE));
+//         drupal_set_message(print_r($lycee_unique, TRUE));         
+                               }
+                  
+               }
+//                drupal_set_message(t("Clé tableau lycée : $key; Valeur tableau lycee: $lycee<br />\n")); 
+                drupal_set_message(t("Valeur var liste_lieux: $liste_lieux<br />\n")); 
+//                drupal_set_message(t("Valeur tab liste_lieux: $tab_liste_lieux<br />\n")); 
+//                drupal_set_message(print_r($tab_liste_lieux, TRUE)); 
+           ?>
