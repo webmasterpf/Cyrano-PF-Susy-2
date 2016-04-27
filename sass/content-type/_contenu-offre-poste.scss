@@ -36,6 +36,7 @@
 .titre-offre-ctpro{
     @include titre-page;
     color: $orange-fonce;
+    font-size: large;
 }    
 .table-poste-bts{
     background:none;
