@@ -118,3 +118,39 @@ Tableau Multidimensionnel !!!!
 //                drupal_set_message(t("Valeur tab liste_lieux: $tab_liste_lieux<br />\n")); 
 //                drupal_set_message(print_r($tab_liste_lieux, TRUE)); 
            ?>
+
+Visibilité d'un block selon termes de taxonomie https://www.drupal.org/node/134428#comment-3430976
+<?php
+$match = FALSE;
+$types = array('contenu_entreprise' => 1);
+if (arg(0) == 'node' && is_numeric(arg(1))) {
+  $nid = arg(1);
+  $node = node_load(array('nid' => $nid));
+  $type = $node->type;
+  if (isset($types[$type])) {
+    $match = TRUE;
+  }
+  if (arg(1) == '111') {
+    $match = FALSE;
+  }
+//liste les tids qui n'afficheront pas le block
+ $desired_terms = array(113, 115, 116);
+    $found = 0;
+    if ( arg(0) == 'node' && is_numeric(arg(1)) && arg(2) == FALSE ) {//inutile si dans un autre if qui teste les parametres du node
+      // Yes, we're viewing a node in view mode.
+      $node = node_load(arg(1)); // cached
+      // If the term does not exist we're done
+      if (is_array($node->taxonomy)) {
+        foreach ($node->taxonomy as $term) {
+          if ( in_array($term->tid, $desired_terms) ) {
+            $match = FALSE;
+          } //if
+        } //foreach term
+      } //if
+    } //if node
+     $match = TRUE;//à retirer
+}
+return $match;
+
+
+?>
