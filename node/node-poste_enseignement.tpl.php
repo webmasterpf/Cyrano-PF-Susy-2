@@ -33,48 +33,59 @@
            </tr>
               <tr class="line2">
                <td>  <?php  print $node->content['field_lieux']['field']['#title'] ?></td>
-               <td><?php 
-              // our massive array with set values and empty values
-$tab_lieux = $node->field_lieux;
+               <td>
+                <?php 
+  // tableau multidimensionnel contenant les data du champ
 
-        
-               foreach ($tab_lieux as $key => $lycee) {
-                   // get the empty array keys using array_keys
-$lycee_clean = array_keys($lycee,"");
+        foreach ($node->field_lieux as $key => $lieux) {
 
-// foreach empty key, we unset that entry
-foreach ($lycee_clean as $k){unset($lycee[$k]);}
-//                   $liste_lycees = array_filter($lycee, 'strlen');//supprime les éléments vides
-                   print $lycee_clean['view'].'</br>';
-                   if($lycee['view'] !== null OR !empty($lycee['view'])){
-                       print $liste_lycees['view'].'</br>';
+                       foreach ($lieux as $cle => $valeur) {
+//Stockage des tids et des termes dans de stableaux distincts
+            $term_lycees[].= $lieux['view'];
+            $term_lycees = array_filter($term_lycees);//supprime les éléments vides
+            $term_lycees= array_unique($term_lycees);
+            
+            $term_id_lycees[].= $lieux['value'];
+            $term_id_lycees = array_filter($term_id_lycees, 'strlen');//supprime les éléments vides
+            $term_id_lycees= array_unique($term_id_lycees);
+            
+                           }
                    }
-                               
-               
-//           drupal_set_message(print_r($liste_lycees, TRUE));   
-//Récupération du tid dans une variable, suppression des doublon                               
-                               foreach ($lycee as $clef => $valeur) {
-//                     $term_tid[] .= $lycee['value'];       
-        $term_tid = $clef;
-        $term_tid = array_filter($term_tid, 'strlen'); //supprime éléments vides
-        //$term_tid = array_unique($term_tid);//supprime doublons
-//                                   $liste_lieux .= $lycee_unique['value'].',';
-        $liste_lieux .= $term_tid . ',';
+                   
+                     
+                   //affichage du terme dans l'annonce
+                   foreach ($term_lycees as $key => $terme) {
+//   drupal_set_message(print_r($term_lycees, TRUE)); 
+                      $liste_lieux = $terme. '</br>';
+                           print $liste_lieux ;
+                       
+                   }
 
-        if (!in_array($lycee,$liste_lieux))
-   {
-                                       $tab_liste_lieux[] .= $lycee['value'];
-                                                
-   }                                    
-     
-                               }
-                  
-               }
+
+//Récupération du tid dans une variable, suppression des doublon                               
+                   foreach ($term_id_lycees as $key2 => $term_id) {
+                       $liste_lieux_tid .= $term_id. ',';
+                   }
+                           
+                           
+                           
+//                   drupal_set_message(t("Valeur tableau $node->field_lieux")); 
+//               drupal_set_message(print_r($node->field_lieux, TRUE)); 
+//               drupal_set_message(t("Valeur tableau tab_lieux_clean")); 
+//               drupal_set_message(print_r($tab_lieux_clean, TRUE)); 
 //                drupal_set_message(t("Clé tableau lycée : $key; Valeur tableau lycee: $lycee<br />\n")); 
 //                drupal_set_message(t("Valeur var liste_lieux: $liste_lieux<br />\n")); 
 //                drupal_set_message(t("Valeur tab liste_lieux: $tab_liste_lieux<br />\n")); 
-//                drupal_set_message(print_r($tab_liste_lieux, TRUE)); 
-           ?></td>
+//               drupal_set_message(t("Valeur tab  lieux")); 
+//               drupal_set_message(print_r($lieux, TRUE)); 
+//               drupal_set_message(t("Valeur tab  term_id_lycees")); 
+//               drupal_set_message(print_r($term_id_lycees, TRUE)); 
+//               
+//               drupal_set_message(t("Valeur var liste_lieux: term_lycees"));  
+//               drupal_set_message(print_r($term_lycees, TRUE)); 
+                
+?>
+               </td>
 
            </tr>
               <tr class="line1">
@@ -96,7 +107,7 @@ foreach ($lycee_clean as $k){unset($lycee[$k]);}
                <td> Postuler à l'offre</td>
                <td> <?php 
           
-               print '<a href=/node/573?destinataire='.$liste_lieux.'&ref_offre='.$node->field_reference_pbts[0]['value'].'&disc_offre=tid_'
+               print '<a href=/node/573?destinataire='.$liste_lieux_tid.'&ref_offre='.$node->field_reference_pbts[0]['value'].'&disc_offre=tid_'
                        .$node->field_discipline[0]['value'].'>ICI</a>';?></td>
 
            </tr>
