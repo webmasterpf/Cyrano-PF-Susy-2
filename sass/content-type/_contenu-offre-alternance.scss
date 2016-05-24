@@ -1,7 +1,7 @@
 /*-------------------------------------|
 |               CONTENU                     |
 |           CUSTOM NODE.TPL          |
-|       Offre de Poste nance           |
+|       Offre de Poste alternance   |
 |--------------------------------------*/
 
 //@include breakpoint ($mobile){}
@@ -31,9 +31,15 @@
     @include border-bleu-violet;
     }
 }
+#colonne-2.detail-offre-apprentissage{
+    @include breakpoint(($desktop,$tablet))
+    {
+    @include border-anthracite-orangePF;
+    }
+}
 
 /*######-------- ||| STYLE ||| --------######*/
-.titre-offre-ctpro{
+.titre-offre-ctpro,.titre-offre-apprentissage{
     @include titre-page;
     color: $orange-fonce;
     font-size: large;
@@ -46,21 +52,34 @@
     text-align:center;
     width:50%;
     padding: em(5px) 0 em(10px) 0;
-    tbody{border: 0;}
 }
-.table-poste-bts tr.line1{
+.table-offre-apprentissage{
+    background:none;
+    @include border-anthracite-anthracite;
+    margin:0 auto;
+    text-align:center;
+    width:70%;
+    padding: em(5px) 0 em(10px) 0;
+}
+.table-poste-bts,.table-offre-apprentissage{
+      tbody{border: 0;}
+     tr.line1{
     color: $violet;
     background: white;
 }
-.table-poste-bts tr.line2{
+ tr.line2{
     background: $gris-clair;
     color: $rose-fushia;
 }
-.table-poste-bts td.etat{
+ td.etat{
     font-weight: bold;
 }
-.table-poste-bts a{color: $orange-fonce;text-decoration: none;font-weight: bold;}
-.table-poste-bts a:hover{text-decoration: underline;}
+ a{color: $orange-fonce;text-decoration: none;font-weight: bold;
+ &:hover{text-decoration: underline;}
+ }
+ 
+}
+
 /*Vue liste des offres - style par taxonomie*/
 .offre-ct-pro h1{
     @include titre-page;
