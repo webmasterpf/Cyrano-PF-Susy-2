@@ -62,22 +62,25 @@
     padding: em(5px) 0 em(10px) 0;
 }
 .table-poste-bts,.table-offre-apprentissage{
-      tbody{border: 0;}
-     tr.line1{
-    color: $violet;
-    background: white;
-}
- tr.line2{
-    background: $gris-clair;
-    color: $rose-fushia;
-}
- td.etat{
-    font-weight: bold;
-}
- a{color: $orange-fonce;text-decoration: none;font-weight: bold;
- &:hover{text-decoration: underline;}
- }
- 
+    tbody{border: 0;}
+    tr.line1{
+        color: $violet;
+        background: white;
+    }
+    tr.line2{
+        background: $gris-clair;
+        color: $rose-fushia;
+    }
+    td.etat{
+        font-weight: bold;
+    }
+    td{
+        @include cesure-txt;
+    }
+    a{color: $orange-fonce;text-decoration: none;font-weight: bold;
+      &:hover{text-decoration: underline;}
+    }
+
 }
 
 /*Vue liste des offres - style par taxonomie*/
@@ -85,8 +88,11 @@
     @include titre-page;
     color: $orange-fonce;
 }
-#colonne-2 .liste-offres-bts-pro {
+#colonne-2 .liste-offres-contrats {
     ul {
+        list-style: none;
+    }
+    ul li{
         list-style: none;
     }
     ul li a{

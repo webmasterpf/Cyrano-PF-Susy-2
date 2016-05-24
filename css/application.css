@@ -1172,9 +1172,12 @@ body .conteneur .col3_layout_2_6_4 {
 }
 @media (min-width: 990px) {
   body .conteneur .col3_layout_2_6_4 {
-    width: 100%;
+    width: 32.23684%;
     float: left;
-    margin-left: 0;
+    margin-left: 67.76316%;
+    margin-right: -100%;
+    float: left;
+    margin-left: 0.3%;
     margin-right: -100%;
   }
 }
@@ -3705,14 +3708,17 @@ table#actu-hasard td {
   color: #DE603A;
 }
 
-#colonne-2 .liste-offres-bts-pro ul {
+#colonne-2 .liste-offres-contrats ul {
   list-style: none;
 }
-#colonne-2 .liste-offres-bts-pro ul li a {
+#colonne-2 .liste-offres-contrats ul li {
+  list-style: none;
+}
+#colonne-2 .liste-offres-contrats ul li a {
   text-decoration: none;
   color: #606171;
 }
-#colonne-2 .liste-offres-bts-pro ul li a:hover {
+#colonne-2 .liste-offres-contrats ul li a:hover {
   color: #E85231;
 }
 

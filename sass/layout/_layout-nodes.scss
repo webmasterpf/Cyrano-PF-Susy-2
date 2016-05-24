@@ -196,7 +196,10 @@ body .conteneur{
 
         }
         @include breakpoint ($desktop){
-           @include span(last 4);
+           @include span( last 4 of $desktopcol);//correction du layout
+            @include isolate(.3%);//permet d'isoler la colonne du flux sans qu'elle en sorte
+           //, fixe le margin-left, possible aussi avec option no-gutters
+           //@include gutters(.5em);//controle le margin-right
 
         }
         //Pour orientation paysage

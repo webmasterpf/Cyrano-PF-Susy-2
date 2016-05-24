@@ -8,7 +8,7 @@
     <?php if ($submitted): ?>
       <span class="submitted"><?php print $submitted; ?></span>
     <?php endif; ?>
-        <!-- ______________________ COLONNE GAUCHE _______________________ -->
+        <!-- ______________________ COLONNE 1 _______________________ -->
 		
 			
          <div id="colonne-1" class="col1_layout_2_6_4 detail-offre-apprentissage">
@@ -21,7 +21,7 @@
 
 		<!--fin du contenu gauche -->
       
-   
+   <!-- ______________________ COLONNE 2 _______________________ -->
       <div id="colonne-2" class="col2_layout_2_6_4 detail-offre-apprentissage">
   <!--Partie centrale -->
 
@@ -66,8 +66,7 @@
       //print $content;
       print $node->content['body']['#value']
               ?>
-        <!--Lien vers formulaire -->
-        <!--<div id="postule"><a href="/site/node/110" title="Pour postuler cliquez ici"> Postuler</a></div>-->
+       
     
       <?php if ($centralBloc): ?>
                 <div id="middleGalerie"><?php print $centralBloc; ?></div>
@@ -87,9 +86,8 @@
       <div class="links"> <?php print $links; ?></div>
     <?php endif; ?>
       </div><!-- /fin colonne 2 centrale-->
-      <!-- ______________________ COLONNE DROITE _______________________ -->
-                   
-          
+      <!-- ______________________ COLONNE 3 _______________________ -->
+                            
            <div id="colonne-3" class="col3_layout_2_6_4 detail-offre-apprentissage">
                                    <?php 
   //$theme_path = drupal_get_path('theme', 'NOM_THEME');
