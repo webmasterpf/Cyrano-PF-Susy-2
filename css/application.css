@@ -3655,6 +3655,7 @@ table#actu-hasard td {
   line-height: 1.875em;
   color: #DE603A;
   font-size: large;
+  text-transform: capitalize;
 }
 
 .table-poste-bts {
@@ -3663,7 +3664,7 @@ table#actu-hasard td {
   border-right: 0.0625em solid #606171;
   margin: 0 auto;
   text-align: center;
-  width: 50%;
+  width: 70%;
   padding: 0.3125em 0 0.625em 0;
 }
 
@@ -3690,6 +3691,17 @@ table#actu-hasard td {
 }
 .table-poste-bts td.etat, .table-offre-apprentissage td.etat {
   font-weight: bold;
+}
+.table-poste-bts td, .table-offre-apprentissage td {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  -ms-word-break: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .table-poste-bts a, .table-offre-apprentissage a {
   color: #DE603A;
