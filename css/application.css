@@ -3840,6 +3840,12 @@ h2.offre-bts-titre {
   float: right;
 }
 
+#colonne-3.detail-offre-ctpro h3, #colonne-3.detail-offre-apprentissage h3 {
+  color: #01ABCF;
+  text-align: center;
+  display: block;
+}
+
 /*style des boutons radios*/
 .bef-checkboxes,
 .bef-select-as-radios .form-radios {
@@ -3900,12 +3906,6 @@ aside.offre-poste-enseignement ul .offre-poste-discipline {
 }
 aside.offre-poste-enseignement label[for="edit-field-etat-poste-value"] {
   font-size: small;
-}
-
-#colonne-3.detail-offre-ctpro h3 {
-  color: #01ABCF;
-  text-align: center;
-  display: block;
 }
 
 /*-------------------------------------|
