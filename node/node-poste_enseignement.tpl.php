@@ -12,6 +12,8 @@
 		
 			
          <div id="colonne-1" class="col1_layout_2_6_4 detail-offre">
+             
+             <a href="/node/578" class="retour-liste">Retourner à la liste des offres</a>
               <?php if ($title): ?>
                 <h1 class="titre-offre-ctpro"><?php print $title; ?></h1>
               <?php endif; ?>

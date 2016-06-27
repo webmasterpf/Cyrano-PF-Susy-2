@@ -61,3 +61,15 @@
       }
   }
   }
+  /*--- DETAIL OFFRE DE POSTE ---*/
+  .detail-offre{
+      a.retour-liste{
+          color: $orange-fonce;
+          text-decoration: none;
+          font-size:x-small;
+          &:hover{
+              background: $orange-fonce;
+              color: $gris-anthracite;
+          }
+      }
+  }

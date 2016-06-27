@@ -5234,6 +5234,17 @@ table#table-bouton-partenaire a {
 |       CONTENU CUSTOM NODE.TPL        |
 |             PAGE RECRUTEMENT         |
 |--------------------------------------*/
+#colonne-1.page-recrutement p {
+  line-height: inherit;
+}
+#colonne-1.page-recrutement a {
+  color: #DE603A;
+  text-decoration: none;
+}
+#colonne-1.page-recrutement a:hover {
+  text-decoration: underline;
+}
+
 #colonne-2.page-recrutement table, #colonne-2.page-recrutement tbody, #colonne-2.page-recrutement tr, #colonne-2.page-recrutement td, #colonne-2.page-recrutement form, #colonne-2.page-recrutement input[type="text"], #colonne-2.page-recrutement input[type="email"] {
   width: 98%;
   display: block;
@@ -5279,6 +5290,17 @@ table#table-bouton-partenaire a {
 }
 #colonne-1.page-recrutement .docs-enseignant a:hover {
   text-decoration: underline;
+}
+
+/*--- DETAIL OFFRE DE POSTE ---*/
+.detail-offre a.retour-liste {
+  color: #DE603A;
+  text-decoration: none;
+  font-size: x-small;
+}
+.detail-offre a.retour-liste:hover {
+  background: #DE603A;
+  color: #606070;
 }
 
 /*-------------------------------------|
